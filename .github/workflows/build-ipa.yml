@@ -13,16 +13,14 @@ permissions:
 jobs:
   build:
     if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[build]')
-    runs-on: macos-latest
+    runs-on: xcode-27  # Manic uses iOS 27 SDK APIs (UIHinge, UISceneAccessory)
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
-      - name: Pick newest Xcode
+      - name: Show Xcode
         run: |
-          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
-          echo "Using $XCODE"
-          sudo xcode-select -s "$XCODE"
+          ls -d /Applications/Xcode*.app
           xcodebuild -version
 
       # Xcode 26 builds R.swift's RswiftResources module only for the Mac when the same

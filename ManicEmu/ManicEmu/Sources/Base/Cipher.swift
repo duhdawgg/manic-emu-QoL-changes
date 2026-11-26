@@ -21,5 +21,7 @@ extension _R {
         static let ManicKey = ""
         static let DeepSeek = ""
         static let RetroAPI = ""
+        // Missing from the public copy of this file; Manic's private key isn't published.
+        static let CoverTranslate = ""
     }
 }
