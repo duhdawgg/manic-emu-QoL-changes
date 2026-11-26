@@ -559,7 +559,7 @@ extension GameType {
         if self == .ss {
             return [EmulationCore.BeetleSaturn.name, EmulationCore.Yabause.name]
         } else if self == .gba {
-            return [EmulationCore.mGBA.name, EmulationCore.VBAM.name, EmulationCore.gpSP.name]
+            return [EmulationCore.mGBA.name, "", ""] // QoL build: only mGBA ships
         } else if self == .md {
 #if SIDE_LOAD
             return [EmulationCore.ClownMDEmu.name, EmulationCore.PicoDrive.name]
@@ -569,13 +569,13 @@ extension GameType {
             return [EmulationCore.Gearsystem.name, EmulationCore.PicoDrive.name]
 #endif
         } else if self == .gb || self == .gbc {
-            return [EmulationCore.Gambatte.name, EmulationCore.mGBA.name, EmulationCore.VBAM.name, EmulationCore.MesenS.name]
+            return ["", EmulationCore.mGBA.name, "", ""] // QoL build: GB/GBC run on mGBA
         } else if self == .arcade {
 #if SIDE_LOAD
             return [EmulationCore.MAME.name, EmulationCore.FinalBurnNeo.name]
 #endif
         } else if self == ._3ds {
-            return [EmulationCore.Citra.name, EmulationCore.Azahar.name]
+            return ["", EmulationCore.Azahar.name] // QoL build: Azahar only (Citra.framework kept for import tools)
         } else if self == ._32x {
 #if SIDE_LOAD
             return [EmulationCore.PicoDrive.name, EmulationCore.JGenesis.name]
@@ -587,7 +587,7 @@ extension GameType {
             return ["", EmulationCore.JGenesis.name, EmulationCore.ClownMDEmu.name]
 #endif
         } else if self == .ds {
-            return [EmulationCore.melonDSDS.name, EmulationCore.DeSmuME.name]
+            return [EmulationCore.melonDSDS.name, ""] // QoL build: only melonDS DS ships
         } else if self == .j2me {
             return [EmulationCore.J2meJS.name, EmulationCore.freej2me.name]
         } else if self == .ps1 {

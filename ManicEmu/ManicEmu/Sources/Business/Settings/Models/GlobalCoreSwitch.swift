@@ -19,7 +19,11 @@ struct GlobalCoreSwitch: SmartCodable, Equatable {
     
     func getUsingCoreIndex(gameType: GameType) -> Int? {
         let coreName = getUsingCoreName(gameType: gameType)
-        return gameType.supportCores.firstIndex(where: { $0 == coreName })
+        if let index = gameType.supportCores.firstIndex(where: { $0 == coreName && !$0.isEmpty }) {
+            return index
+        }
+        // QoL build: a saved core that no longer ships falls back to the first one that does.
+        return gameType.supportCores.firstIndex(where: { !$0.isEmpty })
     }
     
     mutating func setUsingCoreName(gameType: GameType, coreName: String) {
