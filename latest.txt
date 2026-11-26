@@ -1,4 +1,4 @@
-commit: fd2fdfafc93c574584295ce0a8e901b5a2f312fc
+commit: dd6a5fefee916ed14e40e43699f96d5c35f54e9d
 branch: claude/setup
-run: 10
+run: 11
 result: failure
