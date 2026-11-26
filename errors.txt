@@ -223,5 +223,6 @@
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/Dependencies/Libretro/libretro-common/include/retro_miscellaneous.h:60:11: warning: parameter 'b[in]' not found in the function declaration [-Wdocumentation]
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/Dependencies/Libretro/libretro-common/include/retro_miscellaneous.h:73:11: warning: parameter 'a[in,out]' not found in the function declaration [-Wdocumentation]
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/Dependencies/Libretro/libretro-common/include/retro_miscellaneous.h:74:11: warning: parameter 'b[in]' not found in the function declaration [-Wdocumentation]
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: no such module 'RswiftResources'
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: unable to resolve module dependency: 'RswiftResources'
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: Unable to resolve module dependency: 'RswiftResources'
 ** BUILD FAILED **
