@@ -165,6 +165,15 @@ extension GameOption {
             }
         }
         
+        //3DS (Azahar): 1x-4x. Higher factors are too slow on phones, and Manic's menu
+        //offered up to 10x while the core only accepts 1-8, so 9x/10x silently did nothing.
+        static var ResolutionFor3DS: [Resolution] { [.one, .two, .three, .four] }
+        
+        ///Azahar's citra_resolution_factor value for this setting (1-4).
+        var azaharResolutionFactor: Int {
+            return min(max(self == .undefine ? 1 : rawValue, 1), 4)
+        }
+        
         //PS1
         static var ResolutionForPS1: [Resolution] { Array(Resolution.allCases[1..<5]) }
         

@@ -2240,7 +2240,10 @@ extension PlayViewController {
                         .citra_use_cpu_jit: enableJIT ? "enabled" : "disabled",
                         .citra_required_online_lle_modules: enableLLE ? "enabled" : "disabled",
                         .citra_motion_rotation: Self.motionRotationValue(),
-                        .citra_use_fastinterp: enableLLE ? "disabled" : "enabled"
+                        .citra_use_fastinterp: enableLLE ? "disabled" : "enabled",
+                        // Apply the game's saved resolution at boot. Before, it was only sent
+                        // while a game was running, so every launch went back to 1x.
+                        .citra_resolution_factor: "\(manicGame.resolution.azaharResolutionFactor)"
                     ])
                     // Never start Azahar with fast-forward; it can crash on boot.
                     Game.change { realm in
@@ -3430,8 +3433,7 @@ extension PlayViewController {
             if manicGame.isCitra3DS {
                 citraCore?.setResolution(resolution: resolution)
             } else {
-                let resolutionRaw = resolution == .undefine ? 1 : resolution.rawValue
-                LibretroCore.sharedInstance().updateRunningCoreConfigs(["citra_resolution_factor": "\(resolutionRaw)"], flush: false)
+                LibretroCore.sharedInstance().updateRunningCoreConfigs(["citra_resolution_factor": "\(resolution.azaharResolutionFactor)"], flush: false)
             }
         } else if manicGame.gameType == .psp {
             updatePSPResolution(resolution, reload: true)

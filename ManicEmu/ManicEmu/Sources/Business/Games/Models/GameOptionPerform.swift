@@ -802,7 +802,11 @@ extension GameOption {
 
         case .resolution:
             if performImmediately {
-                performResolution(games: games, resolution: firstGame.resolution.next)
+                var nextResolution = firstGame.resolution.next
+                if firstGame.gameType == ._3ds, !GameOption.Resolution.ResolutionFor3DS.contains(nextResolution) {
+                    nextResolution = .one
+                }
+                performResolution(games: games, resolution: nextResolution)
             } else {
                 performStringAction(with: games, in: scene, accessoryChange: accessoryChange)
             }
@@ -1319,6 +1323,8 @@ extension GameOption {
                 options = GameOption.Resolution.AllResolutionTitleForPS1
             } else if firstGame.isN64ParaLLEl {
                 options = GameOption.Resolution.AllResolutionTitleForN64ParaLLEl
+            } else if firstGame.gameType == ._3ds {
+                options = GameOption.Resolution.ResolutionFor3DS.map({ $0.title })
             } else {
                 options = GameOption.Resolution.allCases.filter({ $0 != .undefine }).map({ $0.title })
             }

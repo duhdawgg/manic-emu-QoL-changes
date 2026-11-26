@@ -138,6 +138,7 @@ enum SpecialCoreOption: String {
     case citra_custom_layout_config
     case citra_motion_rotation
     case citra_use_fastinterp
+    case citra_resolution_factor
     //a2600
     case stella_crop_hoverscan
     //a5200
