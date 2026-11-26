@@ -1,0 +1,114 @@
+name: Build melonDS DS core
+
+# Runs when a pushed commit message contains [melonds], or by hand from the Actions tab.
+# Builds CoreSource/melonds-ds (with CoreSource/melonDS) for iOS and commits the result to
+# Cores/melondsds.libretro.framework on the same branch.
+on:
+  push:
+    branches-ignore: ["ci-logs"]
+  workflow_dispatch:
+    inputs:
+      opengl:
+        description: "Build with the OpenGL ES renderer (needed for upscaling)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[melonds]')
+    runs-on: macos-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pick newest Xcode
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Read build options
+        id: opts
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+          GL_INPUT: ${{ github.event.inputs.opengl }}
+        run: |
+          # OpenGL renderer: workflow input, or "[melonds-gl]" in the commit message.
+          GL=OFF
+          if [ "$GL_INPUT" = "true" ]; then GL=ON; fi
+          if printf '%s' "$MSG" | grep -q "\[melonds-gl\]"; then GL=ON; fi
+          echo "gl=$GL" >> "$GITHUB_OUTPUT"
+          echo "OpenGL renderer: $GL"
+
+      - name: Configure
+        working-directory: CoreSource/melonds-ds
+        run: |
+          set -o pipefail
+          GLFLAGS="-DENABLE_OPENGL=OFF"
+          if [ "${{ steps.opts.outputs.gl }}" = "ON" ]; then
+            GLFLAGS="-DENABLE_OPENGL=ON -DOPENGL_PROFILE=OpenGLES3"
+          fi
+          cmake -B build \
+            --toolchain ./cmake/toolchain/ios.toolchain.cmake \
+            -DPLATFORM=OS64 -DDEPLOYMENT_TARGET=14 \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DENABLE_JIT=ON \
+            $GLFLAGS \
+            -DFETCHCONTENT_SOURCE_DIR_MELONDS="$GITHUB_WORKSPACE/CoreSource/melonDS" \
+            2>&1 | tee "$GITHUB_WORKSPACE/melonds.log"
+
+      - name: Build
+        id: build
+        working-directory: CoreSource/melonds-ds
+        run: |
+          set -o pipefail
+          cmake --build build --config Release -j "$(sysctl -n hw.ncpu)" 2>&1 | tee -a "$GITHUB_WORKSPACE/melonds.log"
+
+      - name: Package framework
+        if: steps.build.outcome == 'success'
+        run: |
+          set -e
+          LIB=$(find CoreSource/melonds-ds/build -name "melondsds_libretro*.dylib" -o -name "melondsds_libretro_ios*.dylib" | head -1)
+          [ -n "$LIB" ] || LIB=$(find CoreSource/melonds-ds/build -name "*.dylib" -path "*melonds*" | head -1)
+          echo "Built: $LIB"
+          FW=Cores/melondsds.libretro.framework
+          cp "$LIB" "$FW/melondsds.libretro"
+          install_name_tool -id @rpath/melondsds.libretro.framework/melondsds.libretro "$FW/melondsds.libretro"
+          # The old signature no longer matches; sideloading re-signs the framework.
+          rm -rf "$FW/_CodeSignature"
+          otool -L "$FW/melondsds.libretro" | head -5
+          lipo -info "$FW/melondsds.libretro"
+
+      - name: Commit framework
+        if: steps.build.outcome == 'success'
+        run: |
+          git config user.name ci
+          git config user.email ci@users.noreply.github.com
+          git add Cores/melondsds.libretro.framework
+          git commit -m "Rebuilt melonDS DS core (OpenGL renderer: ${{ steps.opts.outputs.gl }}) from ${GITHUB_SHA::7}" || exit 0
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Save build log
+        if: always()
+        run: |
+          mkdir -p /tmp/ci && cd /tmp/ci
+          git init -q
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q --depth 1 origin ci-logs && git checkout -q FETCH_HEAD -B ci-logs || git checkout -q --orphan ci-logs
+          mkdir -p melonds
+          {
+            echo "commit: ${GITHUB_SHA}"
+            echo "run: ${GITHUB_RUN_NUMBER}"
+            echo "opengl: ${{ steps.opts.outputs.gl }}"
+            echo "result: ${{ steps.build.outcome }}"
+          } > melonds/latest.txt
+          if [ -f "$GITHUB_WORKSPACE/melonds.log" ]; then
+            grep -E "error:|Error|CMake Error|FAILED" "$GITHUB_WORKSPACE/melonds.log" | head -300 > melonds/errors.txt || true
+            tail -300 "$GITHUB_WORKSPACE/melonds.log" > melonds/tail.txt
+          fi
+          git add -A
+          git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "melonDS run ${GITHUB_RUN_NUMBER}: ${{ steps.build.outcome }}" || true
+          for i in 1 2 3; do git push -q origin HEAD:ci-logs && break; git pull -q --rebase origin ci-logs; done
