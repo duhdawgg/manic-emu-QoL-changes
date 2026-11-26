@@ -72,9 +72,14 @@ jobs:
         if: steps.build.outcome == 'success'
         run: |
           set -e
-          LIB=$(find CoreSource/melonds-ds/build -name "melondsds_libretro*.dylib" -o -name "melondsds_libretro_ios*.dylib" | head -1)
-          [ -n "$LIB" ] || LIB=$(find CoreSource/melonds-ds/build -name "*.dylib" -path "*melonds*" | head -1)
+          LIB=$(find CoreSource/melonds-ds/build -path "*melondsds.libretro.framework/melondsds.libretro" -type f | head -1)
           echo "Built: $LIB"
+          [ -n "$LIB" ] || { echo "error: built core not found"; exit 1; }
+          # Sanity checks so a wrong file can never replace the core.
+          SIZE=$(stat -f %z "$LIB"); echo "Size: $SIZE"
+          [ "$SIZE" -gt 1000000 ] || { echo "error: core is suspiciously small"; exit 1; }
+          nm -gU "$LIB" | grep -q " _retro_run$" || { echo "error: core has no retro_run"; exit 1; }
+          strings "$LIB" | grep -q "^melonds_render_mode$" || { echo "error: core options missing"; exit 1; }
           FW=Cores/melondsds.libretro.framework
           cp "$LIB" "$FW/melondsds.libretro"
           install_name_tool -id @rpath/melondsds.libretro.framework/melondsds.libretro "$FW/melondsds.libretro"
