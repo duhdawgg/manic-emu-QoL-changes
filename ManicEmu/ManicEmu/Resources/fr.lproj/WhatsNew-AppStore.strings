@@ -1,0 +1,9 @@
+/* 
+  whatsNew-AppStore.strings
+  ManicEmu
+
+  Created by Daiuno on 2026/9/16.
+  Copyright © 2026 Manic EMU. All rights reserved.
+*/
+
+"WhatsNewDetail" = "- Performances 3DS améliorées\n- Nimbus dans Artic Base prend désormais en charge la dernière version de Pretendo\n- Performances de Home Menu améliorées sur le cœur Azahar\n- Correction du comportement du pointeur Wii pour les utilisateurs concernés\n- Ajout de la prise en charge de MeloCafe Link\n- iPad prend désormais en charge les apps en fenêtre\n- Skin SNES redessiné\n- Ajout d'un repli de skins : iPad peut utiliser les skins d'iPhone\n- Prise en charge d'iPhone Duo\n- Correction d'AirPlay, qui ne fonctionnait pas sous iOS 27 ou version ultérieure\n- Ajout de BitBop, app sœur de Manic EMU pour la musique des jeux rétro\n- Autres corrections et améliorations";
