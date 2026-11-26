@@ -55,6 +55,7 @@ jobs:
             --toolchain ./cmake/toolchain/ios.toolchain.cmake \
             -DPLATFORM=OS64 -DDEPLOYMENT_TARGET=14 \
             -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
             -DENABLE_JIT=ON \
             $GLFLAGS \
             -DFETCHCONTENT_SOURCE_DIR_MELONDS="$GITHUB_WORKSPACE/CoreSource/melonDS" \
