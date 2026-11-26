@@ -37,7 +37,25 @@ Upstream Manic EMU is licensed AGPL-3.0, so this modified version is too.
 ## Plan
 
 1. Import the full source. ✅
-2. Automatic unsigned IPA build with GitHub Actions.
-3. Remove every other system and core; run GB and GBC on mGBA.
-4. Features: 2×/3×/4× rendering, per-game resolution, texture filtering,
-   shader caching, cleaner audio during fast forward, Pokémon Omega Ruby fixes.
+2. Automatic unsigned IPA build (GitHub Actions). Put `[build]` in a commit message to build. ✅
+3. Cleanup: remove every other system and core, run GB and GBC on mGBA, and update the UI
+   to match (same art style, no leftover icons, menus or settings for removed systems).
+4. Graphics:
+   - 2×/3×/4× rendering that actually works and is remembered per game.
+   - Per-game resolution settings.
+   - Better texture filtering.
+   - Shader caching and shader preloading (3DS).
+5. Audio: fewer pops, crackles and dropouts during fast forward, for every core.
+6. Pokémon Omega Ruby compatibility on Azahar.
+
+## Findings so far
+
+- 3DS (Azahar): the resolution setting is changed while a game runs but isn't saved for
+  the next launch, so every boot falls back to 1×. Several settings in `System.core/Azahar.opt`
+  use old Citra names the Azahar core doesn't recognise (for example
+  `citra_use_hw_shader_cache` instead of `citra_use_disk_shader_cache`), so they do nothing.
+- DS (melonDS DS): the iOS build has its OpenGL renderer turned off, and that renderer is the
+  only one that can upscale. The app also sends the DeSmuME resolution setting, which
+  melonDS DS ignores. DS upscaling needs the core rebuilt with OpenGL ES enabled.
+- GBA/GBC/GB (mGBA): 2D systems have no internal resolution; sharpness comes from
+  display filters.

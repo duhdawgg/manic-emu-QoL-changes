@@ -1,0 +1,96 @@
+name: Build unsigned IPA
+
+# Runs when a pushed commit message contains [build], or by hand from the Actions tab.
+# macOS minutes are limited on private repos, so ordinary pushes don't build.
+on:
+  push:
+    branches-ignore: ["ci-logs"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[build]')
+    runs-on: macos-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pick newest Xcode
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          echo "Using $XCODE"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Build
+        id: build
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project ManicEmu/ManicEmu.xcodeproj \
+            -scheme ManicEmuSideload \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            -skipPackagePluginValidation \
+            -skipMacroValidation \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            2>&1 | tee build.log
+
+      - name: Package IPA
+        if: steps.build.outcome == 'success'
+        run: |
+          APP=$(find build/Build/Products -maxdepth 2 -name "*.app" -type d | head -1)
+          echo "App: $APP"
+          mkdir -p Payload
+          cp -R "$APP" Payload/
+          zip -qry ManicEmu-QoL-unsigned.ipa Payload
+          ls -lh ManicEmu-QoL-unsigned.ipa
+
+      - name: Upload IPA
+        if: steps.build.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ManicEmu-QoL-unsigned-ipa
+          path: ManicEmu-QoL-unsigned.ipa
+
+      - name: Publish IPA as a release
+        if: steps.build.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="build-${GITHUB_RUN_NUMBER}"
+          gh release create "$TAG" ManicEmu-QoL-unsigned.ipa \
+            --title "Build ${GITHUB_RUN_NUMBER} (${GITHUB_REF_NAME})" \
+            --notes "Unsigned IPA from ${GITHUB_SHA::7}. Sideload with SideStore, AltStore or Sideloadly." \
+            --prerelease --target "$GITHUB_SHA"
+
+      # Save the result and any errors to the ci-logs branch so they can be read
+      # without opening the Actions page.
+      - name: Save build log
+        if: always()
+        run: |
+          RESULT="${{ steps.build.outcome }}"
+          mkdir -p /tmp/ci && cd /tmp/ci
+          git init -q
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q --depth 1 origin ci-logs && git checkout -q FETCH_HEAD -B ci-logs || git checkout -q --orphan ci-logs
+          {
+            echo "commit: ${GITHUB_SHA}"
+            echo "branch: ${GITHUB_REF_NAME}"
+            echo "run: ${GITHUB_RUN_NUMBER}"
+            echo "result: ${RESULT}"
+          } > latest.txt
+          if [ -f "$GITHUB_WORKSPACE/build.log" ]; then
+            grep -E "error:|warning: .*(deprecated|not found)|\*\* BUILD" "$GITHUB_WORKSPACE/build.log" | head -400 > errors.txt || true
+            tail -300 "$GITHUB_WORKSPACE/build.log" > tail.txt
+          fi
+          git add -A
+          git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "Run ${GITHUB_RUN_NUMBER}: ${RESULT}" || true
+          git push -q origin HEAD:ci-logs
