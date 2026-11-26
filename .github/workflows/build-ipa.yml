@@ -25,6 +25,23 @@ jobs:
           sudo xcode-select -s "$XCODE"
           xcodebuild -version
 
+      # R.swift's generated code imports RswiftResources. Xcode 26 can start scanning the
+      # app's modules before that package module is built for iOS, so build it first.
+      - name: Prebuild R.swift library
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project ManicEmu/ManicEmu.xcodeproj \
+            -scheme RswiftLibrary \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            -skipPackagePluginValidation \
+            -skipMacroValidation \
+            CODE_SIGNING_ALLOWED=NO \
+            2>&1 | tee prebuild.log | tail -20
+
       - name: Build
         id: build
         run: |
