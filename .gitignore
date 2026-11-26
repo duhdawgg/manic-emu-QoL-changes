@@ -91,7 +91,6 @@ iOSInjectionProject/
 
 # Out of sync
 CoresSources
-Dependencies/*
 i18n/
 Scripts/System.core.ver
 ManicEmu/ManicEmu/Resources/System.core
