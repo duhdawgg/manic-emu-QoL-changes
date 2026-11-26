@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBEB3F16C0556BF2D35A4ADC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DA47871A35BD5ACDBA26A /* R.generated.swift */; };
 		00000000000051A10000000F /* RuffleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B188E5A6DD343E5960ABEF0 /* RuffleView.swift */; };
 		00000000000051A100000010 /* FLASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809D2DE31034EF5B9135498 /* FLASH.swift */; };
 		00000000000051A100000011 /* WSC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B86ECC930242969A108735 /* WSC.swift */; };
@@ -2268,6 +2269,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F5DA47871A35BD5ACDBA26A /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		00000000000051A100000002 /* ManicEmuSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManicEmuSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2DDA01B1DB4E15B8F0C5C6 /* Wii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wii.swift; sourceTree = "<group>"; };
 		16B86ECC930242969A108735 /* WSC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSC.swift; sourceTree = "<group>"; };
@@ -13628,6 +13630,7 @@
 		A5A0020724556F1E006E0F0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F5DA47871A35BD5ACDBA26A /* R.generated.swift */,
 				57E0CCC62D9075110027FB8C /* file_icon.png */,
 				A5A001FB24555A5F006E0F0E /* Assets.xcassets */,
 				A5A001FD24555A5F006E0F0E /* LaunchScreen.storyboard */,
@@ -13875,7 +13878,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				57909381303C7D9100A53656 /* PBXTargetDependency */,
 				57909382303C7D9100A53656 /* PBXTargetDependency */,
 				57E8A110304A4A1100000009 /* PBXTargetDependency */,
 			);
@@ -14713,6 +14715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEB3F16C0556BF2D35A4ADC /* R.generated.swift in Sources */,
 				C425CFE2F6744DD2B82FDB01 /* RuffleView.swift in Sources */,
 				4C03A073F6DB40669F022100 /* FLASH.swift in Sources */,
 				58D0423D007B462DB353AA16 /* WSC.swift in Sources */,
@@ -16112,10 +16115,6 @@
 			targetProxy = 00000000000051A100000230 /* PBXContainerItemProxy */;
 		};
 		576DD4482E0FFAC900644424 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 576DD4472E0FFAC900644424 /* RswiftGenerateInternalResources */;
-		};
-		57909381303C7D9100A53656 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 576DD4472E0FFAC900644424 /* RswiftGenerateInternalResources */;
 		};

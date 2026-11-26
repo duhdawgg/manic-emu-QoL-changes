@@ -25,6 +25,40 @@ jobs:
           sudo xcode-select -s "$XCODE"
           xcodebuild -version
 
+      # Xcode 26 builds R.swift's RswiftResources module only for the Mac when the same
+      # package is used both by the R.swift build plugin and by the iOS app, so the app
+      # can't import it. The sideload target therefore doesn't run the plugin; this step
+      # runs the same generator by hand and the target compiles the generated file.
+      - name: Generate R.swift resources
+        run: |
+          set -eo pipefail
+          git clone -q --depth 1 --branch 7.8.0 https://github.com/mac-cain13/R.swift /tmp/rswift
+          swift build -c release --package-path /tmp/rswift --product rswift 2>&1 | tail -3
+          RSWIFT=/tmp/rswift/.build/release/rswift
+          xcodebuild -showBuildSettings -json \
+            -project ManicEmu/ManicEmu.xcodeproj -scheme ManicEmuSideload \
+            -configuration Release -sdk iphoneos -derivedDataPath build \
+            -skipPackagePluginValidation -skipMacroValidation > /tmp/settings.json
+          python3 - <<'PY' > /tmp/rswift.env
+          import json
+          for entry in json.load(open('/tmp/settings.json')):
+              if entry.get('target') != 'ManicEmuSideload':
+                  continue
+              b = entry['buildSettings']
+              for k in ['SOURCE_ROOT', 'PRODUCT_MODULE_NAME', 'INFOPLIST_FILE', 'CODE_SIGN_ENTITLEMENTS',
+                        'BUILT_PRODUCTS_DIR', 'DEVELOPER_DIR', 'SDKROOT', 'PLATFORM_DIR',
+                        'PROJECT_FILE_PATH', 'TARGET_NAME']:
+                  if k in b:
+                      print(f"export {k}='{b[k]}'")
+              break
+          PY
+          cat /tmp/rswift.env
+          source /tmp/rswift.env
+          "$RSWIFT" generate ManicEmu/ManicEmu/Resources/R.generated.swift \
+            --target ManicEmuSideload --input-type xcodeproj --bundle-source finder
+          wc -l ManicEmu/ManicEmu/Resources/R.generated.swift
+          head -12 ManicEmu/ManicEmu/Resources/R.generated.swift
+
       - name: Build
         id: build
         run: |
