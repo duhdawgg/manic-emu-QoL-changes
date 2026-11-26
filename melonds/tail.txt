@@ -1,0 +1,300 @@
+-- Check for working C compiler: /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-CevFzX/CMakeLists.txt:6 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring a Release build.
+-- CMAKE_OSX_ARCHITECTURES: arm64
+-- CMAKE_SYSTEM_PROCESSOR: aarch64
+-- Found Git: /opt/homebrew/bin/git (found version "2.56.1")
+-- GIT_REVISION: 0
+-- GIT_STATE: 
+-- GIT_BRANCH: 
+-- JIT is disabled by default in iOS builds.
+-- OpenGL is disabled by default on this platform.
+-- Using melonDS: /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS (local)
+-- Using libretro-common: https://github.com/JesseTG/libretro-common (ref 8e2b884)
+-- Using embed-binaries: https://github.com/andoalon/embed-binaries.git (ref 21f28ca)
+-- Using glm: https://github.com/g-truc/glm (ref 33b4a62)
+-- Using libslirp: https://github.com/JesseTG/libslirp-mirror (ref e61dbd4)
+-- Using pntr: https://github.com/robloach/pntr (ref 650237a)
+-- Using fmt: https://github.com/fmtlib/fmt (ref 11.0.2)
+-- Using yamc: https://github.com/yohhoy/yamc (ref 4e015a7)
+-- Using span-lite: https://github.com/martinmoene/span-lite (ref 00afc28)
+-- Using date: https://github.com/HowardHinnant/date (ref 1ead671)
+-- Using zlib: https://github.com/madler/zlib (ref v1.3.1)
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-nCY7r6/CMakeLists.txt:8 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-rJEk8e/CMakeLists.txt:8 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-45dliD/CMakeLists.txt:8 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-lKb8sZ/CMakeLists.txt:8 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/_deps/melonds-build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/_deps/melonds-build/CMakeFiles/_CMakeLTOTest-C/src/CMakeLists.txt:2 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The ASM compiler identification is AppleClang
+-- Found assembler: /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/teakra/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (policy) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/teakra/CMakeLists.txt:22 (set):
+  Policy CMP0218 is not set: The CMAKE_WARN_DEPRECATED and
+  CMAKE_ERROR_DEPRECATED variables are ignored.  Run "cmake --help-policy
+  CMP0218" for policy details.  Use the cmake_policy command to set the
+  policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-Qv8yfu/CMakeLists.txt:8 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+CMake Warning (deprecated) at build/_deps/glm-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at build/_deps/glm-src/CMakeLists.txt:2 (cmake_policy):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- GLM: Version 1.0.2
+-- GLM: Disable -Wc++98-compat warnings
+-- GLM: Build with C++17 features
+-- Looking for sys/types.h
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-dynPYM/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-S3eeZS/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-lBThIW/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Looking for stddef.h - found
+-- Check size of off64_t
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-5ZzAjz/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Check size of off64_t - failed
+-- Looking for fseeko
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-JpySWZ/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Looking for fseeko - found
+-- Looking for unistd.h
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-bxi4xb/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Looking for unistd.h - found
+-- Renaming
+--     /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/_deps/zlib-src/zconf.h
+-- to 'zconf.h.included' because this file is included with zlib
+-- but CMake generates it automatically in the build directory.
+-- {fmt} version: 11.0.2
+-- Build type: Release
+-- Performing Test HAS_NULLPTR_WARNING
+CMake Warning (deprecated) at /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/cmake/toolchain/ios.toolchain.cmake:149 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+Call Stack (most recent call first):
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/4.5.1/CMakeSystem.cmake:8 (include)
+  /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/build/CMakeFiles/CMakeScratch/TryCompile-a1ajUz/CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Performing Test HAS_NULLPTR_WARNING - Success
+CMake Error at build/_deps/yamc-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 has been removed from CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+  Or, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5 to try configuring anyway.
+
+
+-- Configuring incomplete, errors occurred!
