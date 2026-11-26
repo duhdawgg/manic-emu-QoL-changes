@@ -1,0 +1,29 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild build -project ManicEmu/ManicEmu.xcodeproj -scheme ManicEmuSideload -configuration Release -sdk iphoneos -destination generic/platform=iOS -derivedDataPath build -skipPackagePluginValidation -skipMacroValidation CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos26.5
+
+Resolve Package Graph
+
+Fetching from https://github.com/Daiuno/BlankSlate.git
+
+Fetching from https://github.com/Daiuno/ChromaColorPicker.git
+
+Fetching from https://github.com/Daiuno/Closures.git
+
+Fetching from https://github.com/Daiuno/CloudServiceKit.git
+
+Fetching from https://github.com/Lakr233/ColorfulX.git
+
+Fetching from https://github.com/simibac/ConfettiSwiftUI.git
+
+Fetching from https://github.com/Daiuno/Device.git
+
+could not find the commit d5721be56fa0d5abcc2c89e227f5759c2c4cb5c6 in https://github.com/Daiuno/Device.git2026-11-26 21:35:12.971 xcodebuild[1204:6907] Writing error result bundle to /var/folders/q2/p1t6rgxj5fj32g1dc7dmd49r0000gn/T/ResultBundle_2026-26-11_21-35-0012.xcresult
+xcodebuild: error: Could not resolve package dependencies:
+  could not find the commit d5721be56fa0d5abcc2c89e227f5759c2c4cb5c6 in https://github.com/Daiuno/Device.git
+
