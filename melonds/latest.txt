@@ -1,4 +1,4 @@
-commit: badd755244325bff4fa978940777e6e2954494e5
-run: 1
+commit: 694a944bbb878a8779f8a18fd070e6c456ad4858
+run: 2
 opengl: OFF
-result: skipped
+result: success
