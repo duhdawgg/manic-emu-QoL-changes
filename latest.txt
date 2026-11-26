@@ -1,4 +1,4 @@
-commit: 5e68b51807fdcc8ffed983123fc0baae4427ba43
+commit: fe52669e4de913e03e014b6567114cd2430c6e28
 branch: claude/setup
-run: 9
-result: skipped
+run: 8
+result: failure

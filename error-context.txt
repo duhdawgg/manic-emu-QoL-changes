@@ -1,33 +1,33 @@
-19765-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/DerivedSources/GeneratedAssetSymbols.swift:160:14: warning: The "appicon_color" image asset name resolves to the symbol "appicon" which already exists. Try renaming the asset.
-19766-    #warning("The \"appicon_color\" image asset name resolves to the symbol \"appicon\" which already exists. Try renaming the asset.")
-19767-             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-19768:/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: unable to resolve module dependency: 'RswiftResources'
+19762-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/DerivedSources/GeneratedAssetSymbols.swift:160:14: warning: The "appicon_color" image asset name resolves to the symbol "appicon" which already exists. Try renaming the asset.
+19763-    #warning("The \"appicon_color\" image asset name resolves to the symbol \"appicon\" which already exists. Try renaming the asset.")
+19764-             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+19765:/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: unable to resolve module dependency: 'RswiftResources'
+19766-import RswiftResources
+19767-       ^
+19768-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: note: a dependency of main module 'ManicEmu'
 19769-import RswiftResources
 19770-       ^
-19771-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: note: a dependency of main module 'ManicEmu'
-19772-import RswiftResources
-19773-       ^
-19774-
-19775-MetalLink /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Products/Release-iphoneos/ManicEmuSideload.app/default.metallib (in target 'ManicEmuSideload' from project 'ManicEmu')
-19776-    cd /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/ManicEmu
-19777-    /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.48RVhf/Metal.xctoolchain/usr/bin/metal -target air64-apple-ios15.0 -o /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Products/Release-iphoneos/ManicEmuSideload.app/default.metallib /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/Metal/Shaders.air /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/Metal/menu_pipeline.air
-19778-
-19779-SwiftDriver ManicEmuSideload normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ManicEmuSideload' from project 'ManicEmu')
-19780-    cd /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/ManicEmu
+19771-
+19772-MetalLink /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Products/Release-iphoneos/ManicEmuSideload.app/default.metallib (in target 'ManicEmuSideload' from project 'ManicEmu')
+19773-    cd /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/ManicEmu
+19774-    /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.Em0s1F/Metal.xctoolchain/usr/bin/metal -target air64-apple-ios15.0 -o /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Products/Release-iphoneos/ManicEmuSideload.app/default.metallib /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/Metal/Shaders.air /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/Metal/menu_pipeline.air
+19775-
+19776-SwiftDriver ManicEmuSideload normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ManicEmuSideload' from project 'ManicEmu')
+19777-    cd /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/ManicEmu
 --
-19782-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/DerivedSources/GeneratedAssetSymbols.swift:160:14: warning: The "appicon_color" image asset name resolves to the symbol "appicon" which already exists. Try renaming the asset.
-19783-    #warning("The \"appicon_color\" image asset name resolves to the symbol \"appicon\" which already exists. Try renaming the asset.")
-19784-             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ (in target 'ManicEmuSideload' from project 'ManicEmu')
-19785:/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: Unable to resolve module dependency: 'RswiftResources'
+19779-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/ManicEmu.build/Release-iphoneos/ManicEmuSideload.build/DerivedSources/GeneratedAssetSymbols.swift:160:14: warning: The "appicon_color" image asset name resolves to the symbol "appicon" which already exists. Try renaming the asset.
+19780-    #warning("The \"appicon_color\" image asset name resolves to the symbol \"appicon\" which already exists. Try renaming the asset.")
+19781-             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ (in target 'ManicEmuSideload' from project 'ManicEmu')
+19782:/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: error: Unable to resolve module dependency: 'RswiftResources'
+19783-import RswiftResources
+19784-       ^ (in target 'ManicEmuSideload' from project 'ManicEmu')
+19785-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: note: A dependency of main module 'ManicEmu'
 19786-import RswiftResources
 19787-       ^ (in target 'ManicEmuSideload' from project 'ManicEmu')
-19788-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/Build/Intermediates.noindex/BuildToolPluginIntermediates/ManicEmu.output/ManicEmuSideload/RswiftGenerateInternalResources/ManicEmuSideload/Resources/R.generated.swift:7:8: note: A dependency of main module 'ManicEmu'
-19789-import RswiftResources
-19790-       ^ (in target 'ManicEmuSideload' from project 'ManicEmu')
-19791-
-19792-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/Big5Freq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
-19793-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/EUCKRFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
-19794-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/EUCTWFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
-19795-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/GB2312Freq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
-19796-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/JISFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
-19797-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/moz.build' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
+19788-
+19789-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/ManicEmu/ManicEmu.xcodeproj: warning: DEFINES_MODULE was set, but no umbrella header could be found to generate the module map (in target 'Libretro' from project 'ManicEmu')
+19790-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/Big5Freq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
+19791-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/EUCKRFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
+19792-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/EUCTWFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
+19793-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/GB2312Freq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
+19794-warning: no rule to process file '/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/build/SourcePackages/checkouts/UniversalDetector/universalchardet/src/base/JISFreq.tab' of type 'file' for architecture 'arm64' (in target 'UniversalDetector' from project 'UniversalDetector')
