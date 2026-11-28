@@ -31,7 +31,14 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Manic EMU requires the use of Bluetooth functionality to enable communication features for certain games.",
+          "NSCameraUsageDescription": "Camera access required to capture photos for custom game covers in Manic EMU",
+          "NSLocalNetworkUsageDescription": "Manic EMU needs access to your local network to find and connect with other devices for online gaming.",
+          "NSMicrophoneUsageDescription": "Microphone access required for full Nintendo DS game functionality in Manic EMU",
+          "NSPhotoLibraryAddUsageDescription": "Manic EMU requires photo library access to save game screenshots and create custom game covers",
+          "NSPhotoLibraryUsageDescription": "Manic EMU requires photo library access to save screenshots and select images for game covers"
+        }
       }
     }
   ],
