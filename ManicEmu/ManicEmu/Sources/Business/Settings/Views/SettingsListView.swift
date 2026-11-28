@@ -11,18 +11,18 @@ import UIKit
 import RealmSwift
 
 class SettingsListView: BaseView {
+    // QoL build: settings grouped by what they're for.
     enum SectionIndex: Int, CaseIterable {
-        case top, general, advance, others, bottom
+        case top, play, lookAndSound, controllers, system, library, app, bottom
         var title: String {
             switch self {
-            case .top, .bottom:
-                ""
-            case .general:
-                R.string.localizable.generalSettingTitle()
-            case .advance:
-                R.string.localizable.advanceSettingTitle()
-            case .others:
-                R.string.localizable.othersSettingTitle()
+            case .top, .bottom: ""
+            case .play: "Play"
+            case .lookAndSound: "Look & Sound"
+            case .controllers: "Controllers"
+            case .system: "System"
+            case .library: "Library"
+            case .app: "App"
             }
         }
     }
@@ -56,54 +56,44 @@ class SettingsListView: BaseView {
         }
         
         for section in SectionIndex.allCases {
-            if section == .top || section == .bottom {
+            switch section {
+            case .top, .bottom:
                 datas[section] = []
-                
-            } else if section == .general {
+            case .play:
+                datas[section] = [.init(type: .quickGame),
+                                  .init(type: .autoSaveState),
+                                  .init(type: .globalCoreSwitch)]
+            case .lookAndSound:
                 datas[section] = [.init(type: .appearance),
                                   .init(type: .theme),
-                                  .init(type: .quickGame),
-                                  .init(type: .autoSaveState),
                                   .init(type: .skin),
-                                  .init(type: .coverScraping)]
-                
-            } else if section == .advance {
+                                  .init(type: .shaders),
+                                  .init(type: .skinSound),
+                                  .init(type: .rumble),
+                                  .init(type: .respectSilentMode)]
+            case .controllers:
+                datas[section] = [.init(type: .fullScreenWhenConnectController)]
+            case .system:
+                datas[section] = [.init(type: .bios),
+                                  .init(type: .jit),
+                                  .init(type: .onlinePlay),
+                                  .init(type: .airPlay),
+                                  .init(type: .retro)]
+            case .library:
 #if SIDE_LOAD
-                datas[section] = [.init(type: .airPlay),
-                                  .init(type: .fullScreenWhenConnectController),
-                                  .init(type: .bios),
-                                  .init(type: .respectSilentMode),
-                                  .init(type: .onlinePlay),
-                                  .init(type: .rumble),
-                                  .init(type: .skinSound),
-                                  .init(type: .retro),
-                                  .init(type: .jit),
-                                  .init(type: .shaders),
-                                  .init(type: .globalCoreSwitch),
-                ]
+                datas[section] = [.init(type: .coverScraping),
+                                  .init(type: .clearCache)]
 #else
-                datas[section] = [.init(type: .airPlay),
-                                  .init(type: .iCloud),
-                                  .init(type: .fullScreenWhenConnectController),
-                                  .init(type: .bios),
-                                  .init(type: .respectSilentMode),
-                                  .init(type: .onlinePlay),
-                                  .init(type: .rumble),
-                                  .init(type: .skinSound),
-                                  .init(type: .retro),
-                                  .init(type: .jit),
-                                  .init(type: .shaders),
-                                  .init(type: .globalCoreSwitch),
-                ]
+                datas[section] = [.init(type: .iCloud),
+                                  .init(type: .coverScraping),
+                                  .init(type: .clearCache)]
 #endif
-            } else if section == .others {
-                datas[section] = [.init(type: .about),
-                                  .init(type: .clearCache),
+            case .app:
+                datas[section] = [.init(type: .language),
                                   .init(type: .resetTips),
-                                  .init(type: .language),
+                                  .init(type: .about),
                                   .init(type: .userAgreement),
                                   .init(type: .privacyPolicy)]
-                
             }
         }
         return datas
@@ -176,7 +166,7 @@ class SettingsListView: BaseView {
                                                    decoration: .init(enable: false),
                                                    itemLayout: .fixedHeight(((UIDevice.isPhone && !UIDevice.isPhoneDuoInnerFullScreen) && preferredLayoutStyle == .landscape) ? 165 : 301)))
                 
-            case .general, .advance, .others:
+            case .play, .lookAndSound, .controllers, .system, .library, .app:
                 var header: ASListPage.Supplementary? = nil
                 if !sectionIndex.title.isEmpty {
                     header = .defaultHeader(title: sectionIndex.title)
@@ -253,7 +243,7 @@ class SettingsListView: BaseView {
                 case .top:
                     break
                     
-                case .general, .advance, .others:
+                case .play, .lookAndSound, .controllers, .system, .library, .app:
                     if let item = items[sectionIndex]?[indexPath.row] {
                         guard let _ = hostingWindow else { return }
                         switch item.type {

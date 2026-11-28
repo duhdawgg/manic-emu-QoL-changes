@@ -98,8 +98,8 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
 - GBA/GBC/GB are 2D: no internal resolution, only display filters.
 
 ## To do (owner's priorities)
-1. UI cleanup: build 1 (removals) done; build 2 = settings regrouped into Play / Look & sound /
-   Controllers / System / Library / App, keeping the art style.
+1. UI cleanup: done in two builds (removals, then settings regrouped into Play / Look & Sound /
+   Controllers / System / Library / App in `SettingsListView.SectionIndex`, same art style).
 2. DS upscaling (GLES port above), wired to per-game resolution.
 3. Fast-forward audio: fewer pops, crackles and dropouts, for **every** core. Audio goes through
    the RetroArch fork in `Dependencies/Libretro` (iOS audio driver), so one fix should cover all.
