@@ -1,36 +1,7 @@
+      |       ^~~~~~~~~~~
+2 warnings generated.
 [ 84%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/core/test.cpp.o
-2 warnings generated.
-[ 84%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/environment.cpp.o
-2 warnings generated.
-[ 84%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/exceptions.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.cpp:17:
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   72 |     [[gnu::access(read_only, 2)]]
-      |       ^~~~~~~~~~~
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   76 |     [[gnu::access(read_only, 1)]]
-      |       ^~~~~~~~~~~
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/tasks.cpp:17:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   72 |     [[gnu::access(read_only, 2)]]
-      |       ^~~~~~~~~~~
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   76 |     [[gnu::access(read_only, 1)]]
-      |       ^~~~~~~~~~~
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.cpp:17:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   72 |     [[gnu::access(read_only, 2)]]
-      |       ^~~~~~~~~~~
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   76 |     [[gnu::access(read_only, 1)]]
-      |       ^~~~~~~~~~~
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/test.cpp:21:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
@@ -70,24 +41,45 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/NDS.h:546:7: note: 'Current' has been explicitly marked deprecated here
   546 |     [[deprecated("Temporary workaround until JIT code generation is revised to accommodate multiple NDS objects.")]] static NDS* Current;
       |       ^
-2 warnings generated.
-[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/format.cpp.o
-2 warnings generated.
-[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/glsym_private.cpp.o
-[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/info.cpp.o
-[ 86%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/cursor.cpp.o
-[ 86%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/input.cpp.o
-2 warnings generated.
-[ 87%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/joypad.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/cursor.cpp:24:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/tasks.cpp:17:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
       |       ^~~~~~~~~~~
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-[ 87%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/pointer.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/joypad.cpp:24:
+2 warnings generated.
+[ 84%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/environment.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/test.cpp:21:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   72 |     [[gnu::access(read_only, 2)]]
+      |       ^~~~~~~~~~~
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   76 |     [[gnu::access(read_only, 1)]]
+      |       ^~~~~~~~~~~
+2 warnings generated.
+[ 84%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/exceptions.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.cpp:17:
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   72 |     [[gnu::access(read_only, 2)]]
+      |       ^~~~~~~~~~~
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   76 |     [[gnu::access(read_only, 1)]]
+      |       ^~~~~~~~~~~
+7 warnings generated.
+[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/format.cpp.o
+[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/glsym_private.cpp.o
+[ 85%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/info.cpp.o
+[ 86%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/cursor.cpp.o
+2 warnings generated.
+[ 86%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/input.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/cursor.cpp:24:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
       |       ^~~~~~~~~~~
@@ -104,14 +96,11 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
+[ 87%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/joypad.cpp.o
+2 warnings generated.
+[ 87%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/pointer.cpp.o
 2 warnings generated.
 [ 87%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/rumble.cpp.o
-2 warnings generated.
-[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/solar.cpp.o
-7 warnings generated.
-[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/libretro.cpp.o
-2 warnings generated.
-[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/message/error.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/rumble.cpp:22:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -120,7 +109,14 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
 2 warnings generated.
-[ 89%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/microphone.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/joypad.cpp:24:
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   72 |     [[gnu::access(read_only, 2)]]
+      |       ^~~~~~~~~~~
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   76 |     [[gnu::access(read_only, 1)]]
+      |       ^~~~~~~~~~~
+[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/input/solar.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/pointer.cpp:24:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -129,7 +125,9 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
 2 warnings generated.
-[ 89%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/net/net.cpp.o
+[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/libretro.cpp.o
+2 warnings generated.
+[ 88%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/message/error.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/input/solar.cpp:23:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -138,16 +136,7 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
 2 warnings generated.
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.cpp:17:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.hpp:21:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   72 |     [[gnu::access(read_only, 2)]]
-      |       ^~~~~~~~~~~
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   76 |     [[gnu::access(read_only, 1)]]
-      |       ^~~~~~~~~~~
-[ 89%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/net/mp.cpp.o
+[ 89%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/microphone.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/libretro.cpp:40:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
@@ -158,16 +147,29 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-2 warnings generated.
-[ 90%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/file.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/net/net.cpp:26:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.cpp:17:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.hpp:21:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
       |       ^~~~~~~~~~~
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
+2 warnings generated.
+[ 89%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/net/net.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/microphone.cpp:25:
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   72 |     [[gnu::access(read_only, 2)]]
+      |       ^~~~~~~~~~~
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   76 |     [[gnu::access(read_only, 1)]]
+      |       ^~~~~~~~~~~
+2 warnings generated.
+2 warnings generated.
+[ 90%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/net/mp.cpp.o
+[ 90%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/file.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/net/net.cpp:26:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
       |       ^~~~~~~~~~~
@@ -183,10 +185,6 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-2 warnings generated.
-[ 90%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/mp.cpp.o
-2 warnings generated.
-[ 91%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/mutex.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/file.cpp:36:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -195,10 +193,10 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
 2 warnings generated.
-[ 91%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/platform.cpp.o
+[ 90%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/mp.cpp.o
 2 warnings generated.
-[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/semaphore.cpp.o
-[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/thread.cpp.o
+[ 91%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/mutex.cpp.o
+[ 91%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/platform.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/lan.cpp:21:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
@@ -209,17 +207,8 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/platform.cpp:30:
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/../environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   72 |     [[gnu::access(read_only, 2)]]
-      |       ^~~~~~~~~~~
-/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/../environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
-   76 |     [[gnu::access(read_only, 1)]]
-      |       ^~~~~~~~~~~
-[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/render/render.cpp.o
 2 warnings generated.
-[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/render/software.cpp.o
-[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/dirent.cpp.o
+[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/semaphore.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/mp.cpp:19:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
@@ -231,13 +220,21 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
 2 warnings generated.
-[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/file.cpp.o
+[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/platform/thread.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/platform.cpp:30:
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/../environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   72 |     [[gnu::access(read_only, 2)]]
+      |       ^~~~~~~~~~~
+/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/platform/../environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
+   76 |     [[gnu::access(read_only, 1)]]
+      |       ^~~~~~~~~~~
+[ 92%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/render/render.cpp.o
+[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/render/software.cpp.o
 2 warnings generated.
-[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/http.cpp.o
-[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/info.cpp.o
-[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/microphone.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/software.cpp:17:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/software.hpp:28:
+[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/dirent.cpp.o
+[ 93%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/file.cpp.o
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/render.cpp:26:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.hpp:21:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -245,10 +242,8 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/scaler.cpp.o
-[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/task_queue.cpp.o
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/render.cpp:26:
-In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/message/error.hpp:21:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/software.cpp:17:
+In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/software.hpp:28:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    72 |     [[gnu::access(read_only, 2)]]
@@ -262,14 +257,17 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/render/render.cpp:62:20: note: add missing switch cases
    62 |     switch (config.ConfiguredRenderer()) {
       |                    ^
-[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/threads.cpp.o
+[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/http.cpp.o
 3 warnings generated.
+[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/info.cpp.o
+[ 94%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/microphone.cpp.o
+2 warnings generated.
+[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/scaler.cpp.o
+[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/task_queue.cpp.o
+[ 95%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/retro/threads.cpp.o
 [ 96%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/screenlayout.cpp.o
 [ 96%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/sram.cpp.o
-2 warnings generated.
 [ 97%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/utils.cpp.o
-[ 97%] Building C object src/libretro/CMakeFiles/melondsds_libretro.dir/__/pntr/pntr.c.o
-[ 97%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/Net_Slirp.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.cpp:19:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/screenlayout.hpp:35:
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:72:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
@@ -278,7 +276,9 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-[ 98%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/Net.cpp.o
+2 warnings generated.
+[ 97%] Building C object src/libretro/CMakeFiles/melondsds_libretro.dir/__/pntr/pntr.c.o
+[ 97%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/Net_Slirp.cpp.o
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/sram.cpp:37:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/core.hpp:29:
 In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/core/../message/error.hpp:21:
@@ -289,11 +289,11 @@ In file included from /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-cha
 /Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonds-ds/src/libretro/environment.hpp:76:7: warning: unknown attribute 'gnu::access' ignored [-Wunknown-attributes]
    76 |     [[gnu::access(read_only, 1)]]
       |       ^~~~~~~~~~~
-[ 98%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/LocalMP.cpp.o
 2 warnings generated.
+[ 98%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/Net.cpp.o
+[ 98%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/LocalMP.cpp.o
 [ 98%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/PacketDispatcher.cpp.o
 [100%] Building CXX object src/libretro/CMakeFiles/melondsds_libretro.dir/Users/runner/work/manic-emu-QoL-changes/manic-emu-QoL-changes/CoreSource/melonDS/src/net/Net_PCap.cpp.o
-2 warnings generated.
 [100%] Linking CXX shared library melondsds.libretro.framework/melondsds.libretro
 ld: warning: ignoring duplicate libraries: '../../libretro-common.a'
 Code signing melondsds.libretro framework
