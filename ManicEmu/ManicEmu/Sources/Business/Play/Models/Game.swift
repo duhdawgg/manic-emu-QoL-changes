@@ -1193,6 +1193,29 @@ class Game: Object, ObjectUpdatable {
         virtualGameType ?? gameType
     }
     
+    /// QoL build: true when `defaultCore` points at a core this build doesn't ship
+    /// (an empty slot in `supportCores`, or out of range).
+    var isOnRemovedCore: Bool {
+        let cores = gameType.supportCores
+        guard !cores.isEmpty else { return false }
+        return defaultCore < 0 || defaultCore >= cores.count || cores[defaultCore].isEmpty
+    }
+
+    /// QoL build: move a game off a removed core (e.g. one restored from a backup or
+    /// iCloud sync of regular Manic) onto the first core that ships. Moves its save too.
+    func repairCoreSlotIfNeeded() {
+        guard !isInvalidated, isOnRemovedCore,
+              let index = gameType.supportCores.firstIndex(where: { !$0.isEmpty }) else { return }
+        Log.debug("[Game] \(name): core slot \(defaultCore) isn't shipped, switching to \(index)")
+        changeDefaultCore(coreIndex: index)
+    }
+
+    /// QoL build: repair every game in the library (see `repairCoreSlotIfNeeded`).
+    static func repairAllCoreSlots() {
+        let games = Array(Database.realm.objects(Game.self)).filter { $0.isOnRemovedCore }
+        games.forEach { $0.repairCoreSlotIfNeeded() }
+    }
+
     func changeDefaultCore(coreIndex: Int) {
         if defaultCore != coreIndex {
             let oldSaveUrl = gameSaveUrl

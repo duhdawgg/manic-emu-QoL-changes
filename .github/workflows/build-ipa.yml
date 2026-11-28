@@ -12,7 +12,12 @@ permissions:
 
 jobs:
   build:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[build]')
+    # A commit with both [melonds] and [build] is built by build-melonds.yml once the new
+    # DS core is committed, so this IPA never ships the old core.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (contains(github.event.head_commit.message, '[build]') &&
+       !contains(github.event.head_commit.message, '[melonds'))
     runs-on: xcode-27  # Manic uses iOS 27 SDK APIs (UIHinge, UISceneAccessory)
     timeout-minutes: 120
     steps:
@@ -36,7 +41,8 @@ jobs:
           xcodebuild -showBuildSettings -json \
             -project ManicEmu/ManicEmu.xcodeproj -scheme ManicEmuSideload \
             -configuration Release -sdk iphoneos -derivedDataPath build \
-            -skipPackagePluginValidation -skipMacroValidation > /tmp/settings.json
+            -skipPackagePluginValidation -skipMacroValidation \
+            -onlyUsePackageVersionsFromResolvedFile > /tmp/settings.json
           python3 - <<'PY' > /tmp/rswift.env
           import json
           for entry in json.load(open('/tmp/settings.json')):
@@ -70,6 +76,7 @@ jobs:
             -derivedDataPath build \
             -skipPackagePluginValidation \
             -skipMacroValidation \
+            -onlyUsePackageVersionsFromResolvedFile \
             ONLY_ACTIVE_ARCH=YES \
             ARCHS=arm64 \
             CODE_SIGNING_ALLOWED=NO \

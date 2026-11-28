@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write  # to start the IPA build after the core is committed
 
 jobs:
   build:
@@ -94,8 +95,17 @@ jobs:
           git config user.name ci
           git config user.email ci@users.noreply.github.com
           git add Cores/melondsds.libretro.framework
-          git commit -m "Rebuilt melonDS DS core (OpenGL renderer: ${{ steps.opts.outputs.gl }}) from ${GITHUB_SHA::7}" || exit 0
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          if git commit -m "Rebuilt melonDS DS core (OpenGL renderer: ${{ steps.opts.outputs.gl }}) from ${GITHUB_SHA::7}"; then
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      # Pushes made with the workflow token don't start other workflows, so when the commit
+      # also asked for [build], start the IPA build now that the new core is on the branch.
+      - name: Start IPA build
+        if: steps.build.outcome == 'success' && contains(github.event.head_commit.message, '[build]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-ipa.yml --ref "${GITHUB_REF_NAME}"
 
       - name: Save build log
         if: always()

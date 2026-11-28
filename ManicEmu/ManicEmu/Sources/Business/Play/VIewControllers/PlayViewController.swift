@@ -165,6 +165,8 @@ class PlayViewController: GameViewController {
             game.handleTapAction(forceQuick: true, in: scene)
             return
         }
+        // QoL build: never launch a core that no longer ships (e.g. a synced game set to Gambatte).
+        game.repairCoreSlotIfNeeded()
         if game.gameType == .ns || game.gameType == .xbox360 || game.gameType == .xbox || game.gameType == .ps2 || game.gameType == .wiiu {
             holdTabletopPause = true
             if #available(iOS 27.1, *) {

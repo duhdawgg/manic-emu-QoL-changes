@@ -377,6 +377,9 @@ struct Database {
                 }
             }
             
+            // QoL build: move games set to a removed core onto one that ships.
+            Game.repairAllCoreSlots()
+
         } catch {
             Log.error("初始化数据错误 \(error)")
         }

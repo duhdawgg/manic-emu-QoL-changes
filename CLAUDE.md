@@ -4,7 +4,8 @@ A stripped-down, performance-focused fork of Manic EMU (iOS emulator, Swift + C/
 Owner works from Windows + iPhone 17 Pro, **no Mac**: every build runs in GitHub Actions and
 is sideloaded (SideStore / AltStore / Sideloadly). See `QOL.md` for provenance and the plan.
 
-Working branch: `claude/setup` (`main` holds only the original README).
+Everything is on `main`. Claude sessions work on a `claude/...` branch and merge to `main` when
+the owner approves.
 
 ## Target lineup
 | System | Core | Notes |
@@ -24,6 +25,9 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
 - `.github/workflows/build-melonds.yml`: `[melonds]` in a commit message rebuilds
   `CoreSource/melonds-ds` (+ `CoreSource/melonDS`) and commits it to
   `Cores/melondsds.libretro.framework`. `[melonds-gl]` turns the OpenGL ES renderer on.
+  If the message has both `[melonds]` and `[build]`, the IPA build is started by the melonDS
+  workflow after the new core is committed (so it never ships the old core).
+- Swift packages are locked to `Package.resolved` (`-onlyUsePackageVersionsFromResolvedFile`).
 - Build results go to the `ci-logs` branch (`latest.txt`, `errors.txt`, `error-context.txt`,
   `build.log.gz`; melonDS in `melonds/`), so they can be read with plain git.
 - Last good build: **build-12** (commit 576c11e). IPA verified: contains exactly the Azahar,
@@ -43,13 +47,21 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
 - melonDS CI must copy `build/**/melondsds.libretro.framework/melondsds.libretro` (it once
   grabbed a 120 KB dependency dylib; now there are size/symbol/option checks).
 - CMake 4 on runners needs `-DCMAKE_POLICY_VERSION_MINIMUM=3.5`.
+- **Don't edit the 3DS settings files** (`System.core/Azahar.opt` and friends) unless the owner
+  asks. Known: `citra_shaders_accurate_mul` is `enabled` (what Azahar used before the key
+  rename); upstream Manic meant `disabled`. Owner chose to leave it.
 
 ## Done
 - Full source import; CI IPA build; project trimmed to the three core frameworks + Citra.
 - `System.swift`: only 3DS, DS, GBA, GBC, GB registered.
 - Saved core that no longer ships falls back to the first available (`GlobalCoreSwitch`).
+- Games whose `defaultCore` points at an empty slot (e.g. restored from a regular Manic backup)
+  are moved to the shipped core, saves included: at launch (`Database.setup`) and right before
+  a game starts (`Game.repairCoreSlotIfNeeded`). Without this, GB/GBC would try Gambatte and
+  3DS would run on Citra.
 - 3DS: saved per-game resolution is passed to Azahar at boot (`citra_resolution_factor`);
-  it used to be sent only at runtime, so every launch reset to 1x. Choices limited to 1x-4x.
+  it used to be sent only at runtime, so every launch reset to 1x. Choices limited to 1x-4x
+  (the core accepts up to 18x; higher is too slow on phones).
 - `System.core/Azahar.opt`: old Citra key names replaced with the names in the shipped core,
   keeping the values the core already used.
 
