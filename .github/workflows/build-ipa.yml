@@ -130,3 +130,16 @@ jobs:
           git add -A
           git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "Run ${GITHUB_RUN_NUMBER}: ${RESULT}" || true
           for i in 1 2 3; do git push -q origin HEAD:ci-logs && break; git pull -q --rebase origin ci-logs; done
+
+  # Signs the new build for your iPhone and adds it to your install page.
+  # Does nothing until the signing secrets are set (see SIGNING.md).
+  sign:
+    needs: build
+    permissions:
+      contents: write
+      pages: read
+    uses: ./.github/workflows/sign-ipa.yml
+    with:
+      release_tag: build-${{ github.run_number }}
+      skip_if_unconfigured: true
+    secrets: inherit

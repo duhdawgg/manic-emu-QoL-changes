@@ -44,6 +44,15 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
   grabbed a 120 KB dependency dylib; now there are size/symbol/option checks).
 - CMake 4 on runners needs `-DCMAKE_POLICY_VERSION_MINIMUM=3.5`.
 
+## No-PC signing (`SIGNING.md`)
+- `.github/workflows/sign-ipa.yml` (manual, and called by build-ipa after each build): signs an
+  IPA with the owner's paid dev account via the App Store Connect API (`Scripts/signer/prepare.py`),
+  zsign v1.1.3 (pinned commit), and publishes an itms-services install page on the `apps` branch
+  (GitHub Pages) with the IPA in the `signed-apps` release. Needs the repo to be public.
+- Secrets: `ASC_ISSUER_ID`, `ASC_KEY_ID`, `ASC_PRIVATE_KEY`, `DEVICE_UDID`. Without them the
+  auto-sign job skips quietly. Cert key is kept encrypted on `signing-state` (Fernet, key from the .p8).
+- Bundle ID becomes `<original>.<TEAMID>`; extensions get their own bundle IDs + profiles.
+
 ## Done
 - Full source import; CI IPA build; project trimmed to the three core frameworks + Citra.
 - `System.swift`: only 3DS, DS, GBA, GBC, GB registered.
