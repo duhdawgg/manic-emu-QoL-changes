@@ -1,0 +1,46 @@
+{
+  "name": "Manic EMU QoL",
+  "identifier": "com.duhdawgg.manicemu-qol.source",
+  "sourceURL": "https://raw.githubusercontent.com/duhdawgg/manic-emu-QoL-changes/main/altstore.json",
+  "subtitle": "Stripped-down Manic EMU for 3DS, DS and Game Boy",
+  "description": "A modified Manic EMU with only Azahar (3DS), melonDS DS (DS) and mGBA (GBA, GBC, GB). Built automatically from github.com/duhdawgg/manic-emu-QoL-changes.",
+  "iconURL": "https://raw.githubusercontent.com/duhdawgg/manic-emu-QoL-changes/main/ManicEmu/ManicEmu/Resources/Assets.xcassets/AppIcon.appiconset/1024.png",
+  "website": "https://github.com/duhdawgg/manic-emu-QoL-changes",
+  "tintColor": "#7C3AED",
+  "apps": [
+    {
+      "name": "Manic EMU QoL",
+      "bundleIdentifier": "com.aoshuang.manicemu",
+      "developerName": "duhdawgg (based on Manic EMU)",
+      "subtitle": "3DS, DS and Game Boy emulator",
+      "localizedDescription": "Manic EMU trimmed to 3DS (Azahar), DS (melonDS DS) and GBA/GBC/GB (mGBA). 3DS resolution (1x-4x) is now saved per game and applied at launch.",
+      "iconURL": "https://raw.githubusercontent.com/duhdawgg/manic-emu-QoL-changes/main/ManicEmu/ManicEmu/Resources/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "tintColor": "#7C3AED",
+      "category": "games",
+      "versions": [
+        {
+          "version": "2.0.2",
+          "buildVersion": "5",
+          "date": "2026-11-26",
+          "localizedDescription": "Build 12: first QoL build. Only 3DS, DS, GBA, GBC and GB. GB/GBC run on mGBA. 3DS resolution is remembered per game (1x-4x).",
+          "downloadURL": "https://github.com/duhdawgg/manic-emu-QoL-changes/releases/download/build-12/ManicEmu-QoL-unsigned.ipa",
+          "size": 124473566,
+          "sha256": "615866ecfef31c88946b060e72afb97eaa4804ebad4d447ec8c3b9464b82b281",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Manic EMU requires the use of Bluetooth functionality to enable communication features for certain games.",
+          "NSCameraUsageDescription": "Camera access required to capture photos for custom game covers in Manic EMU",
+          "NSLocalNetworkUsageDescription": "Manic EMU needs access to your local network to find and connect with other devices for online gaming.",
+          "NSMicrophoneUsageDescription": "Microphone access required for full Nintendo DS game functionality in Manic EMU",
+          "NSPhotoLibraryAddUsageDescription": "Manic EMU requires photo library access to save game screenshots and create custom game covers",
+          "NSPhotoLibraryUsageDescription": "Manic EMU requires photo library access to save screenshots and select images for game covers"
+        }
+      }
+    }
+  ],
+  "news": []
+}
