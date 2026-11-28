@@ -11,13 +11,34 @@ permissions:
   contents: write
 
 jobs:
+  # Tags only count in the commit's first line, so a description that merely mentions
+  # them doesn't start a build. A first line with both [melonds] and [build] is built by
+  # build-melonds.yml once the new DS core is committed, so the IPA never ships the old core.
+  check:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[build]')
+    runs-on: ubuntu-latest
+    outputs:
+      build: ${{ steps.c.outputs.build }}
+    steps:
+      - id: c
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          SUBJECT=$(printf '%s\n' "$MSG" | head -n 1)
+          BUILD=false
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            BUILD=true
+          elif [[ "$SUBJECT" == *"[build]"* && "$SUBJECT" != *"[melonds"* ]]; then
+            BUILD=true
+          fi
+          echo "First line: $SUBJECT"
+          echo "Build IPA: $BUILD"
+          echo "build=$BUILD" >> "$GITHUB_OUTPUT"
+
   build:
-    # A commit with both [melonds] and [build] is built by build-melonds.yml once the new
-    # DS core is committed, so this IPA never ships the old core.
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      (contains(github.event.head_commit.message, '[build]') &&
-       !contains(github.event.head_commit.message, '[melonds'))
+    needs: check
+    if: needs.check.outputs.build == 'true'
     runs-on: xcode-27  # Manic uses iOS 27 SDK APIs (UIHinge, UISceneAccessory)
     timeout-minutes: 120
     steps:

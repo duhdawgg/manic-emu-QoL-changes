@@ -18,8 +18,32 @@ permissions:
   actions: write  # to start the IPA build after the core is committed
 
 jobs:
+  # Tags only count in the commit's first line, so a description that merely mentions
+  # them doesn't start a build.
+  check:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[melonds')
+    runs-on: ubuntu-latest
+    outputs:
+      melonds: ${{ steps.c.outputs.melonds }}
+      ipa: ${{ steps.c.outputs.ipa }}
+    steps:
+      - id: c
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          SUBJECT=$(printf '%s\n' "$MSG" | head -n 1)
+          MELONDS=false; IPA=false
+          if [ "$EVENT" = "workflow_dispatch" ] || [[ "$SUBJECT" == *"[melonds"* ]]; then MELONDS=true; fi
+          if [[ "$EVENT" != "workflow_dispatch" && "$SUBJECT" == *"[build]"* ]]; then IPA=true; fi
+          echo "First line: $SUBJECT"
+          echo "Build melonDS: $MELONDS, then IPA: $IPA"
+          echo "melonds=$MELONDS" >> "$GITHUB_OUTPUT"
+          echo "ipa=$IPA" >> "$GITHUB_OUTPUT"
+
   build:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[melonds]')
+    needs: check
+    if: needs.check.outputs.melonds == 'true'
     runs-on: macos-latest
     timeout-minutes: 90
     steps:
@@ -37,10 +61,10 @@ jobs:
           MSG: ${{ github.event.head_commit.message }}
           GL_INPUT: ${{ github.event.inputs.opengl }}
         run: |
-          # OpenGL renderer: workflow input, or "[melonds-gl]" in the commit message.
+          # OpenGL renderer: workflow input, or "[melonds-gl]" in the commit's first line.
           GL=OFF
           if [ "$GL_INPUT" = "true" ]; then GL=ON; fi
-          if printf '%s' "$MSG" | grep -q "\[melonds-gl\]"; then GL=ON; fi
+          if printf '%s\n' "$MSG" | head -n 1 | grep -q "\[melonds-gl\]"; then GL=ON; fi
           echo "gl=$GL" >> "$GITHUB_OUTPUT"
           echo "OpenGL renderer: $GL"
 
@@ -102,7 +126,7 @@ jobs:
       # Pushes made with the workflow token don't start other workflows, so when the commit
       # also asked for [build], start the IPA build now that the new core is on the branch.
       - name: Start IPA build
-        if: steps.build.outcome == 'success' && contains(github.event.head_commit.message, '[build]')
+        if: steps.build.outcome == 'success' && needs.check.outputs.ipa == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run build-ipa.yml --ref "${GITHUB_REF_NAME}"
