@@ -14,57 +14,18 @@ import ZipArchive
 
 class BIOSSelectionView: BaseView {
     
+    // QoL build: only the systems this build ships.
     private enum SectionIndex: Int, CaseIterable {
-        case amiga, c64, pce, ngc, wii, symbian, lynx, a7800, a5200, arcade, mcd, ss, ds, ps1, dc, gb, gbc, gba, fds, pm, _3ds
-        var title: String {
-            switch self {
-            case .arcade: GameType.arcade.localizedName
-            case .mcd: GameType.mcd.localizedName
-            case .ss: GameType.ss.localizedName
-            case .ds: GameType.ds.localizedName
-            case .ps1: GameType.ps1.localizedName
-            case .dc: GameType.dc.localizedName
-            case .gb: GameType.gb.localizedName
-            case .gbc: GameType.gbc.localizedName
-            case .gba: GameType.gba.localizedName
-            case .fds: GameType.fds.localizedName
-            case .pm: GameType.pm.localizedName
-            case ._3ds: GameType._3ds.localizedName
-            case .lynx: GameType.lynx.localizedName
-            case .a7800: GameType.a7800.localizedName
-            case .a5200: GameType.a5200.localizedName
-            case .symbian: GameType.symbian.localizedName
-            case .ngc:  GameType.ngc.localizedName
-            case .wii: GameType.wii.localizedName
-            case .pce: GameType.pce.localizedName
-            case .c64: GameType.c64.localizedName
-            case .amiga: GameType.amiga.localizedName
-            }
-        }
+        case _3ds, ds, gba, gbc, gb
+        var title: String { gameType.localizedName }
         
         var gameType: GameType {
             switch self {
-            case .arcade: return .arcade
-            case .mcd: return .mcd
-            case .ss: return .ss
-            case .ds: return .ds
-            case .ps1: return .ps1
-            case .dc: return .dc
-            case .gb: return .gb
-            case .gbc: return .gbc
-            case .gba: return .gba
-            case .fds: return .fds
-            case .pm: return .pm
             case ._3ds: return ._3ds
-            case .a5200: return .a5200
-            case .a7800: return .a7800
-            case .lynx: return .lynx
-            case .symbian: return .symbian
-            case .ngc: return .ngc
-            case .wii: return .wii
-            case .pce: return .pce
-            case .c64: return .c64
-            case .amiga: return .amiga
+            case .ds: return .ds
+            case .gba: return .gba
+            case .gbc: return .gbc
+            case .gb: return .gb
             }
         }
     }
@@ -90,13 +51,7 @@ class BIOSSelectionView: BaseView {
                 } else {
                     return
                 }
-                if gameType == .arcade {
-                    if let _ = action.normalItemValue?.subActions {
-                        self.importBios(gameType: gameType)
-                    } else {
-                        MAMEBiosView.show()
-                    }
-                } else if gameType == .symbian {
+                if gameType == .symbian {
                     SymbianFirmwareView.show()
                 } else if gameType == .ngc {
                     self.showGamecubeIPLSheet(desc: gameType.biosItems.first?.desc)

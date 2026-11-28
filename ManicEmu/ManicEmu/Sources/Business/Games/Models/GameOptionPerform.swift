@@ -29,7 +29,8 @@ extension GameOption {
             GameCoverModifyView.show(game: firstGame)
             
         case .editLink:
-            AddUrlGameView.show(game: firstGame)
+            // QoL build: web/URL games removed.
+            break
             
         case .stateList:
             pauseEmulationIfNeed()
@@ -470,7 +471,8 @@ extension GameOption {
             performStringAction(with: games, in: scene, accessoryChange: accessoryChange)
             
         case .ps1Sbi:
-            PSXSBIImportView.show(game: firstGame)
+            // QoL build: PS1 removed; option always hidden.
+            break
             
         case .ps1Renderer:
             performStringAction(with: games, in: scene, accessoryChange: accessoryChange)
@@ -677,15 +679,8 @@ extension GameOption {
             
         case .coreSettings:
             pauseEmulationIfNeed()
-            if firstGame.isJ2MECore {
-                J2MESettingView.show(game: firstGame, hideCompletion: {
-                    resumeEmulationIfNeed()
-                })
-            } else if firstGame.isCitra3DS {
-                CitraAdvancedSettingView.show(hideCompletion: {
-                    resumeEmulationIfNeed()
-                })
-            } else {
+            // QoL build: the J2ME and Citra settings screens were removed with those cores.
+            do {
                 LibretroCoreConfigsView.show(games: games, hideCompletion: { changeConfigs in
                     resumeEmulationIfNeed()
                     if changeConfigs.count > 0,
@@ -918,74 +913,8 @@ extension GameOption {
             performStringAction(with: games, in: scene, accessoryChange: accessoryChange)
 
         case .triggerPro:
-            let triggers = Trigger.supportTriggers(gameType: firstGame.gameType)
-            if triggers.count == 0 {
-                pauseEmulationIfNeed()
-                TriggerProManageView.show(hideCompletion: {
-                    accessoryChange?()
-                    resumeEmulationIfNeed()
-                })
-            } else {
-                var options = [[ASListPage.Cell]]()
-                var usingTriggerId: Int? = nil
-                let firstGameUsingTriggerId = Prefference.defalut.getPrefference(kind: .triggerPro, storeKey: .game(gameId: firstGame.id), bestEfforts: true)?.triggerProValue
-                if let firstGameUsingTriggerId, firstGameUsingTriggerId != -1 {
-                    if games.allSatisfy({
-                        Prefference.defalut.getPrefference(kind: .triggerPro, storeKey: .game(gameId: $0.id), bestEfforts: true)?.triggerProValue == firstGameUsingTriggerId
-                    }) {
-                        usingTriggerId = firstGameUsingTriggerId
-                    }
-                }
-                if let usingTriggerId {
-                    options.append(triggers.map({ ASListPage.Cell.iconTitleDetailRadioCell(title: $0.triggerProName, isSelected: $0.id == usingTriggerId) }))
-                } else {
-                    options.append(triggers.map({ ASListPage.Cell.iconTitleDetailRadioCell(title: $0.triggerProName) }))
-                }
-                options.append([ASListPage.Cell.iconTitleChevronCell(title: R.string.localizable.disableTriggerPro())])
-                options.append([ASListPage.Cell.iconTitleChevronCell(title: R.string.localizable.manageTriggerPro())])
-                let sheet = ASSheet(style: .simpleList(icon: icon, title: title, options: options))
-                pauseEmulationIfNeed()
-                var isFunctionDismiss = false
-                ASSheetView.show(sheet, action: { action, _ in
-                    if let indexPath = action.listPageValue?.normalItemValue?.indexPath {
-                        if indexPath.section == 0 || indexPath.section == 1 {
-                            let storeValue = indexPath.section == 0 ? "\(triggers[indexPath.row].id)" : "-1"
-                            //section == 0: trigger pro
-                            //section == 1: disableTriggerPro
-                            games.forEach({
-                                Prefference.defalut.storePrefference(kind: .triggerPro, storeKey: .game(gameId: $0.id), storeValue: storeValue)
-                            })
-                            PlayViewController.updateTriggerPro()
-                            accessoryChange?()
-                            isFunctionDismiss = true
-                            return .dismiss(completion: {
-                                hideSheetInGaming()
-                                resumeEmulationIfNeed()
-                            })
-                        } else if indexPath.section == 2 {
-                            //manageTriggerPro
-                            isFunctionDismiss = true
-                            return .dismiss(completion: {
-                                TriggerProManageView.show(hideCompletion: {
-                                    accessoryChange?()
-                                    resumeEmulationIfNeed()
-                                })
-                            })
-                        }
-                    } else if let navigationValue = action.listPageValue?.navigationValue,
-                                navigationValue.isTapClose {
-                        isFunctionDismiss = true
-                        return .dismiss(completion: {
-                            resumeEmulationIfNeed()
-                        })
-                    }
-                    return .none
-                }, dismiss: {
-                    if !isFunctionDismiss {
-                        resumeEmulationIfNeed()
-                    }
-                })
-            }
+            // QoL build: Trigger Pro removed; this option is always hidden.
+            break
 
         case .screenScaling:
             performStringAction(with: games, in: scene, accessoryChange: accessoryChange)
@@ -1125,10 +1054,12 @@ extension GameOption {
             hideSheetInGaming()
             
         case .skinButtonBinding:
-            SkinButtonBindingView.show(games: games)
+            // QoL build: Flash removed; option always hidden.
+            break
             
         case .bitbop:
-            BitBopKit.sendToBitBop(games: games, in: scene)
+            // QoL build: BitBop promo removed; this option is always hidden.
+            break
         }
     }
     

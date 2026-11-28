@@ -200,7 +200,7 @@ class Theme: Object, ObjectUpdatable {
         if let orderJsonString = getExtraString(key: ExtraKey.manufacturerOrder.rawValue),
             let orderJsonData = orderJsonString.data(using: .utf8),
             let orderJson = try? JSONSerialization.jsonObject(with: orderJsonData) as? [Int]  {
-            let order = orderJson.compactMap({ Manufacturer(rawValue: $0) })
+            let order = orderJson.compactMap({ Manufacturer(rawValue: $0) }).filter { Manufacturer.allCases.contains($0) }
             Log.debug("[Theme] get manufacturerOrder:\(orderJsonString)")
             let new = Manufacturer.allCases.filter { all in
                 return !order.contains(where: { $0 == all })

@@ -65,6 +65,26 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
 - `System.core/Azahar.opt`: old Citra key names replaced with the names in the shipped core,
   keeping the values the core already used.
 
+- UI cleanup, build 1 (removals):
+  - Settings: community/promo links (FAQ, feedback, QQ, Discord, share, featured items,
+    "More from Manic"/BitBop card, donate and rate-us cards) and Trigger Pro are gone.
+  - Trigger Pro: all screens deleted. The `Trigger` Realm model is kept (schema + sync).
+  - BitBop (Manic's sister-app promo): button, menu entry and `BitBopKit` deleted.
+  - In-game menu: `GameOption.hiddenInQoLBuild` hides options for removed features/systems.
+    **Never delete `GameOption` cases**: their raw values are saved in preferences. The same
+    goes for `Manufacturer` (theme order) and `ImportServiceType`.
+  - Deleted screens: PSP networking, multi-disc builder, web/URL games, MAME BIOS, PS1 SBI,
+    Citra advanced settings, Flash button binding, J2ME settings, PlayCase promo. Import's
+    "More" menu (fetch from MeloNX/XeniOS/etc.) is gone. BIOS list: 3DS, DS, GBA, GBC, GB.
+  - Art/data: covers, brand logos, manufacturer logos for removed systems; `System.core`
+    keymaps/skins for removed systems, J2ME/Ruffle/jGenesis web cores, NES palettes, 286
+    unused libretro `.info` files and `Libretro/system` (PSP/Dolphin/FBNeo/PrBoom, 48 MB).
+    `Libretro/system` and `Libretro/config` keep a README so their folders still get created.
+  - Kept on purpose: Symbian/J2ME/etc. core code in `Tools/Cores` (deeply wired in, not
+    visible), skin import (.manicskin/.deltaskin/.gammaskin/.playcase), PlayCase skins for
+    GB/GBC/GBA/DS, Nimbus (3DS Pretendo installer), RetroAchievements, AirPlay.
+  - Removing a Swift file: also remove it from `project.pbxproj` (every target's build phase).
+
 ## Findings that drive the next work
 - **DS upscaling:** melonDS DS's iOS build disables OpenGL, and only the GL renderer can
   upscale. The renderer targets desktop GL 3.1 (`#version 140`); iOS has GLES 3.0. Biggest
@@ -78,7 +98,8 @@ A game's `defaultCore` is an **index** into that list, so removed cores are left
 - GBA/GBC/GB are 2D: no internal resolution, only display filters.
 
 ## To do (owner's priorities)
-1. UI cleanup: remove icons, menus, settings and assets for removed systems/cores, keeping the art style.
+1. UI cleanup: build 1 (removals) done; build 2 = settings regrouped into Play / Look & sound /
+   Controllers / System / Library / App, keeping the art style.
 2. DS upscaling (GLES port above), wired to per-game resolution.
 3. Fast-forward audio: fewer pops, crackles and dropouts, for **every** core. Audio goes through
    the RetroArch fork in `Dependencies/Libretro` (iOS audio driver), so one fix should cover all.

@@ -13,11 +13,10 @@ import UIKit
 class OnlinePlaySettingView: BaseView {
     
     private enum SectionIndex: Int, CaseIterable {
-        case ds, psp, pretendo, libretro
+        case ds, pretendo, libretro // QoL build: PSP networking removed
         var title: String {
             switch self {
             case .ds: R.string.localizable.nintendoWFC()
-            case .psp: R.string.localizable.pspNetworking()
             case .pretendo: GameType._3ds.localizedShortName + " " + R.string.localizable.pretendo()
             case .libretro: R.string.localizable.othreNetworking()
             }
@@ -52,18 +51,14 @@ class OnlinePlaySettingView: BaseView {
                 if navigationValue.isTapClose {
                     self.hide()
                 }
-            } else if let section = action.normalItemValue?.indexPath.section {
-                if section == 0 {
-                    //NDS
+            } else if let section = action.normalItemValue?.indexPath.section,
+                      let sectionIndex = SectionIndex(rawValue: section) {
+                switch sectionIndex {
+                case .ds:
                     WFCSettingView.show()
-                } else if section == 1 {
-                    //PSP
-                    PSPNetworkingView.show()
-                } else if section == 2 {
-                    //3DS
+                case .pretendo:
                     PretendoNetworkingView.show()
-                } else if section == 3 {
-                    //Other
+                case .libretro:
                     LibretroNetplayView.show()
                 }
             }

@@ -9,11 +9,10 @@
 
 import UIKit
 import RealmSwift
-import MessageUI
 
 class SettingsListView: BaseView {
     enum SectionIndex: Int, CaseIterable {
-        case top, general, advance, support, others, moreFromManic, bottom
+        case top, general, advance, others, bottom
         var title: String {
             switch self {
             case .top, .bottom:
@@ -22,12 +21,8 @@ class SettingsListView: BaseView {
                 R.string.localizable.generalSettingTitle()
             case .advance:
                 R.string.localizable.advanceSettingTitle()
-            case .support:
-                R.string.localizable.supportSettingTitle()
             case .others:
                 R.string.localizable.othersSettingTitle()
-            case .moreFromManic:
-                R.string.localizable.moreFromManic()
             }
         }
     }
@@ -61,7 +56,7 @@ class SettingsListView: BaseView {
         }
         
         for section in SectionIndex.allCases {
-            if section == .top || section == .bottom || section == .moreFromManic {
+            if section == .top || section == .bottom {
                 datas[section] = []
                 
             } else if section == .general {
@@ -82,7 +77,6 @@ class SettingsListView: BaseView {
                                   .init(type: .rumble),
                                   .init(type: .skinSound),
                                   .init(type: .retro),
-                                  .init(type: .triggerPro),
                                   .init(type: .jit),
                                   .init(type: .shaders),
                                   .init(type: .globalCoreSwitch),
@@ -97,27 +91,18 @@ class SettingsListView: BaseView {
                                   .init(type: .rumble),
                                   .init(type: .skinSound),
                                   .init(type: .retro),
-                                  .init(type: .triggerPro),
                                   .init(type: .jit),
                                   .init(type: .shaders),
                                   .init(type: .globalCoreSwitch),
                 ]
 #endif
-            } else if section == .support {
-                datas[section] = [.init(type: .FAQ),
-                                  .init(type: .feedback),
-                                  .init(type: .qq),
-                                  .init(type: .discord)]
-                
             } else if section == .others {
                 datas[section] = [.init(type: .about),
-                                  .init(type: .shareApp),
                                   .init(type: .clearCache),
                                   .init(type: .resetTips),
                                   .init(type: .language),
                                   .init(type: .userAgreement),
-                                  .init(type: .privacyPolicy),
-                                  .init(type: .featuredItems)]
+                                  .init(type: .privacyPolicy)]
                 
             }
         }
@@ -191,7 +176,7 @@ class SettingsListView: BaseView {
                                                    decoration: .init(enable: false),
                                                    itemLayout: .fixedHeight(((UIDevice.isPhone && !UIDevice.isPhoneDuoInnerFullScreen) && preferredLayoutStyle == .landscape) ? 165 : 301)))
                 
-            case .general, .advance, .support, .others:
+            case .general, .advance, .others:
                 var header: ASListPage.Supplementary? = nil
                 if !sectionIndex.title.isEmpty {
                     header = .defaultHeader(title: sectionIndex.title)
@@ -199,18 +184,9 @@ class SettingsListView: BaseView {
                 let section = ASListPage.Section(cells: settingItems.map({ $0.cellData }), header: header)
                 sections.append(section)
                 
-            case .moreFromManic:
-                let promo = SettingsBitBopPromoView()
-                sections.append(ASListPage.Section(cells: [.custom(promo)],
-                                                   header: .defaultHeader(title: sectionIndex.title),
-                                                   decoration: .init(enable: false),
-                                                   itemLayout: .fixedHeight(100)))
-                
             case .bottom:
-                var cellHeight = 479.0
-#if SIDE_LOAD
-                cellHeight += 76
-#endif
+                // QoL build: only the app name/version block (donate and rate-us removed).
+                let cellHeight = 479.0 - 100 - R.Size.ContentSpaceMedium
                 sections.append(ASListPage.Section(cells: [ASListPage.Cell.custom(bottomView)],
                                                    decoration: .init(enable: false),
                                                    itemLayout: .fixedHeight(cellHeight)))
@@ -277,7 +253,7 @@ class SettingsListView: BaseView {
                 case .top:
                     break
                     
-                case .general, .advance, .support, .others:
+                case .general, .advance, .others:
                     if let item = items[sectionIndex]?[indexPath.row] {
                         guard let _ = hostingWindow else { return }
                         switch item.type {
@@ -308,32 +284,6 @@ class SettingsListView: BaseView {
                             } else {
                                 ThemeSettingView.show()
                             }
-                            
-                        case .FAQ:
-                            if isWindowHasEnoughSpaceforIpadMultiColumnLayout {
-                                didTapDetailView?(ASWebView(url: R.URLs.FAQ, showClose: false))
-                            } else {
-                                ASWebView.show(url: R.URLs.FAQ)
-                            }
-                            
-                        case .feedback:
-                            if MFMailComposeViewController.canSendMail() {
-                                let mailController = MFMailComposeViewController()
-                                mailController.setToRecipients([R.Strings.SupportEmail])
-                                mailController.mailComposeDelegate = self
-                                topApplicationViewController()?.present(mailController, animated: true)
-                            } else {
-                                UIView.makeToast(message: R.string.localizable.noEmailSetting())
-                            }
-                            
-                        case .shareApp:
-                            ShareManager.shareApp(senderForIpad: UIDevice.isPad ? self : nil, in: hostingWindowScene)
-                            
-                        case .qq:
-                            UIApplication.shared.open(R.URLs.JoinQQ)
-                            
-                        case .discord:
-                            UIApplication.shared.open(R.URLs.JoinDiscord)
                             
                         case .clearCache:
                             UIView.makeLoading()
@@ -374,13 +324,6 @@ class SettingsListView: BaseView {
                                 ASWebView.show(url: R.URLs.AboutUS)
                             }
                             
-                        case .triggerPro:
-                            if isWindowHasEnoughSpaceforIpadMultiColumnLayout {
-                                didTapDetailView?(TriggerProManageView(showClose: false))
-                            } else {
-                                TriggerProManageView.show()
-                            }
-                            
                         case .skin:
                             if isWindowHasEnoughSpaceforIpadMultiColumnLayout {
                                 didTapDetailView?(SkinSettingsView(showClose: false))
@@ -410,9 +353,6 @@ class SettingsListView: BaseView {
                             } else {
                                 ShaderListView.show(initType: .normal)
                             }
-                            
-                        case .featuredItems:
-                            UIApplication.shared.open(R.URLs.PlayCasePromo)
                             
                         case .globalCoreSwitch:
                             if isWindowHasEnoughSpaceforIpadMultiColumnLayout {
@@ -483,7 +423,7 @@ class SettingsListView: BaseView {
                         }
                     }
                     
-                case .moreFromManic, .bottom:
+                case .bottom:
                     break
                 }
             }
@@ -503,100 +443,3 @@ extension SettingsListView: ViewTransition {
     }
 }
 
-extension SettingsListView: MFMailComposeViewControllerDelegate {
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: (any Error)?) {
-        switch result {
-        case .sent:
-            UIView.makeToast(message: R.string.localizable.sendEmailSuccess())
-            controller.dismiss(animated: true)
-        case .failed:
-            var errorMsg = ""
-            if let error = error {
-                errorMsg += "\n" + error.localizedDescription
-            }
-            UIView.makeToast(message: R.string.localizable.sendEmailFailed(errorMsg))
-        default:
-            controller.dismiss(animated: true)
-        }
-        
-    }
-}
-
-/// Settings promo for BitBop. Layout follows the Settings-BitBop card: 100pt, 20pt corners, logo on the right.
-private final class SettingsBitBopPromoView: BaseView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        layer.cornerRadius = R.Size.CornerRadiusLarge
-        clipsToBounds = true
-        
-        let backgroundView = UIImageView(image: R.image.bitbop_bg())
-        backgroundView.contentMode = .scaleAspectFill
-        addSubview(backgroundView)
-        backgroundView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-        
-        let logoView = UIImageView(image: R.image.bitbop_logo())
-        logoView.contentMode = .scaleAspectFill
-        logoView.layer.cornerRadius = R.Size.CornerRadiusMedium
-        logoView.clipsToBounds = true
-        addSubview(logoView)
-        logoView.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().inset(12)
-            make.centerY.equalToSuperview()
-            make.size.equalTo(60)
-        }
-        
-        let titleLabel = UILabel()
-        titleLabel.text = R.string.localizable.bitBopPromoTitle()
-        titleLabel.font = R.Font.Body(emphasis: true)
-        titleLabel.textColor = R.Color.LabelPrimary
-        titleLabel.numberOfLines = 1
-        addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(12)
-            make.trailing.equalTo(logoView.snp.leading).offset(-12)
-            make.top.equalToSuperview().offset(11)
-        }
-        
-        let detailLabel = UILabel()
-        detailLabel.text = R.string.localizable.bitBopPromoDetail()
-        detailLabel.font = R.Font.Caption()
-        detailLabel.textColor = R.Color.LabelSecondary
-        detailLabel.numberOfLines = 2
-        addSubview(detailLabel)
-        detailLabel.snp.makeConstraints { make in
-            make.leading.trailing.equalTo(titleLabel)
-            make.top.equalToSuperview().offset(31)
-        }
-        
-        let tryNowLabel = UILabel()
-        tryNowLabel.text = R.string.localizable.bitBopTryNow()
-        tryNowLabel.font = R.Font.Caption()
-        tryNowLabel.textColor = R.Color.BitBop
-        let tryNowView = UIView()
-        tryNowView.isUserInteractionEnabled = false
-        tryNowView.backgroundColor = R.Color.BitBop.withAlphaComponent(0.1)
-        tryNowView.layer.cornerRadius = 12
-        tryNowView.addSubview(tryNowLabel)
-        tryNowLabel.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(10)
-            make.centerY.equalToSuperview()
-        }
-        addSubview(tryNowView)
-        tryNowView.snp.makeConstraints { make in
-            make.leading.equalTo(titleLabel)
-            make.top.equalToSuperview().offset(65)
-            make.height.equalTo(24)
-        }
-        
-        addTapGesture { _ in
-            UIDevice.generateHaptic()
-            BitBopKit.openBitBop()
-        }
-    }
-    
-    @MainActor required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}

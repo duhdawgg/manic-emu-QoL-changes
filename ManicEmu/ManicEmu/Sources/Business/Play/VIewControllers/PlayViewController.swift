@@ -106,8 +106,6 @@ class PlayViewController: GameViewController {
     private var progressAchievements: [CheevosAchievement] = []
     //挑战中的成就
     private var challengeAchievements: [CheevosAchievement] = []
-    ///TriggerProView
-    private var triggerProView: TriggerProView?
     ///背景图片
     private var backgroundImageView: UIImageView? = nil
     ///flex皮肤的menu和flex按钮
@@ -119,7 +117,6 @@ class PlayViewController: GameViewController {
     //数据库变化通知
     private var gameUpdateToken: Any? = nil
     private var cheatCodeUpdateToken: Any? = nil
-    private var triggerProUpdateToken: Any? = nil
     private var settingsUpdateToken: Any? = nil
     
     private var lastSaveDate: Date? = nil
@@ -332,7 +329,6 @@ class PlayViewController: GameViewController {
         Log.debug("✅ \(objectInfo(self)) deinit")
         gameUpdateToken = nil
         cheatCodeUpdateToken = nil
-        triggerProUpdateToken = nil
         settingsUpdateToken = nil
         notificationTokens.forEach { NotificationCenter.default.removeObserver($0) }
     }
@@ -799,16 +795,10 @@ class PlayViewController: GameViewController {
             guard let self else { return }
             self.loadConfig()
             self.updateSkin()
-            if !self.manicGame.safeMode {
-                self.updateTriggerPro()
-            }
         }
 #else
         loadConfig()
         updateSkin()
-        if !manicGame.safeMode {
-            updateTriggerPro()
-        }
 #endif
         // In full-screen mode, tap the screen to temporarily show menu and flex buttons.
         view.addTapGesture(handler: { [weak self] _ in
@@ -2663,8 +2653,6 @@ extension PlayViewController {
         default:
             break
         }
-        
-        triggerProView?.hapticType = manicGame.haptic
     }
     
     /// iOS 27 connects the noninteractive external scene only after this registration.
@@ -3960,74 +3948,6 @@ extension PlayViewController {
         }
     }
     
-    private func updateTriggerPro(showToast: Bool = false) {
-        guard !isHardcoreMode else {
-            if showToast {
-                UIView.makeToast(message: R.string.localizable.notAllowHardcore())
-            }
-            return
-        }
-        
-        triggerProView?.removeFromSuperview()
-        triggerProView = nil
-        triggerProUpdateToken = nil
-        
-        if let id = Prefference.defalut.getPrefference(kind: .triggerPro,
-                                                       storeKey: .game(gameId: manicGame.id),
-                                                       bestEfforts: true)?.triggerProValue,
-           id != -1 {
-            let realm = Database.realm
-            if let trigger = realm.objects(Trigger.self).where({ $0.id == id }).first {
-                triggerProUpdateToken = trigger.observe(keyPaths: [\Trigger.items]) { [weak self] change in
-                    guard let self = self else { return }
-                    switch change {
-                    case .change(_, _):
-                        Log.debug("TriggerPro更新")
-                        self.triggerProView?.reloadButtons()
-                    default:
-                        break
-                    }
-                }
-                
-                let aView = TriggerProView(trigger: trigger)
-                aView.hapticType = manicGame.haptic
-                aView.activateHandler = { [weak self] inputs in
-                    guard let self else { return }
-                    for input in inputs {
-                        if input.type == .controller(GameControllerInputType("directKeyboard")) {
-                            self.gameController(self.controllerView, didActivate: input, value: 0)
-                        } else {
-                            self.controllerView.activate(input)
-                        }
-                    }
-                }
-                aView.deactivateHandler = { [weak self] inputs in
-                    guard let self else { return }
-                    for input in inputs {
-                        if input.type == .controller(GameControllerInputType("directKeyboard")) {
-                            self.gameController(self.controllerView, didDeactivate: input)
-                        } else {
-                            self.controllerView.deactivate(input)
-                        }
-                    }
-                }
-                view.addSubview(aView)
-                aView.snp.makeConstraints { make in
-                    make.edges.equalTo(controllerView)
-                }
-                triggerProView = aView
-                if showToast {
-                    UIView.makeToast(message: R.string.localizable.enableTriggerPro() + ": \(trigger.triggerProName)")
-                }
-                return
-            }
-        }
-        //禁用TriggerPro
-        if showToast {
-            UIView.makeToast(message: R.string.localizable.disableTriggerPro())
-        }
-    }
-    
     private func updateFastforward(speed: GameOption.FastForwardSpeed) {
         guard !manicGame.safeMode else { return }
         if manicGame.isLibretroType {
@@ -4332,8 +4252,7 @@ extension PlayViewController: GameViewControllerDelegate {
                 FlexSkinSettingViewController.isShow ||
                 RetroAchievementListView.hasShownInstance ||
                 CheevosPopupView.hasShownInstance ||
-                GameplayManualsView.hasShownInstance ||
-                J2MESettingView.hasShownInstance) ? false : true
+                GameplayManualsView.hasShownInstance) ? false : true
     }
     
 }
@@ -4453,12 +4372,6 @@ extension PlayViewController {
     static func updateAnalogMode() {
         if let currentPlayViewController {
             currentPlayViewController.updateAnalogMode(toastAllow: true, toggle: true)
-        }
-    }
-    
-    static func updateTriggerPro() {
-        if let currentPlayViewController {
-            currentPlayViewController.updateTriggerPro(showToast: true)
         }
     }
     

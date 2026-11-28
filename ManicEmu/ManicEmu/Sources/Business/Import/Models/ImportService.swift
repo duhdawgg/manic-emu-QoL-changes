@@ -129,9 +129,7 @@ class ImportService: Object, ObjectUpdatable {
             R.image.import_smb()!
         case .webdav:
             R.image.import_webdav()!
-        case .multiDisc:
-            R.image.import_multi_disc_icon()!
-        case .romPatcher:
+        case .multiDisc, .romPatcher: // QoL build: multi-disc helper removed
             R.image.import_rom_patcher()!
         case .romm:
             R.image.import_romm()!

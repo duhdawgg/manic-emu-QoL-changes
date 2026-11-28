@@ -16,7 +16,6 @@
 		00000000000051A100000014 /* NGP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4867970474EB9B27D4D8D /* NGP.swift */; };
 		00000000000051A100000015 /* PCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E402E22DFA4C9D96FFBC89 /* PCE.swift */; };
 		00000000000051A100000016 /* Wii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DDA01B1DB4E15B8F0C5C6 /* Wii.swift */; };
-		00000000000051A100000017 /* AddUrlGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C447133057D7CB0099C15F /* AddUrlGameView.swift */; };
 		00000000000051A100000018 /* NGC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691349DFB9FB4307A3151455 /* NGC.swift */; };
 		00000000000051A100000019 /* Symbian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B02C144024C2EAC5EAF21 /* Symbian.swift */; };
 		00000000000051A10000001A /* FocusTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C500000000000000000101 /* FocusTypes.swift */; };
@@ -49,7 +48,6 @@
 		00000000000051A100000035 /* GameCoverModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9424F302CA8E100C06208 /* GameCoverModifyView.swift */; };
 		00000000000051A100000036 /* ControllersSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770068C2D438FEA00762E8F /* ControllersSettingView.swift */; };
 		00000000000051A100000037 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3492D65B3D60036476B /* ImageFetcher.swift */; };
-		00000000000051A100000038 /* AddTriggerButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */; };
 		00000000000051A100000039 /* ASSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB262FE419640051F661 /* ASSwitch.swift */; };
 		00000000000051A10000003A /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F633032D718C45007270E8 /* LocaleExtensions.swift */; };
 		00000000000051A10000003B /* GG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0382DFBEC220066122E /* GG.swift */; };
@@ -65,7 +63,6 @@
 		00000000000051A100000045 /* GlobalCoreSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E4B582F8A2F430027E6D0 /* GlobalCoreSwitch.swift */; };
 		00000000000051A100000046 /* ASListCustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D482B13019D3320030A771 /* ASListCustomCollectionCell.swift */; };
 		00000000000051A100000047 /* ASSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C79DE02FE3EC43003C737F /* ASSheetView.swift */; };
-		00000000000051A100000048 /* CitraAdvancedSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */; };
 		00000000000051A100000049 /* WFCSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28812F3780B700D2D998 /* WFCSettingView.swift */; };
 		00000000000051A10000004A /* TransparentHoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579076EF2D8AAC2800ED90FB /* TransparentHoleView.swift */; };
 		00000000000051A10000004B /* ASLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742E1B32FDA9A2C0031A726 /* ASLabelView.swift */; };
@@ -92,7 +89,6 @@
 		00000000000051A100000060 /* UniversalScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577EC55F2F7E561900E8E3EB /* UniversalScript.swift */; };
 		00000000000051A100000061 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BECBC2D1D3F6B008AD18D /* HomeTabBar.swift */; };
 		00000000000051A100000062 /* ASText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB072FE416B60051F661 /* ASText.swift */; };
-		00000000000051A100000063 /* AddTriggerActionComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */; };
 		00000000000051A100000064 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EED0752ECB8172003971BD /* IconView.swift */; };
 		00000000000051A100000065 /* ShowableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1D43C2FF3D53900FC5B2A /* ShowableView.swift */; };
 		00000000000051A100000066 /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F46D2EED6DBC00916D8B /* Shader.swift */; };
@@ -131,7 +127,6 @@
 		00000000000051A100000087 /* ThreeDSKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720CACB2DB5558B0090C0F6 /* ThreeDSKeyboardView.swift */; };
 		00000000000051A100000088 /* PriceItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047A152D8571D500C62FF6 /* PriceItemCollectionCell.swift */; };
 		00000000000051A100000089 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1D4012FF215ED00FC5B2A /* CategorySelectionView.swift */; };
-		00000000000051A10000008A /* AddTriggerActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483B53021D4C60030A771 /* AddTriggerActionView.swift */; };
 		00000000000051A10000008B /* NDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A481692E7F05CD001D4598 /* NDS.swift */; };
 		00000000000051A10000008C /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9172D7D25B600D0CC93 /* GameInfoView.swift */; };
 		00000000000051A10000008D /* ASNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF5FDA2FE0221F0073D318 /* ASNavigationView.swift */; };
@@ -144,7 +139,6 @@
 		00000000000051A100000094 /* GameCheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005772D3D60B300762E8F /* GameCheat.swift */; };
 		00000000000051A100000095 /* GBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574ABEBB2E609FE30045F76E /* GBA.swift */; };
 		00000000000051A100000096 /* WFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5754D8922E2751C0001EA5ED /* WFC.swift */; };
-		00000000000051A100000097 /* AddTriggerActionSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */; };
 		00000000000051A100000098 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770055E2D3CC3FF00762E8F /* Skin.swift */; };
 		00000000000051A100000099 /* A7800.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE882F2338D500EA24F1 /* A7800.swift */; };
 		00000000000051A10000009A /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005D32D3F2F8200762E8F /* WebServer.swift */; };
@@ -161,8 +155,6 @@
 		00000000000051A1000000A5 /* PlayHistoryItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E962F72D6AB43D0022914C /* PlayHistoryItemCollectionCell.swift */; };
 		00000000000051A1000000A6 /* ObjectUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB33A2D6584AC0036476B /* ObjectUpdatable.swift */; };
 		00000000000051A1000000A7 /* NDSSaveConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A912022F3B765B00628B04 /* NDSSaveConverter.swift */; };
-		00000000000051A1000000A8 /* MultiDiscDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */; };
-		00000000000051A1000000A9 /* PSXSBIImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */; };
 		00000000000051A1000000AA /* ASViewEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF606D2FE278AF0073D318 /* ASViewEffects.swift */; };
 		00000000000051A1000000AB /* PlatformSortCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F59142DC5BB27007BFD92 /* PlatformSortCollectionViewCell.swift */; };
 		00000000000051A1000000AC /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C97B4D2A09F3B900053A4C /* UIColorExtensions.swift */; };
@@ -178,7 +170,6 @@
 		00000000000051A1000000B6 /* LibretroNetplayAnalogDpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C81DAD2FD6082600A8D0A1 /* LibretroNetplayAnalogDpad.swift */; };
 		00000000000051A1000000B7 /* GameSavePurchaseGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0E042D88005800D2A1BA /* GameSavePurchaseGuideView.swift */; };
 		00000000000051A1000000B8 /* J2MENetworkBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C5CB32F6E983600776F8C /* J2MENetworkBridge.swift */; };
-		00000000000051A1000000B9 /* TriggerProPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */; };
 		00000000000051A1000000BA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591B2DC7083E007BFD92 /* Theme.swift */; };
 		00000000000051A1000000BB /* SectionIndexViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574789BA2D4F8769006F0D99 /* SectionIndexViewItem.swift */; };
 		00000000000051A1000000BC /* AirPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9382D7D703500D0CC93 /* AirPlayViewController.swift */; };
@@ -205,12 +196,9 @@
 		00000000000051A1000000D1 /* ShaderOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F4972EEE71A800916D8B /* ShaderOrderView.swift */; };
 		00000000000051A1000000D2 /* LandscapeBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD13F0301109D5007F211A /* LandscapeBackgroundView.swift */; };
 		00000000000051A1000000D3 /* UTTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005602D3CD3A800762E8F /* UTTypeExtensions.swift */; };
-		00000000000051A1000000D4 /* TriggerProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF932EA8E7E100F41540 /* TriggerProView.swift */; };
 		00000000000051A1000000D5 /* SG1000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0362DFBEC190066122E /* SG1000.swift */; };
 		00000000000051A1000000D6 /* ASCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF5ED52FDB09A00073D318 /* ASCheckView.swift */; };
 		00000000000051A1000000D7 /* CarouselLayoutIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760A38E3029CB94002CCF6B /* CarouselLayoutIcon.swift */; };
-		00000000000051A1000000D8 /* PlayCasePromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160723005FAE80088345B /* PlayCasePromoView.swift */; };
-		00000000000051A1000000D9 /* MultiDiscAddCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */; };
 		00000000000051A1000000DA /* iCloudSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EED02A2EC8D7C1003971BD /* iCloudSettingView.swift */; };
 		00000000000051A1000000DB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3CC2D6774F50036476B /* Database.swift */; };
 		00000000000051A1000000DC /* ASSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB502FE41A9F0051F661 /* ASSegment.swift */; };
@@ -235,7 +223,6 @@
 		00000000000051A1000000EF /* ASCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB342FE419DB0051F661 /* ASCheck.swift */; };
 		00000000000051A1000000F0 /* ASCornerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB0E2FE417DB0051F661 /* ASCornerStyle.swift */; };
 		00000000000051A1000000F1 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48250301702B20030A771 /* FileBrowserView.swift */; };
-		00000000000051A1000000F2 /* PSXSBICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */; };
 		00000000000051A1000000F3 /* SkinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3A82D66CE610036476B /* SkinCollectionViewCell.swift */; };
 		00000000000051A1000000F4 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE4E2DD3326F00AABF98 /* Shaders.metal */; };
 		00000000000051A1000000F5 /* PersistedKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576060172D22BC5200A98B0C /* PersistedKit.swift */; };
@@ -248,10 +235,8 @@
 		00000000000051A1000000FC /* ArticBaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02782F87EC3A000BD6F4 /* ArticBaseCollectionCell.swift */; };
 		00000000000051A1000000FD /* AchievementsProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E7EC2E547FD800EC0DA5 /* AchievementsProfile.swift */; };
 		00000000000051A1000000FE /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F30CDD2EC44F340035327C /* Manufacturer.swift */; };
-		00000000000051A1000000FF /* PSXSBIDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */; };
 		00000000000051A100000100 /* BIOSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8B1012E2366D800F93E60 /* BIOSItem.swift */; };
 		00000000000051A100000101 /* GameOptionsSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D482963018F9490030A771 /* GameOptionsSortView.swift */; };
-		00000000000051A100000102 /* PSPNetworkingConfigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */; };
 		00000000000051A100000103 /* PretendoHomeMenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02832F87EC6B000BD6F4 /* PretendoHomeMenuCollectionCell.swift */; };
 		00000000000051A100000104 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCC732F324C8E009BD74E /* Cipher.swift */; };
 		00000000000051A100000105 /* WeakScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FFB2F52EC38004B6FFD /* WeakScriptMessageHandler.swift */; };
@@ -267,7 +252,6 @@
 		00000000000051A10000010F /* SymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE10462D606C4700CDD82A /* SymbolButton.swift */; };
 		00000000000051A100000110 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F632FF2D718360007270E8 /* SettingItem.swift */; };
 		00000000000051A100000111 /* AddCheatCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECBF2D7969DA002E619C /* AddCheatCodeView.swift */; };
-		00000000000051A100000112 /* PSPNetworkingConfigOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */; };
 		00000000000051A100000113 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57605FFB2D20F28100A98B0C /* ImportViewController.swift */; };
 		00000000000051A100000114 /* GameCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591F2DC7AC9E007BFD92 /* GameCoverView.swift */; };
 		00000000000051A100000115 /* GameOptionPerform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483953020EA6A0030A771 /* GameOptionPerform.swift */; };
@@ -279,12 +263,9 @@
 		00000000000051A10000011B /* TitleInputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E01071300CB3C8009AA38C /* TitleInputCollectionViewCell.swift */; };
 		00000000000051A10000011C /* RetroAchievementCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E8102E559ED600EC0DA5 /* RetroAchievementCountView.swift */; };
 		00000000000051A10000011D /* J2MEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FF32F52E92B004B6FFD /* J2MEView.swift */; };
-		00000000000051A10000011E /* PSPNetworkingConfigLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */; };
 		00000000000051A10000011F /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005B82D3E71B200762E8F /* ImportService.swift */; };
 		00000000000051A100000120 /* ShaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570622EB2D7BD2F6004F09E7 /* ShaderManager.swift */; };
-		00000000000051A100000121 /* AddTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */; };
 		00000000000051A100000122 /* GameShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48374301F57B90030A771 /* GameShortCutView.swift */; };
-		00000000000051A100000123 /* MAMEBiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */; };
 		00000000000051A100000124 /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28E92F3A055F00D2D998 /* CollectionFooterReusableView.swift */; };
 		00000000000051A100000125 /* ASButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57744ADD2FD91C8000DECBC7 /* ASButtonView.swift */; };
 		00000000000051A100000126 /* GameViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9242D7D36CD00D0CC93 /* GameViewExtensions.swift */; };
@@ -317,15 +298,12 @@
 		00000000000051A100000141 /* NumbersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F4E92EEFE44800916D8B /* NumbersExtensions.swift */; };
 		00000000000051A100000142 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483A930217B010030A771 /* SequenceExtensions.swift */; };
 		00000000000051A100000143 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2383F502A2733DF000563E6 /* UIFontExtensions.swift */; };
-		00000000000051A100000144 /* SettingsRateUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */; };
 		00000000000051A100000145 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C1A62D56580400962555 /* UITextFieldExtensions.swift */; };
 		00000000000051A100000146 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E7C92E5446F700EC0DA5 /* ArrayExtensions.swift */; };
 		00000000000051A100000147 /* FlexSkinSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC338D2DBC789E00DF7418 /* FlexSkinSettingViewController.swift */; };
 		00000000000051A100000148 /* BIOSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706AFC52DF7DAA20066122E /* BIOSCollectionViewCell.swift */; };
 		00000000000051A100000149 /* ASTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579454212FE683F000D32DD6 /* ASTextView.swift */; };
 		00000000000051A10000014A /* SparkleSeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9632D2D6B0B7D0022914C /* SparkleSeperatorView.swift */; };
-		00000000000051A10000014B /* MultiDiscItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */; };
-		00000000000051A10000014C /* PSPNetworkingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */; };
 		00000000000051A10000014D /* SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0592DFC0F7A0066122E /* SS.swift */; };
 		00000000000051A10000014E /* LibretroCoreConfigsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760A3693028CAF8002CCF6B /* LibretroCoreConfigsView.swift */; };
 		00000000000051A10000014F /* NoControllCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744C6FE2E368BA50088081A /* NoControllCollectionView.swift */; };
@@ -339,15 +317,12 @@
 		00000000000051A100000157 /* A2600.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE7F2F2338B700EA24F1 /* A2600.swift */; };
 		00000000000051A100000158 /* ASCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57716109300A1C7D0088345B /* ASCardView.swift */; };
 		00000000000051A100000159 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF60FB2FE3214B0073D318 /* UIStackViewExtensions.swift */; };
-		00000000000051A10000015A /* TriggerProManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4839F3020EDA70030A771 /* TriggerProManageView.swift */; };
 		00000000000051A10000015B /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FF91C2D350F170043B2F3 /* PlayViewController.swift */; };
-		00000000000051A10000015C /* MultiDiscBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4844F302330030030A771 /* MultiDiscBuilderView.swift */; };
 		00000000000051A10000015D /* GameMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D941F4302BFC8700C06208 /* GameMetadataView.swift */; };
 		00000000000051A10000015E /* MCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0442DFBF7BC0066122E /* MCD.swift */; };
 		00000000000051A10000015F /* ProHUDExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6EBF22D769905002E619C /* ProHUDExtentions.swift */; };
 		00000000000051A100000160 /* EmulationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA59B42E3F13C900110849 /* EmulationCore.swift */; };
 		00000000000051A100000161 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577006882D438F1100762E8F /* GameListView.swift */; };
-		00000000000051A100000162 /* TriggerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF842EA88ABA00F41540 /* TriggerButton.swift */; };
 		00000000000051A100000163 /* FilesSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBA5523052D8AA0017A6C3 /* FilesSyncManager.swift */; };
 		00000000000051A100000164 /* FilesSyncPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBA5603052D8AA0017A6C3 /* FilesSyncPolicy.swift */; };
 		00000000000051A100000165 /* FilesSyncIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBA5643052D8AA0017A6C3 /* FilesSyncIndex.swift */; };
@@ -377,7 +352,6 @@
 		00000000000051A10000017D /* OnlineCoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A39CD2DCD00FE00B28FC2 /* OnlineCoverManager.swift */; };
 		00000000000051A10000017E /* MappingInputPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720D1C22DBA01740090C0F6 /* MappingInputPopupView.swift */; };
 		00000000000051A10000017F /* GamesToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C19D2D562F8600962555 /* GamesToolView.swift */; };
-		00000000000051A100000180 /* J2MESettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */; };
 		00000000000051A100000181 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF84792D62E97A00AA0AAB /* NSAttributedStringExtensions.swift */; };
 		00000000000051A100000182 /* RetroAchievementsLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160EB300931850088345B /* RetroAchievementsLaunchView.swift */; };
 		00000000000051A100000183 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0DA42D85CD3900D2A1BA /* FeaturesCell.swift */; };
@@ -394,9 +368,6 @@
 		00000000000051A10000018E /* CheevosProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D029182E6C9C4000BF1F9D /* CheevosProgressView.swift */; };
 		00000000000051A10000018F /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047A092D85217400C62FF6 /* PurchaseView.swift */; };
 		00000000000051A100000190 /* PlayHistoryBlankSlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AB72D8037FE002920F0 /* PlayHistoryBlankSlateView.swift */; };
-		00000000000051A100000191 /* AddTriggerActionHoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */; };
-		00000000000051A100000192 /* PSPNetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28952F37856700D2D998 /* PSPNetworkingView.swift */; };
-		00000000000051A100000193 /* AddTriggerMappingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */; };
 		00000000000051A100000194 /* JGenesisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F5AB2EF45C6900916D8B /* JGenesisView.swift */; };
 		00000000000051A100000195 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E3DF12A0C9D9B0068EADA /* GradientView.swift */; };
 		00000000000051A100000196 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AC72D8119D8002920F0 /* SyncManager.swift */; };
@@ -408,7 +379,6 @@
 		00000000000051A10000019C /* BonjourKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28C02F39A9CA00D2D998 /* BonjourKit.swift */; };
 		00000000000051A10000019D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579213522D95313800E88819 /* BaseNavigationController.swift */; };
 		00000000000051A10000019E /* ResourcesKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0CC522D8EACBF0027FB8C /* ResourcesKit.swift */; };
-		00000000000051A10000019F /* SkinButtonBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */; };
 		00000000000051A1000001A0 /* ASListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C65ADF2FD6B2BA00BB73E0 /* ASListPageView.swift */; };
 		00000000000051A1000001A1 /* GamesNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577006992D44B9B500762E8F /* GamesNavigationView.swift */; };
 		00000000000051A1000001A2 /* GamesCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770069D2D44C01800762E8F /* GamesCollectionReusableView.swift */; };
@@ -611,15 +581,11 @@
 		572D02802F87EC63000BD6F4 /* NimbusCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D027B2F87EC4D000BD6F4 /* NimbusCollectionCell.swift */; };
 		572D02862F87EC79000BD6F4 /* PretendoHomeMenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02832F87EC6B000BD6F4 /* PretendoHomeMenuCollectionCell.swift */; };
 		572D02DD2F89483E000BD6F4 /* OptionsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02DB2F894812000BD6F4 /* OptionsSheetView.swift */; };
-		57399AC52E40ACE100AB73DD /* PSXSBIImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */; };
-		57399AC82E40AFBA00AB73DD /* PSXSBICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */; };
-		57399ACF2E40BB4D00AB73DD /* PSXSBIDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */; };
 		57399B192E42EDEA00AB73DD /* DeadZoneControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399B182E42EDE800AB73DD /* DeadZoneControl.swift */; };
 		5739D1BE2DA79D2A0090409D /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739D1BD2DA79D220090409D /* DataExtension.swift */; };
 		573BECBD2D1D3F6B008AD18D /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BECBC2D1D3F6B008AD18D /* HomeTabBar.swift */; };
 		573CEE0E2F20D05800EA24F1 /* RomPatcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE0C2F20D05100EA24F1 /* RomPatcherView.swift */; };
 		573CEE122F20D46D00EA24F1 /* LocalWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE112F20D46B00EA24F1 /* LocalWebServer.swift */; };
-		573CEE2B2F21036800EA24F1 /* MultiDiscAddCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */; };
 		573CEE3D2F21431300EA24F1 /* FlexBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE392F21430D00EA24F1 /* FlexBackground.swift */; };
 		573CEE6D2F224FB300EA24F1 /* ShaderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE6B2F224FAE00EA24F1 /* ShaderConfig.swift */; };
 		573CEE812F2338BC00EA24F1 /* A2600.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE7F2F2338B700EA24F1 /* A2600.swift */; };
@@ -665,8 +631,6 @@
 		57655C1B2DF6AD04003E4A6E /* MD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57655C1A2DF6AD02003E4A6E /* MD.swift */; };
 		57655C262DF6BCF3003E4A6E /* PlatformSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57655C252DF6BCE3003E4A6E /* PlatformSelectionView.swift */; };
 		576A7DA82E3B4B1400008E35 /* PS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A7DA72E3B4B1200008E35 /* PS1.swift */; };
-		576C46312E16D9090008D087 /* MultiDiscDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */; };
-		576C46352E16DA1B0008D087 /* MultiDiscItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */; };
 		576C4BDD3041749100DB526E /* BackgroundMusicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C4BD83041748700DB526E /* BackgroundMusicKit.swift */; };
 		576C4BDE3041749100DB526E /* BackgroundMusicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C4BD83041748700DB526E /* BackgroundMusicKit.swift */; };
 		576C4BDF3041749100DB526E /* BackgroundMusicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C4BD83041748700DB526E /* BackgroundMusicKit.swift */; };
@@ -717,8 +681,6 @@
 		5770069A2D44B9B500762E8F /* GamesNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577006992D44B9B500762E8F /* GamesNavigationView.swift */; };
 		5770069C2D44BDEA00762E8F /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770069B2D44BDEA00762E8F /* GameCollectionViewCell.swift */; };
 		5770069E2D44C01800762E8F /* GamesCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770069D2D44C01800762E8F /* GamesCollectionReusableView.swift */; };
-		577160733005FAEE0088345B /* PlayCasePromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160723005FAE80088345B /* PlayCasePromoView.swift */; };
-		577160743005FAEE0088345B /* PlayCasePromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160723005FAE80088345B /* PlayCasePromoView.swift */; };
 		577160AF30078D680088345B /* FlexItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160AB30078D530088345B /* FlexItemView.swift */; };
 		577160B030078D680088345B /* FlexItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160AB30078D530088345B /* FlexItemView.swift */; };
 		577160EF300931900088345B /* RetroAchievementsLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160EB300931850088345B /* RetroAchievementsLaunchView.swift */; };
@@ -772,13 +734,8 @@
 		578E4B592F8A2F480027E6D0 /* GlobalCoreSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E4B582F8A2F430027E6D0 /* GlobalCoreSwitch.swift */; };
 		578E4BA52F8A9B230027E6D0 /* TitleSortCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E4BA32F8A9B140027E6D0 /* TitleSortCollectionCell.swift */; };
 		578F28832F3780BC00D2D998 /* WFCSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28812F3780B700D2D998 /* WFCSettingView.swift */; };
-		578F28972F37856B00D2D998 /* PSPNetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28952F37856700D2D998 /* PSPNetworkingView.swift */; };
-		578F28A62F3786D100D2D998 /* PSPNetworkingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */; };
-		578F28AD2F37871100D2D998 /* PSPNetworkingConfigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */; };
 		578F28B72F37881C00D2D998 /* PSPNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28B52F37881400D2D998 /* PSPNetworkingConfig.swift */; };
 		578F28C12F39A9CD00D2D998 /* BonjourKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28C02F39A9CA00D2D998 /* BonjourKit.swift */; };
-		578F28D52F39E0A200D2D998 /* PSPNetworkingConfigLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */; };
-		578F28DB2F39FBC200D2D998 /* PSPNetworkingConfigOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */; };
 		578F28EC2F3A056600D2D998 /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28E92F3A055F00D2D998 /* CollectionFooterReusableView.swift */; };
 		579076F02D8AAC2900ED90FB /* TransparentHoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579076EF2D8AAC2800ED90FB /* TransparentHoleView.swift */; };
 		57909385303C7D9100A53656 /* Amiga.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93489E15EFD47F2AE825436 /* Amiga.swift */; };
@@ -816,7 +773,6 @@
 		579093A5303C7D9100A53656 /* GameCoverModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9424F302CA8E100C06208 /* GameCoverModifyView.swift */; };
 		579093A6303C7D9100A53656 /* ControllersSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770068C2D438FEA00762E8F /* ControllersSettingView.swift */; };
 		579093A7303C7D9100A53656 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3492D65B3D60036476B /* ImageFetcher.swift */; };
-		579093A8303C7D9100A53656 /* AddTriggerButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */; };
 		579093A9303C7D9100A53656 /* ASSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB262FE419640051F661 /* ASSwitch.swift */; };
 		579093AA303C7D9100A53656 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F633032D718C45007270E8 /* LocaleExtensions.swift */; };
 		579093AB303C7D9100A53656 /* GG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0382DFBEC220066122E /* GG.swift */; };
@@ -831,7 +787,6 @@
 		579093B4303C7D9100A53656 /* GlobalCoreSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E4B582F8A2F430027E6D0 /* GlobalCoreSwitch.swift */; };
 		579093B5303C7D9100A53656 /* ASListCustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D482B13019D3320030A771 /* ASListCustomCollectionCell.swift */; };
 		579093B6303C7D9100A53656 /* ASSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C79DE02FE3EC43003C737F /* ASSheetView.swift */; };
-		579093B7303C7D9100A53656 /* CitraAdvancedSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */; };
 		579093B8303C7D9100A53656 /* WFCSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28812F3780B700D2D998 /* WFCSettingView.swift */; };
 		579093B9303C7D9100A53656 /* TransparentHoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579076EF2D8AAC2800ED90FB /* TransparentHoleView.swift */; };
 		579093BA303C7D9100A53656 /* ASLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742E1B32FDA9A2C0031A726 /* ASLabelView.swift */; };
@@ -855,7 +810,6 @@
 		579093CC303C7D9100A53656 /* UniversalScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577EC55F2F7E561900E8E3EB /* UniversalScript.swift */; };
 		579093CD303C7D9100A53656 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BECBC2D1D3F6B008AD18D /* HomeTabBar.swift */; };
 		579093CE303C7D9100A53656 /* ASText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB072FE416B60051F661 /* ASText.swift */; };
-		579093CF303C7D9100A53656 /* AddTriggerActionComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */; };
 		579093D0303C7D9100A53656 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EED0752ECB8172003971BD /* IconView.swift */; };
 		579093D1303C7D9100A53656 /* ShowableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1D43C2FF3D53900FC5B2A /* ShowableView.swift */; };
 		579093D2303C7D9100A53656 /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F46D2EED6DBC00916D8B /* Shader.swift */; };
@@ -894,7 +848,6 @@
 		579093F3303C7D9100A53656 /* ThreeDSKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720CACB2DB5558B0090C0F6 /* ThreeDSKeyboardView.swift */; };
 		579093F4303C7D9100A53656 /* PriceItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047A152D8571D500C62FF6 /* PriceItemCollectionCell.swift */; };
 		579093F5303C7D9100A53656 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1D4012FF215ED00FC5B2A /* CategorySelectionView.swift */; };
-		579093F6303C7D9100A53656 /* AddTriggerActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483B53021D4C60030A771 /* AddTriggerActionView.swift */; };
 		579093F7303C7D9100A53656 /* NDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A481692E7F05CD001D4598 /* NDS.swift */; };
 		579093F8303C7D9100A53656 /* GameInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9172D7D25B600D0CC93 /* GameInfoView.swift */; };
 		579093F9303C7D9100A53656 /* ASNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF5FDA2FE0221F0073D318 /* ASNavigationView.swift */; };
@@ -906,7 +859,6 @@
 		579093FF303C7D9100A53656 /* GameCheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005772D3D60B300762E8F /* GameCheat.swift */; };
 		57909400303C7D9100A53656 /* GBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574ABEBB2E609FE30045F76E /* GBA.swift */; };
 		57909401303C7D9100A53656 /* WFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5754D8922E2751C0001EA5ED /* WFC.swift */; };
-		57909402303C7D9100A53656 /* AddTriggerActionSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */; };
 		57909403303C7D9100A53656 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770055E2D3CC3FF00762E8F /* Skin.swift */; };
 		57909404303C7D9100A53656 /* A7800.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE882F2338D500EA24F1 /* A7800.swift */; };
 		57909405303C7D9100A53656 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005D32D3F2F8200762E8F /* WebServer.swift */; };
@@ -922,8 +874,6 @@
 		5790940F303C7D9100A53656 /* PlayHistoryItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E962F72D6AB43D0022914C /* PlayHistoryItemCollectionCell.swift */; };
 		57909410303C7D9100A53656 /* ObjectUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB33A2D6584AC0036476B /* ObjectUpdatable.swift */; };
 		57909411303C7D9100A53656 /* NDSSaveConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A912022F3B765B00628B04 /* NDSSaveConverter.swift */; };
-		57909412303C7D9100A53656 /* MultiDiscDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */; };
-		57909413303C7D9100A53656 /* PSXSBIImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */; };
 		57909414303C7D9100A53656 /* ASViewEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF606D2FE278AF0073D318 /* ASViewEffects.swift */; };
 		57909415303C7D9100A53656 /* PlatformSortCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F59142DC5BB27007BFD92 /* PlatformSortCollectionViewCell.swift */; };
 		57909416303C7D9100A53656 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C97B4D2A09F3B900053A4C /* UIColorExtensions.swift */; };
@@ -938,7 +888,6 @@
 		5790941F303C7D9100A53656 /* EmulatorBridgingBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E24202FD33FFC00A2749A /* EmulatorBridgingBase.swift */; };
 		57909420303C7D9100A53656 /* GameSavePurchaseGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0E042D88005800D2A1BA /* GameSavePurchaseGuideView.swift */; };
 		57909421303C7D9100A53656 /* J2MENetworkBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C5CB32F6E983600776F8C /* J2MENetworkBridge.swift */; };
-		57909422303C7D9100A53656 /* TriggerProPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */; };
 		57909423303C7D9100A53656 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591B2DC7083E007BFD92 /* Theme.swift */; };
 		57909424303C7D9100A53656 /* SectionIndexViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574789BA2D4F8769006F0D99 /* SectionIndexViewItem.swift */; };
 		57909425303C7D9100A53656 /* AirPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9382D7D703500D0CC93 /* AirPlayViewController.swift */; };
@@ -965,12 +914,9 @@
 		5790943A303C7D9100A53656 /* ShaderOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F4972EEE71A800916D8B /* ShaderOrderView.swift */; };
 		5790943B303C7D9100A53656 /* LandscapeBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD13F0301109D5007F211A /* LandscapeBackgroundView.swift */; };
 		5790943C303C7D9100A53656 /* UTTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005602D3CD3A800762E8F /* UTTypeExtensions.swift */; };
-		5790943D303C7D9100A53656 /* TriggerProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF932EA8E7E100F41540 /* TriggerProView.swift */; };
 		5790943E303C7D9100A53656 /* SG1000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0362DFBEC190066122E /* SG1000.swift */; };
 		5790943F303C7D9100A53656 /* ASCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF5ED52FDB09A00073D318 /* ASCheckView.swift */; };
 		57909440303C7D9100A53656 /* CarouselLayoutIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760A38E3029CB94002CCF6B /* CarouselLayoutIcon.swift */; };
-		57909441303C7D9100A53656 /* PlayCasePromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160723005FAE80088345B /* PlayCasePromoView.swift */; };
-		57909442303C7D9100A53656 /* MultiDiscAddCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */; };
 		57909443303C7D9100A53656 /* iCloudSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EED02A2EC8D7C1003971BD /* iCloudSettingView.swift */; };
 		57909444303C7D9100A53656 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3CC2D6774F50036476B /* Database.swift */; };
 		57909445303C7D9100A53656 /* ASSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB502FE41A9F0051F661 /* ASSegment.swift */; };
@@ -995,7 +941,6 @@
 		57909458303C7D9100A53656 /* ASCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB342FE419DB0051F661 /* ASCheck.swift */; };
 		57909459303C7D9100A53656 /* ASCornerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796DB0E2FE417DB0051F661 /* ASCornerStyle.swift */; };
 		5790945A303C7D9100A53656 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48250301702B20030A771 /* FileBrowserView.swift */; };
-		5790945B303C7D9100A53656 /* PSXSBICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */; };
 		5790945C303C7D9100A53656 /* SkinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3A82D66CE610036476B /* SkinCollectionViewCell.swift */; };
 		5790945D303C7D9100A53656 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE4E2DD3326F00AABF98 /* Shaders.metal */; };
 		5790945E303C7D9100A53656 /* PersistedKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576060172D22BC5200A98B0C /* PersistedKit.swift */; };
@@ -1008,10 +953,8 @@
 		57909465303C7D9100A53656 /* ArticBaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02782F87EC3A000BD6F4 /* ArticBaseCollectionCell.swift */; };
 		57909466303C7D9100A53656 /* AchievementsProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E7EC2E547FD800EC0DA5 /* AchievementsProfile.swift */; };
 		57909467303C7D9100A53656 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F30CDD2EC44F340035327C /* Manufacturer.swift */; };
-		57909468303C7D9100A53656 /* PSXSBIDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */; };
 		57909469303C7D9100A53656 /* BIOSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8B1012E2366D800F93E60 /* BIOSItem.swift */; };
 		5790946A303C7D9100A53656 /* GameOptionsSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D482963018F9490030A771 /* GameOptionsSortView.swift */; };
-		5790946B303C7D9100A53656 /* PSPNetworkingConfigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */; };
 		5790946C303C7D9100A53656 /* PretendoHomeMenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02832F87EC6B000BD6F4 /* PretendoHomeMenuCollectionCell.swift */; };
 		5790946D303C7D9100A53656 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCC732F324C8E009BD74E /* Cipher.swift */; };
 		5790946E303C7D9100A53656 /* WeakScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FFB2F52EC38004B6FFD /* WeakScriptMessageHandler.swift */; };
@@ -1027,7 +970,6 @@
 		57909478303C7D9100A53656 /* SymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE10462D606C4700CDD82A /* SymbolButton.swift */; };
 		57909479303C7D9100A53656 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F632FF2D718360007270E8 /* SettingItem.swift */; };
 		5790947A303C7D9100A53656 /* AddCheatCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECBF2D7969DA002E619C /* AddCheatCodeView.swift */; };
-		5790947B303C7D9100A53656 /* PSPNetworkingConfigOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */; };
 		5790947C303C7D9100A53656 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57605FFB2D20F28100A98B0C /* ImportViewController.swift */; };
 		5790947D303C7D9100A53656 /* GameCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591F2DC7AC9E007BFD92 /* GameCoverView.swift */; };
 		5790947E303C7D9100A53656 /* GameOptionPerform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483953020EA6A0030A771 /* GameOptionPerform.swift */; };
@@ -1039,12 +981,9 @@
 		57909484303C7D9100A53656 /* TitleInputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E01071300CB3C8009AA38C /* TitleInputCollectionViewCell.swift */; };
 		57909485303C7D9100A53656 /* RetroAchievementCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E8102E559ED600EC0DA5 /* RetroAchievementCountView.swift */; };
 		57909486303C7D9100A53656 /* J2MEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FF32F52E92B004B6FFD /* J2MEView.swift */; };
-		57909487303C7D9100A53656 /* PSPNetworkingConfigLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */; };
 		57909488303C7D9100A53656 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005B82D3E71B200762E8F /* ImportService.swift */; };
 		57909489303C7D9100A53656 /* ShaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570622EB2D7BD2F6004F09E7 /* ShaderManager.swift */; };
-		5790948A303C7D9100A53656 /* AddTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */; };
 		5790948B303C7D9100A53656 /* GameShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48374301F57B90030A771 /* GameShortCutView.swift */; };
-		5790948C303C7D9100A53656 /* MAMEBiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */; };
 		5790948D303C7D9100A53656 /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28E92F3A055F00D2D998 /* CollectionFooterReusableView.swift */; };
 		5790948E303C7D9100A53656 /* ASButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57744ADD2FD91C8000DECBC7 /* ASButtonView.swift */; };
 		5790948F303C7D9100A53656 /* GameViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9242D7D36CD00D0CC93 /* GameViewExtensions.swift */; };
@@ -1077,15 +1016,12 @@
 		579094AA303C7D9100A53656 /* NumbersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F4E92EEFE44800916D8B /* NumbersExtensions.swift */; };
 		579094AB303C7D9100A53656 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483A930217B010030A771 /* SequenceExtensions.swift */; };
 		579094AC303C7D9100A53656 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2383F502A2733DF000563E6 /* UIFontExtensions.swift */; };
-		579094AD303C7D9100A53656 /* SettingsRateUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */; };
 		579094AE303C7D9100A53656 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C1A62D56580400962555 /* UITextFieldExtensions.swift */; };
 		579094AF303C7D9100A53656 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E7C92E5446F700EC0DA5 /* ArrayExtensions.swift */; };
 		579094B0303C7D9100A53656 /* FlexSkinSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC338D2DBC789E00DF7418 /* FlexSkinSettingViewController.swift */; };
 		579094B1303C7D9100A53656 /* BIOSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706AFC52DF7DAA20066122E /* BIOSCollectionViewCell.swift */; };
 		579094B2303C7D9100A53656 /* ASTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579454212FE683F000D32DD6 /* ASTextView.swift */; };
 		579094B3303C7D9100A53656 /* SparkleSeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9632D2D6B0B7D0022914C /* SparkleSeperatorView.swift */; };
-		579094B4303C7D9100A53656 /* MultiDiscItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */; };
-		579094B5303C7D9100A53656 /* PSPNetworkingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */; };
 		579094B6303C7D9100A53656 /* SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0592DFC0F7A0066122E /* SS.swift */; };
 		579094B7303C7D9100A53656 /* LibretroCoreConfigsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760A3693028CAF8002CCF6B /* LibretroCoreConfigsView.swift */; };
 		579094B8303C7D9100A53656 /* NoControllCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744C6FE2E368BA50088081A /* NoControllCollectionView.swift */; };
@@ -1099,15 +1035,12 @@
 		579094C0303C7D9100A53656 /* A2600.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE7F2F2338B700EA24F1 /* A2600.swift */; };
 		579094C1303C7D9100A53656 /* ASCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57716109300A1C7D0088345B /* ASCardView.swift */; };
 		579094C2303C7D9100A53656 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF60FB2FE3214B0073D318 /* UIStackViewExtensions.swift */; };
-		579094C3303C7D9100A53656 /* TriggerProManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4839F3020EDA70030A771 /* TriggerProManageView.swift */; };
 		579094C4303C7D9100A53656 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FF91C2D350F170043B2F3 /* PlayViewController.swift */; };
-		579094C5303C7D9100A53656 /* MultiDiscBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4844F302330030030A771 /* MultiDiscBuilderView.swift */; };
 		579094C6303C7D9100A53656 /* GameMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D941F4302BFC8700C06208 /* GameMetadataView.swift */; };
 		579094C7303C7D9100A53656 /* MCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0442DFBF7BC0066122E /* MCD.swift */; };
 		579094C8303C7D9100A53656 /* ProHUDExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6EBF22D769905002E619C /* ProHUDExtentions.swift */; };
 		579094C9303C7D9100A53656 /* EmulationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA59B42E3F13C900110849 /* EmulationCore.swift */; };
 		579094CA303C7D9100A53656 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577006882D438F1100762E8F /* GameListView.swift */; };
-		579094CB303C7D9100A53656 /* TriggerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF842EA88ABA00F41540 /* TriggerButton.swift */; };
 		579094CC303C7D9100A53656 /* UniversalScript.c in Sources */ = {isa = PBXBuildFile; fileRef = 577EC5AA2F7E566700E8E3EB /* UniversalScript.c */; };
 		579094CD303C7D9100A53656 /* ShaderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F47A2EEE572500916D8B /* ShaderInfoView.swift */; };
 		579094CE303C7D9100A53656 /* ASListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C65AE62FD6B2D600BB73E0 /* ASListItemView.swift */; };
@@ -1130,7 +1063,6 @@
 		579094DF303C7D9100A53656 /* OnlineCoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A39CD2DCD00FE00B28FC2 /* OnlineCoverManager.swift */; };
 		579094E0303C7D9100A53656 /* MappingInputPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720D1C22DBA01740090C0F6 /* MappingInputPopupView.swift */; };
 		579094E1303C7D9100A53656 /* GamesToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C19D2D562F8600962555 /* GamesToolView.swift */; };
-		579094E2303C7D9100A53656 /* J2MESettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */; };
 		579094E3303C7D9100A53656 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF84792D62E97A00AA0AAB /* NSAttributedStringExtensions.swift */; };
 		579094E4303C7D9100A53656 /* RetroAchievementsLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577160EB300931850088345B /* RetroAchievementsLaunchView.swift */; };
 		579094E5303C7D9100A53656 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0DA42D85CD3900D2A1BA /* FeaturesCell.swift */; };
@@ -1147,9 +1079,6 @@
 		579094F0303C7D9100A53656 /* CheevosProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D029182E6C9C4000BF1F9D /* CheevosProgressView.swift */; };
 		579094F1303C7D9100A53656 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047A092D85217400C62FF6 /* PurchaseView.swift */; };
 		579094F2303C7D9100A53656 /* PlayHistoryBlankSlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AB72D8037FE002920F0 /* PlayHistoryBlankSlateView.swift */; };
-		579094F3303C7D9100A53656 /* AddTriggerActionHoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */; };
-		579094F4303C7D9100A53656 /* PSPNetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28952F37856700D2D998 /* PSPNetworkingView.swift */; };
-		579094F5303C7D9100A53656 /* AddTriggerMappingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */; };
 		579094F6303C7D9100A53656 /* JGenesisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F5AB2EF45C6900916D8B /* JGenesisView.swift */; };
 		579094F7303C7D9100A53656 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E3DF12A0C9D9B0068EADA /* GradientView.swift */; };
 		579094F8303C7D9100A53656 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AC72D8119D8002920F0 /* SyncManager.swift */; };
@@ -1322,8 +1251,6 @@
 		57ABFB622FEBC335001C1425 /* SettingsMembershipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFB602FEBC334001C1425 /* SettingsMembershipView.swift */; };
 		57ABFB6D2FEBC355001C1425 /* SettingsAdventureCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFB682FEBC348001C1425 /* SettingsAdventureCardView.swift */; };
 		57ABFB6E2FEBC355001C1425 /* SettingsAdventureCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFB682FEBC348001C1425 /* SettingsAdventureCardView.swift */; };
-		57ABFBB62FED1756001C1425 /* SettingsRateUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */; };
-		57ABFBB72FED1756001C1425 /* SettingsRateUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */; };
 		57ABFBC02FED179E001C1425 /* SettingsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBBC2FED1793001C1425 /* SettingsInfoView.swift */; };
 		57ABFBC12FED179E001C1425 /* SettingsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBBC2FED1793001C1425 /* SettingsInfoView.swift */; };
 		57ABFBD62FED20D1001C1425 /* SettingsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABFBD22FED20C4001C1425 /* SettingsTopView.swift */; };
@@ -1342,7 +1269,6 @@
 		57B592572FD07B05003C4235 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 57B592562FD07B05003C4235 /* SFSafeSymbols */; };
 		57B5E3142ECC625E00DE17E9 /* Arcade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3122ECC625600DE17E9 /* Arcade.swift */; };
 		57B5E3242ECCCD0800DE17E9 /* MAMEKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3222ECCCD0100DE17E9 /* MAMEKit.swift */; };
-		57B5E3362ECDF75F00DE17E9 /* MAMEBiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */; };
 		57B6EBDB2D758819002E619C /* GamesSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6EBDA2D7587FE002E619C /* GamesSelectionView.swift */; };
 		57B6EBF32D769910002E619C /* ProHUDExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6EBF22D769905002E619C /* ProHUDExtentions.swift */; };
 		57B6ECBD2D7953EC002E619C /* CheatCodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECBC2D7953E6002E619C /* CheatCodeListView.swift */; };
@@ -1406,9 +1332,6 @@
 		57BFBE772DD336E000AABF98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE762DD336DD00AABF98 /* main.swift */; };
 		57BFBE792DD336FC00AABF98 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE782DD336F100AABF98 /* Application.swift */; };
 		57BFBE902DD435C900AABF98 /* PSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE8F2DD435C700AABF98 /* PSP.swift */; };
-		57C447183057D7E00099C15F /* AddUrlGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C447133057D7CB0099C15F /* AddUrlGameView.swift */; };
-		57C447193057D7E00099C15F /* AddUrlGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C447133057D7CB0099C15F /* AddUrlGameView.swift */; };
-		57C4471A3057D7E00099C15F /* AddUrlGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C447133057D7CB0099C15F /* AddUrlGameView.swift */; };
 		57C65AE32FD6B2D200BB73E0 /* ASListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C65ADF2FD6B2BA00BB73E0 /* ASListPageView.swift */; };
 		57C65AE42FD6B2D200BB73E0 /* ASListPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C65ADF2FD6B2BA00BB73E0 /* ASListPageView.swift */; };
 		57C65AEB2FD6B2E300BB73E0 /* ASListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C65AE62FD6B2D600BB73E0 /* ASListItemView.swift */; };
@@ -1544,8 +1467,6 @@
 		57CDCDF22FD5CBD3005BA4C8 /* PlayHistoryItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E962F72D6AB43D0022914C /* PlayHistoryItemCollectionCell.swift */; };
 		57CDCDF32FD5CBD3005BA4C8 /* ObjectUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB33A2D6584AC0036476B /* ObjectUpdatable.swift */; };
 		57CDCDF42FD5CBD3005BA4C8 /* NDSSaveConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A912022F3B765B00628B04 /* NDSSaveConverter.swift */; };
-		57CDCDF52FD5CBD3005BA4C8 /* MultiDiscDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */; };
-		57CDCDF62FD5CBD3005BA4C8 /* PSXSBIImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */; };
 		57CDCDF72FD5CBD3005BA4C8 /* PlatformSortCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F59142DC5BB27007BFD92 /* PlatformSortCollectionViewCell.swift */; };
 		57CDCDF82FD5CBD3005BA4C8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C97B4D2A09F3B900053A4C /* UIColorExtensions.swift */; };
 		57CDCDF92FD5CBD3005BA4C8 /* SkinSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECF42D79F1E4002E619C /* SkinSettingsView.swift */; };
@@ -1558,7 +1479,6 @@
 		57CDCE052FD5CBD3005BA4C8 /* EmulatorBridgingBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E24202FD33FFC00A2749A /* EmulatorBridgingBase.swift */; };
 		57CDCE062FD5CBD3005BA4C8 /* GameSavePurchaseGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0E042D88005800D2A1BA /* GameSavePurchaseGuideView.swift */; };
 		57CDCE072FD5CBD3005BA4C8 /* J2MENetworkBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C5CB32F6E983600776F8C /* J2MENetworkBridge.swift */; };
-		57CDCE082FD5CBD3005BA4C8 /* TriggerProPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */; };
 		57CDCE092FD5CBD3005BA4C8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591B2DC7083E007BFD92 /* Theme.swift */; };
 		57CDCE0A2FD5CBD3005BA4C8 /* SectionIndexViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574789BA2D4F8769006F0D99 /* SectionIndexViewItem.swift */; };
 		57CDCE0B2FD5CBD3005BA4C8 /* AirPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9382D7D703500D0CC93 /* AirPlayViewController.swift */; };
@@ -1580,9 +1500,7 @@
 		57CDCE242FD5CBD3005BA4C8 /* RoundAndBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5726FF802D74AC8D00041AD5 /* RoundAndBorderView.swift */; };
 		57CDCE272FD5CBD3005BA4C8 /* ShaderOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F4972EEE71A800916D8B /* ShaderOrderView.swift */; };
 		57CDCE282FD5CBD3005BA4C8 /* UTTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005602D3CD3A800762E8F /* UTTypeExtensions.swift */; };
-		57CDCE292FD5CBD3005BA4C8 /* TriggerProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF932EA8E7E100F41540 /* TriggerProView.swift */; };
 		57CDCE2A2FD5CBD3005BA4C8 /* SG1000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0362DFBEC190066122E /* SG1000.swift */; };
-		57CDCE2B2FD5CBD3005BA4C8 /* MultiDiscAddCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */; };
 		57CDCE2C2FD5CBD3005BA4C8 /* iCloudSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EED02A2EC8D7C1003971BD /* iCloudSettingView.swift */; };
 		57CDCE2D2FD5CBD3005BA4C8 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3CC2D6774F50036476B /* Database.swift */; };
 		57CDCE2E2FD5CBD3005BA4C8 /* OptionsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02DB2F894812000BD6F4 /* OptionsSheetView.swift */; };
@@ -1601,7 +1519,6 @@
 		57CDCE3B2FD5CBD3005BA4C8 /* CoreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DCE8552E0FC9B60079E3AA /* CoreSelectionView.swift */; };
 		57CDCE3C2FD5CBD3005BA4C8 /* ImportFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9632B2D6B06090022914C /* ImportFooterCollectionReusableView.swift */; };
 		57CDCE3D2FD5CBD3005BA4C8 /* AddCheatCodeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECCA2D797CA7002E619C /* AddCheatCodeContentCell.swift */; };
-		57CDCE3F2FD5CBD3005BA4C8 /* PSXSBICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */; };
 		57CDCE402FD5CBD3005BA4C8 /* SkinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCB3A82D66CE610036476B /* SkinCollectionViewCell.swift */; };
 		57CDCE412FD5CBD3005BA4C8 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 57BFBE4E2DD3326F00AABF98 /* Shaders.metal */; };
 		57CDCE422FD5CBD3005BA4C8 /* PersistedKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576060172D22BC5200A98B0C /* PersistedKit.swift */; };
@@ -1611,9 +1528,7 @@
 		57CDCE482FD5CBD3005BA4C8 /* ArticBaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02782F87EC3A000BD6F4 /* ArticBaseCollectionCell.swift */; };
 		57CDCE492FD5CBD3005BA4C8 /* AchievementsProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E7EC2E547FD800EC0DA5 /* AchievementsProfile.swift */; };
 		57CDCE4A2FD5CBD3005BA4C8 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F30CDD2EC44F340035327C /* Manufacturer.swift */; };
-		57CDCE4B2FD5CBD3005BA4C8 /* PSXSBIDescCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */; };
 		57CDCE4C2FD5CBD3005BA4C8 /* BIOSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8B1012E2366D800F93E60 /* BIOSItem.swift */; };
-		57CDCE4E2FD5CBD3005BA4C8 /* PSPNetworkingConfigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */; };
 		57CDCE502FD5CBD3005BA4C8 /* PretendoHomeMenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02832F87EC6B000BD6F4 /* PretendoHomeMenuCollectionCell.swift */; };
 		57CDCE512FD5CBD3005BA4C8 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCC732F324C8E009BD74E /* Cipher.swift */; };
 		57CDCE522FD5CBD3005BA4C8 /* WeakScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FFB2F52EC38004B6FFD /* WeakScriptMessageHandler.swift */; };
@@ -1627,7 +1542,6 @@
 		57CDCE602FD5CBD3005BA4C8 /* SymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE10462D606C4700CDD82A /* SymbolButton.swift */; };
 		57CDCE612FD5CBD3005BA4C8 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F632FF2D718360007270E8 /* SettingItem.swift */; };
 		57CDCE622FD5CBD3005BA4C8 /* AddCheatCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6ECBF2D7969DA002E619C /* AddCheatCodeView.swift */; };
-		57CDCE642FD5CBD3005BA4C8 /* PSPNetworkingConfigOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */; };
 		57CDCE652FD5CBD3005BA4C8 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57605FFB2D20F28100A98B0C /* ImportViewController.swift */; };
 		57CDCE672FD5CBD3005BA4C8 /* GameCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F591F2DC7AC9E007BFD92 /* GameCoverView.swift */; };
 		57CDCE6B2FD5CBD3005BA4C8 /* SideMenuShowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262620F2A260E4C00174003 /* SideMenuShowStyle.swift */; };
@@ -1636,11 +1550,8 @@
 		57CDCE702FD5CBD3005BA4C8 /* ShaderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573CEE6B2F224FAE00EA24F1 /* ShaderConfig.swift */; };
 		57CDCE712FD5CBD3005BA4C8 /* RetroAchievementCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720E8102E559ED600EC0DA5 /* RetroAchievementCountView.swift */; };
 		57CDCE722FD5CBD3005BA4C8 /* J2MEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7FF32F52E92B004B6FFD /* J2MEView.swift */; };
-		57CDCE732FD5CBD3005BA4C8 /* PSPNetworkingConfigLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */; };
 		57CDCE742FD5CBD3005BA4C8 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577005B82D3E71B200762E8F /* ImportService.swift */; };
 		57CDCE752FD5CBD3005BA4C8 /* ShaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570622EB2D7BD2F6004F09E7 /* ShaderManager.swift */; };
-		57CDCE762FD5CBD3005BA4C8 /* AddTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */; };
-		57CDCE772FD5CBD3005BA4C8 /* MAMEBiosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */; };
 		57CDCE782FD5CBD3005BA4C8 /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28E92F3A055F00D2D998 /* CollectionFooterReusableView.swift */; };
 		57CDCE7A2FD5CBD3005BA4C8 /* GameViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1A9242D7D36CD00D0CC93 /* GameViewExtensions.swift */; };
 		57CDCE7B2FD5CBD3005BA4C8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570F59DB2DC9D528007BFD92 /* ThemeManager.swift */; };
@@ -1670,8 +1581,6 @@
 		57CDCE9B2FD5CBD3005BA4C8 /* FlexSkinSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC338D2DBC789E00DF7418 /* FlexSkinSettingViewController.swift */; };
 		57CDCE9D2FD5CBD3005BA4C8 /* BIOSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706AFC52DF7DAA20066122E /* BIOSCollectionViewCell.swift */; };
 		57CDCE9E2FD5CBD3005BA4C8 /* SparkleSeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9632D2D6B0B7D0022914C /* SparkleSeperatorView.swift */; };
-		57CDCE9F2FD5CBD3005BA4C8 /* MultiDiscItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */; };
-		57CDCEA02FD5CBD3005BA4C8 /* PSPNetworkingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */; };
 		57CDCEA12FD5CBD3005BA4C8 /* SS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706B0592DFC0F7A0066122E /* SS.swift */; };
 		57CDCEA32FD5CBD3005BA4C8 /* NoControllCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744C6FE2E368BA50088081A /* NoControllCollectionView.swift */; };
 		57CDCEA42FD5CBD3005BA4C8 /* PermissionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E38E9A2D8C74F9001616D3 /* PermissionKit.swift */; };
@@ -1685,7 +1594,6 @@
 		57CDCEB12FD5CBD3005BA4C8 /* ProHUDExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6EBF22D769905002E619C /* ProHUDExtentions.swift */; };
 		57CDCEB22FD5CBD3005BA4C8 /* EmulationCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BA59B42E3F13C900110849 /* EmulationCore.swift */; };
 		57CDCEB32FD5CBD3005BA4C8 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577006882D438F1100762E8F /* GameListView.swift */; };
-		57CDCEB42FD5CBD3005BA4C8 /* TriggerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF842EA88ABA00F41540 /* TriggerButton.swift */; };
 		57CDCEB52FD5CBD3005BA4C8 /* UniversalScript.c in Sources */ = {isa = PBXBuildFile; fileRef = 577EC5AA2F7E566700E8E3EB /* UniversalScript.c */; };
 		57CDCEB62FD5CBD3005BA4C8 /* ShaderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F47A2EEE572500916D8B /* ShaderInfoView.swift */; };
 		57CDCEB82FD5CBD3005BA4C8 /* PretendoNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D02702F87E453000BD6F4 /* PretendoNetworkingConfig.swift */; };
@@ -1704,7 +1612,6 @@
 		57CDCECA2FD5CBD3005BA4C8 /* OnlineCoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A39CD2DCD00FE00B28FC2 /* OnlineCoverManager.swift */; };
 		57CDCECC2FD5CBD3005BA4C8 /* MappingInputPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720D1C22DBA01740090C0F6 /* MappingInputPopupView.swift */; };
 		57CDCECD2FD5CBD3005BA4C8 /* GamesToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C19D2D562F8600962555 /* GamesToolView.swift */; };
-		57CDCECE2FD5CBD3005BA4C8 /* J2MESettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */; };
 		57CDCED02FD5CBD3005BA4C8 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF84792D62E97A00AA0AAB /* NSAttributedStringExtensions.swift */; };
 		57CDCED12FD5CBD3005BA4C8 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F0DA42D85CD3900D2A1BA /* FeaturesCell.swift */; };
 		57CDCED22FD5CBD3005BA4C8 /* AuxiliaryLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC33B92DBCD90700DF7418 /* AuxiliaryLineView.swift */; };
@@ -1716,7 +1623,6 @@
 		57CDCED82FD5CBD3005BA4C8 /* CheevosProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D029182E6C9C4000BF1F9D /* CheevosProgressView.swift */; };
 		57CDCED92FD5CBD3005BA4C8 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047A092D85217400C62FF6 /* PurchaseView.swift */; };
 		57CDCEDA2FD5CBD3005BA4C8 /* PlayHistoryBlankSlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AB72D8037FE002920F0 /* PlayHistoryBlankSlateView.swift */; };
-		57CDCEDB2FD5CBD3005BA4C8 /* PSPNetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F28952F37856700D2D998 /* PSPNetworkingView.swift */; };
 		57CDCEDC2FD5CBD3005BA4C8 /* JGenesisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781F5AB2EF45C6900916D8B /* JGenesisView.swift */; };
 		57CDCEDD2FD5CBD3005BA4C8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E3DF12A0C9D9B0068EADA /* GradientView.swift */; };
 		57CDCEDE2FD5CBD3005BA4C8 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EC6AC72D8119D8002920F0 /* SyncManager.swift */; };
@@ -1770,32 +1676,9 @@
 		57D48379301F57C20030A771 /* GameShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48374301F57B90030A771 /* GameShortCutView.swift */; };
 		57D483993020EA770030A771 /* GameOptionPerform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483953020EA6A0030A771 /* GameOptionPerform.swift */; };
 		57D4839A3020EA770030A771 /* GameOptionPerform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483953020EA6A0030A771 /* GameOptionPerform.swift */; };
-		57D483A33020EDB50030A771 /* TriggerProManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4839F3020EDA70030A771 /* TriggerProManageView.swift */; };
-		57D483A43020EDB50030A771 /* TriggerProManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4839F3020EDA70030A771 /* TriggerProManageView.swift */; };
 		57D483AA30217B060030A771 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483A930217B010030A771 /* SequenceExtensions.swift */; };
 		57D483AB30217B060030A771 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483A930217B010030A771 /* SequenceExtensions.swift */; };
-		57D483B63021D4C70030A771 /* AddTriggerActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483B53021D4C60030A771 /* AddTriggerActionView.swift */; };
-		57D483B73021D4C70030A771 /* AddTriggerActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483B53021D4C60030A771 /* AddTriggerActionView.swift */; };
-		57D483C13021D61D0030A771 /* AddTriggerButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */; };
-		57D483C23021D61D0030A771 /* AddTriggerButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */; };
-		57D483CD3021D6D30030A771 /* AddTriggerMappingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */; };
-		57D483CE3021D6D30030A771 /* AddTriggerMappingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */; };
-		57D4841A3023119B0030A771 /* AddTriggerActionSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */; };
-		57D4841B3023119B0030A771 /* AddTriggerActionSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */; };
-		57D48421302311D00030A771 /* AddTriggerActionHoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */; };
-		57D48422302311D00030A771 /* AddTriggerActionHoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */; };
-		57D4842E302312020030A771 /* AddTriggerActionComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */; };
-		57D4842F302312020030A771 /* AddTriggerActionComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */; };
-		57D48450302330060030A771 /* MultiDiscBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4844F302330030030A771 /* MultiDiscBuilderView.swift */; };
-		57D48451302330060030A771 /* MultiDiscBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4844F302330030030A771 /* MultiDiscBuilderView.swift */; };
-		57D48BDB30585CDA00151935 /* SkinButtonBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */; };
-		57D48BDC30585CDA00151935 /* SkinButtonBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */; };
-		57D48BDD30585CDA00151935 /* SkinButtonBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */; };
 		57D7CF362EA5DBA800F41540 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF332EA5DB9C00F41540 /* Trigger.swift */; };
-		57D7CF592EA78B2B00F41540 /* TriggerProPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */; };
-		57D7CF622EA792FB00F41540 /* AddTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */; };
-		57D7CF862EA88AC100F41540 /* TriggerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF842EA88ABA00F41540 /* TriggerButton.swift */; };
-		57D7CF952EA8E7EE00F41540 /* TriggerProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CF932EA8E7E100F41540 /* TriggerProView.swift */; };
 		57D7CFC22EAA1B5E00F41540 /* ShadowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CFC12EAA1B5E00F41540 /* ShadowLabel.m */; };
 		57D941BA302ABE7700C06208 /* LandscapeFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D941B6302ABE6E00C06208 /* LandscapeFilterView.swift */; };
 		57D941BB302ABE7700C06208 /* LandscapeFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D941B6302ABE6E00C06208 /* LandscapeFilterView.swift */; };
@@ -1813,8 +1696,6 @@
 		57D942CD302F1EC000C06208 /* Bimap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942CB302F1EBB00C06208 /* Bimap.swift */; };
 		57D942DA302F449200C06208 /* MappingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942D6302F448900C06208 /* MappingOptionsView.swift */; };
 		57D942DB302F449200C06208 /* MappingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942D6302F448900C06208 /* MappingOptionsView.swift */; };
-		57D942E4302F72CE00C06208 /* CitraAdvancedSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */; };
-		57D942E5302F72CE00C06208 /* CitraAdvancedSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */; };
 		57D9430F303029FF00C06208 /* LibretroNetplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9430B303029F300C06208 /* LibretroNetplayView.swift */; };
 		57D94310303029FF00C06208 /* LibretroNetplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9430B303029F300C06208 /* LibretroNetplayView.swift */; };
 		57DA89132D82B0C20074052A /* SmartCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 57DA89122D82B0C20074052A /* SmartCodable */; };
@@ -1945,7 +1826,6 @@
 		57F2A8052F8E100100C62FF6 /* PurchaseBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F2A8012F8E100100C62FF6 /* PurchaseBackgroundView.swift */; };
 		57F30CD82EC048880035327C /* ManufacturerCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F30CD62EC048780035327C /* ManufacturerCategoryView.swift */; };
 		57F30CDF2EC44F390035327C /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F30CDD2EC44F340035327C /* Manufacturer.swift */; };
-		57F3BAEC2F6541C900ABF4B3 /* J2MESettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */; };
 		57F6327C2D6EA8D3007270E8 /* DropGlowEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6327B2D6EA8BD007270E8 /* DropGlowEffectView.swift */; };
 		57F632852D6EB485007270E8 /* UIScreenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F632842D6EB47F007270E8 /* UIScreenExtensions.swift */; };
 		57F6328B2D6EB84A007270E8 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6328A2D6EB837007270E8 /* DownloadManager.swift */; };
@@ -2078,10 +1958,6 @@
 		E524FBC9308F2B41009885DA /* WiiU.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FBC7308F2B38009885DA /* WiiU.swift */; };
 		E524FBCA308F2B41009885DA /* WiiU.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FBC7308F2B38009885DA /* WiiU.swift */; };
 		E524FBCB308F2B41009885DA /* WiiU.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FBC7308F2B38009885DA /* WiiU.swift */; };
-		E524FC023090E598009885DA /* BitBopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FC013090E591009885DA /* BitBopKit.swift */; };
-		E524FC033090E598009885DA /* BitBopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FC013090E591009885DA /* BitBopKit.swift */; };
-		E524FC043090E598009885DA /* BitBopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FC013090E591009885DA /* BitBopKit.swift */; };
-		E524FC053090E598009885DA /* BitBopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524FC013090E591009885DA /* BitBopKit.swift */; };
 		E5A00BB23080B2CC00E99223 /* ProHUDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A00BB13080B2C200E99223 /* ProHUDExtensions.swift */; };
 		E5A00BB33080B2CC00E99223 /* ProHUDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A00BB13080B2C200E99223 /* ProHUDExtensions.swift */; };
 		E5A00BB43080B2CC00E99223 /* ProHUDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A00BB13080B2C200E99223 /* ProHUDExtensions.swift */; };
@@ -2340,15 +2216,11 @@
 		572D027B2F87EC4D000BD6F4 /* NimbusCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusCollectionCell.swift; sourceTree = "<group>"; };
 		572D02832F87EC6B000BD6F4 /* PretendoHomeMenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendoHomeMenuCollectionCell.swift; sourceTree = "<group>"; };
 		572D02DB2F894812000BD6F4 /* OptionsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSheetView.swift; sourceTree = "<group>"; };
-		57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXSBIImportView.swift; sourceTree = "<group>"; };
-		57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXSBICollectionCell.swift; sourceTree = "<group>"; };
-		57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXSBIDescCollectionCell.swift; sourceTree = "<group>"; };
 		57399B182E42EDE800AB73DD /* DeadZoneControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadZoneControl.swift; sourceTree = "<group>"; };
 		5739D1BD2DA79D220090409D /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		573BECBC2D1D3F6B008AD18D /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		573CEE0C2F20D05100EA24F1 /* RomPatcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomPatcherView.swift; sourceTree = "<group>"; };
 		573CEE112F20D46B00EA24F1 /* LocalWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWebServer.swift; sourceTree = "<group>"; };
-		573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDiscAddCollectionCell.swift; sourceTree = "<group>"; };
 		573CEE392F21430D00EA24F1 /* FlexBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexBackground.swift; sourceTree = "<group>"; };
 		573CEE6B2F224FAE00EA24F1 /* ShaderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderConfig.swift; sourceTree = "<group>"; };
 		573CEE7F2F2338B700EA24F1 /* A2600.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2600.swift; sourceTree = "<group>"; };
@@ -2389,8 +2261,6 @@
 		57655C1A2DF6AD02003E4A6E /* MD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD.swift; sourceTree = "<group>"; };
 		57655C252DF6BCE3003E4A6E /* PlatformSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSelectionView.swift; sourceTree = "<group>"; };
 		576A7DA72E3B4B1200008E35 /* PS1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS1.swift; sourceTree = "<group>"; };
-		576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDiscDescCollectionCell.swift; sourceTree = "<group>"; };
-		576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDiscItemCollectionCell.swift; sourceTree = "<group>"; };
 		576C4BD83041748700DB526E /* BackgroundMusicKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicKit.swift; sourceTree = "<group>"; };
 		576C4BE13041749900DB526E /* FocusSoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSoundEffects.swift; sourceTree = "<group>"; };
 		576C4C043041978C00DB526E /* GameCoverScrapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoverScrapingView.swift; sourceTree = "<group>"; };
@@ -2430,7 +2300,6 @@
 		577006992D44B9B500762E8F /* GamesNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesNavigationView.swift; sourceTree = "<group>"; };
 		5770069B2D44BDEA00762E8F /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		5770069D2D44C01800762E8F /* GamesCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCollectionReusableView.swift; sourceTree = "<group>"; };
-		577160723005FAE80088345B /* PlayCasePromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCasePromoView.swift; sourceTree = "<group>"; };
 		577160AB30078D530088345B /* FlexItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexItemView.swift; sourceTree = "<group>"; };
 		577160EB300931850088345B /* RetroAchievementsLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroAchievementsLaunchView.swift; sourceTree = "<group>"; };
 		57716109300A1C7D0088345B /* ASCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCardView.swift; sourceTree = "<group>"; };
@@ -2526,13 +2395,8 @@
 		578E4B582F8A2F430027E6D0 /* GlobalCoreSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCoreSwitch.swift; sourceTree = "<group>"; };
 		578E4BA32F8A9B140027E6D0 /* TitleSortCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSortCollectionCell.swift; sourceTree = "<group>"; };
 		578F28812F3780B700D2D998 /* WFCSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFCSettingView.swift; sourceTree = "<group>"; };
-		578F28952F37856700D2D998 /* PSPNetworkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingView.swift; sourceTree = "<group>"; };
-		578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingSwitchCell.swift; sourceTree = "<group>"; };
-		578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingConfigCell.swift; sourceTree = "<group>"; };
 		578F28B52F37881400D2D998 /* PSPNetworkingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingConfig.swift; sourceTree = "<group>"; };
 		578F28C02F39A9CA00D2D998 /* BonjourKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourKit.swift; sourceTree = "<group>"; };
-		578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingConfigLocalView.swift; sourceTree = "<group>"; };
-		578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPNetworkingConfigOnlineView.swift; sourceTree = "<group>"; };
 		578F28E92F3A055F00D2D998 /* CollectionFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterReusableView.swift; sourceTree = "<group>"; };
 		579076EF2D8AAC2800ED90FB /* TransparentHoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentHoleView.swift; sourceTree = "<group>"; };
 		5790958B303C7D9100A53656 /* ManicEmuSideload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManicEmuSideload.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2643,7 +2507,6 @@
 		57ABFB422FEB9BA5001C1425 /* ViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransition.swift; sourceTree = "<group>"; };
 		57ABFB602FEBC334001C1425 /* SettingsMembershipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMembershipView.swift; sourceTree = "<group>"; };
 		57ABFB682FEBC348001C1425 /* SettingsAdventureCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAdventureCardView.swift; sourceTree = "<group>"; };
-		57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRateUsView.swift; sourceTree = "<group>"; };
 		57ABFBBC2FED1793001C1425 /* SettingsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoView.swift; sourceTree = "<group>"; };
 		57ABFBD22FED20C4001C1425 /* SettingsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTopView.swift; sourceTree = "<group>"; };
 		57ABFBDC2FED2275001C1425 /* SettingsBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBottomView.swift; sourceTree = "<group>"; };
@@ -2658,7 +2521,6 @@
 		57B592312FD06BDD003C4235 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57B5E3122ECC625600DE17E9 /* Arcade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcade.swift; sourceTree = "<group>"; };
 		57B5E3222ECCCD0100DE17E9 /* MAMEKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMEKit.swift; sourceTree = "<group>"; };
-		57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMEBiosView.swift; sourceTree = "<group>"; };
 		57B6EBDA2D7587FE002E619C /* GamesSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesSelectionView.swift; sourceTree = "<group>"; };
 		57B6EBF22D769905002E619C /* ProHUDExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHUDExtentions.swift; sourceTree = "<group>"; };
 		57B6ECBC2D7953E6002E619C /* CheatCodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatCodeListView.swift; sourceTree = "<group>"; };
@@ -6930,7 +6792,6 @@
 		57BFBE762DD336DD00AABF98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		57BFBE782DD336F100AABF98 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		57BFBE8F2DD435C700AABF98 /* PSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSP.swift; sourceTree = "<group>"; };
-		57C447133057D7CB0099C15F /* AddUrlGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlGameView.swift; sourceTree = "<group>"; };
 		57C65ADF2FD6B2BA00BB73E0 /* ASListPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASListPageView.swift; sourceTree = "<group>"; };
 		57C65AE62FD6B2D600BB73E0 /* ASListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASListItemView.swift; sourceTree = "<group>"; };
 		57C7595C2FD451130093A2B3 /* System.core */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.core; sourceTree = "<group>"; };
@@ -6987,21 +6848,8 @@
 		57D48367301F37F00030A771 /* LanServiceEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanServiceEditView.swift; sourceTree = "<group>"; };
 		57D48374301F57B90030A771 /* GameShortCutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameShortCutView.swift; sourceTree = "<group>"; };
 		57D483953020EA6A0030A771 /* GameOptionPerform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptionPerform.swift; sourceTree = "<group>"; };
-		57D4839F3020EDA70030A771 /* TriggerProManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerProManageView.swift; sourceTree = "<group>"; };
 		57D483A930217B010030A771 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
-		57D483B53021D4C60030A771 /* AddTriggerActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerActionView.swift; sourceTree = "<group>"; };
-		57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerButtonStyleView.swift; sourceTree = "<group>"; };
-		57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerMappingListView.swift; sourceTree = "<group>"; };
-		57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerActionSimpleView.swift; sourceTree = "<group>"; };
-		57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerActionHoldView.swift; sourceTree = "<group>"; };
-		57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerActionComboView.swift; sourceTree = "<group>"; };
-		57D4844F302330030030A771 /* MultiDiscBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDiscBuilderView.swift; sourceTree = "<group>"; };
-		57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinButtonBindingView.swift; sourceTree = "<group>"; };
 		57D7CF332EA5DB9C00F41540 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
-		57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerProPreviewController.swift; sourceTree = "<group>"; };
-		57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTriggerButtonView.swift; sourceTree = "<group>"; };
-		57D7CF842EA88ABA00F41540 /* TriggerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerButton.swift; sourceTree = "<group>"; };
-		57D7CF932EA8E7E100F41540 /* TriggerProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerProView.swift; sourceTree = "<group>"; };
 		57D7CFC02EAA1B5E00F41540 /* ShadowLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowLabel.h; sourceTree = "<group>"; };
 		57D7CFC12EAA1B5E00F41540 /* ShadowLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowLabel.m; sourceTree = "<group>"; };
 		57D941B6302ABE6E00C06208 /* LandscapeFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeFilterView.swift; sourceTree = "<group>"; };
@@ -7012,7 +6860,6 @@
 		57D942AE302EE81D00C06208 /* SpecialCoreOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCoreOption.swift; sourceTree = "<group>"; };
 		57D942CB302F1EBB00C06208 /* Bimap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bimap.swift; sourceTree = "<group>"; };
 		57D942D6302F448900C06208 /* MappingOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingOptionsView.swift; sourceTree = "<group>"; };
-		57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitraAdvancedSettingView.swift; sourceTree = "<group>"; };
 		57D9430B303029F300C06208 /* LibretroNetplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibretroNetplayView.swift; sourceTree = "<group>"; };
 		57DA89312D8328420074052A /* CKAccountStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAccountStatusExtensions.swift; sourceTree = "<group>"; };
 		57DC7FF32F52E92B004B6FFD /* J2MEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J2MEView.swift; sourceTree = "<group>"; };
@@ -7106,7 +6953,6 @@
 		57F2A8012F8E100100C62FF6 /* PurchaseBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBackgroundView.swift; sourceTree = "<group>"; };
 		57F30CD62EC048780035327C /* ManufacturerCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerCategoryView.swift; sourceTree = "<group>"; };
 		57F30CDD2EC44F340035327C /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
-		57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J2MESettingView.swift; sourceTree = "<group>"; };
 		57F6327B2D6EA8BD007270E8 /* DropGlowEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGlowEffectView.swift; sourceTree = "<group>"; };
 		57F632842D6EB47F007270E8 /* UIScreenExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtensions.swift; sourceTree = "<group>"; };
 		57F6328A2D6EB837007270E8 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
@@ -7167,7 +7013,6 @@
 		E524FABA308866D4009885DA /* DuoHingeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoHingeKit.swift; sourceTree = "<group>"; };
 		E524FB053088C9BB009885DA /* ShortcutButtonContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutButtonContainerView.swift; sourceTree = "<group>"; };
 		E524FBC7308F2B38009885DA /* WiiU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiU.swift; sourceTree = "<group>"; };
-		E524FC013090E591009885DA /* BitBopKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBopKit.swift; sourceTree = "<group>"; };
 		E5A00BB13080B2C200E99223 /* ProHUDExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHUDExtensions.swift; sourceTree = "<group>"; };
 		E5D10A010000000000000001 /* DuoLayoutKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoLayoutKit.swift; sourceTree = "<group>"; };
 		F0C500000000000000000101 /* FocusTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTypes.swift; sourceTree = "<group>"; };
@@ -7727,7 +7572,6 @@
 		577005B12D3E6E9F00762E8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				57C447133057D7CB0099C15F /* AddUrlGameView.swift */,
 				57CC357F2DC0683700DF7418 /* DownloadManageView.swift */,
 				57B6EBDA2D7587FE002E619C /* GamesSelectionView.swift */,
 				57E9632B2D6B06090022914C /* ImportFooterCollectionReusableView.swift */,
@@ -7735,13 +7579,9 @@
 				577005B22D3E6F1600762E8F /* ImportServiceListView.swift */,
 				577005B62D3E715500762E8F /* ImportServiceListCollectionViewCell.swift */,
 				577005B42D3E6F3000762E8F /* AddImportServiceView.swift */,
-				576C46302E16D8F20008D087 /* MultiDiscDescCollectionCell.swift */,
-				576C46342E16DA0D0008D087 /* MultiDiscItemCollectionCell.swift */,
-				573CEE292F21035800EA24F1 /* MultiDiscAddCollectionCell.swift */,
 				57ABFAEE2FEA56E1001C1425 /* ImportNavigationView.swift */,
 				57ABFB082FEA8345001C1425 /* ImportMottoCollectionViewCell.swift */,
 				57D48367301F37F00030A771 /* LanServiceEditView.swift */,
-				57D4844F302330030030A771 /* MultiDiscBuilderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -7788,11 +7628,6 @@
 			children = (
 				5754D88A2E274AB9001EA5ED /* OnlinePlaySettingView.swift */,
 				578F28812F3780B700D2D998 /* WFCSettingView.swift */,
-				578F28A42F3786B500D2D998 /* PSPNetworkingSwitchCell.swift */,
-				578F28AB2F37870700D2D998 /* PSPNetworkingConfigCell.swift */,
-				578F28D42F39E0A100D2D998 /* PSPNetworkingConfigLocalView.swift */,
-				578F28DA2F39FBC100D2D998 /* PSPNetworkingConfigOnlineView.swift */,
-				578F28952F37856700D2D998 /* PSPNetworkingView.swift */,
 				572D02682F87E3F1000BD6F4 /* PretendoNetworkingView.swift */,
 				572D02782F87EC3A000BD6F4 /* ArticBaseCollectionCell.swift */,
 				572D027B2F87EC4D000BD6F4 /* NimbusCollectionCell.swift */,
@@ -7862,12 +7697,8 @@
 			isa = PBXGroup;
 			children = (
 				5760A3693028CAF8002CCF6B /* LibretroCoreConfigsView.swift */,
-				57F3BAEA2F6541AB00ABF4B3 /* J2MESettingView.swift */,
-				57399ACE2E40BB4400AB73DD /* PSXSBIDescCollectionCell.swift */,
-				57399AC72E40AFB100AB73DD /* PSXSBICollectionCell.swift */,
 				576F0E042D88005800D2A1BA /* GameSavePurchaseGuideView.swift */,
 				57F1A9172D7D25B600D0CC93 /* GameInfoView.swift */,
-				57D48BDA30585CD300151935 /* SkinButtonBindingView.swift */,
 				57D9424F302CA8E100C06208 /* GameCoverModifyView.swift */,
 				576C4C043041978C00DB526E /* GameCoverScrapingView.swift */,
 				57913B412D5ED722004D51AA /* GameInfoCoverView.swift */,
@@ -7877,8 +7708,6 @@
 				5721F1C73027390E00CAC638 /* SteamGridDBContentsView.swift */,
 				57F1D4282FF381F100FC5B2A /* GameInfoNavigationView.swift */,
 				57F1D4322FF3878900FC5B2A /* SaveStateListView.swift */,
-				57399AC42E40ACCF00AB73DD /* PSXSBIImportView.swift */,
-				57D942E0302F72C100C06208 /* CitraAdvancedSettingView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -13160,7 +12989,6 @@
 				57B6ECF42D79F1E4002E619C /* SkinSettingsView.swift */,
 				57CCB3A82D66CE610036476B /* SkinCollectionViewCell.swift */,
 				57CCB3B22D6700A20036476B /* AddSkinCollectionViewCell.swift */,
-				577160723005FAE80088345B /* PlayCasePromoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -13212,7 +13040,6 @@
 		57D7CF3B2EA7352A00F41540 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				57D7CF572EA78B1700F41540 /* TriggerProPreviewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -13220,16 +13047,6 @@
 		57D7CF422EA7356D00F41540 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				57D7CF932EA8E7E100F41540 /* TriggerProView.swift */,
-				57D7CF842EA88ABA00F41540 /* TriggerButton.swift */,
-				57D4839F3020EDA70030A771 /* TriggerProManageView.swift */,
-				57D7CF612EA792F900F41540 /* AddTriggerButtonView.swift */,
-				57D483C03021D61C0030A771 /* AddTriggerButtonStyleView.swift */,
-				57D483CC3021D6CC0030A771 /* AddTriggerMappingListView.swift */,
-				57D483B53021D4C60030A771 /* AddTriggerActionView.swift */,
-				57D48419302311940030A771 /* AddTriggerActionSimpleView.swift */,
-				57D48420302311C80030A771 /* AddTriggerActionHoldView.swift */,
-				57D4842A302311F20030A771 /* AddTriggerActionComboView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -13422,7 +13239,6 @@
 				578E4B4F2F8A2AA50027E6D0 /* GlobalCoreSwitchView.swift */,
 				57EED0342EC8D9BB003971BD /* JITSettingView.swift */,
 				57EED02A2EC8D7C1003971BD /* iCloudSettingView.swift */,
-				57B5E3342ECDF75800DE17E9 /* MAMEBiosView.swift */,
 				5706AFC52DF7DAA20066122E /* BIOSCollectionViewCell.swift */,
 				5706AFC12DF7D9460066122E /* BIOSSelectionView.swift */,
 				57BA2D8F30357F0E0039E284 /* SymbianFirmwareView.swift */,
@@ -13432,7 +13248,6 @@
 				57ABFB602FEBC334001C1425 /* SettingsMembershipView.swift */,
 				57ABFB682FEBC348001C1425 /* SettingsAdventureCardView.swift */,
 				57ABFBD22FED20C4001C1425 /* SettingsTopView.swift */,
-				57ABFBB12FED174B001C1425 /* SettingsRateUsView.swift */,
 				57ABFBDC2FED2275001C1425 /* SettingsBottomView.swift */,
 				57ABFBBC2FED1793001C1425 /* SettingsInfoView.swift */,
 				57F632FD2D71822A007270E8 /* SettingsListView.swift */,
@@ -13692,7 +13507,6 @@
 				57BA59B42E3F13C900110849 /* EmulationCore.swift */,
 				E5D10A010000000000000001 /* DuoLayoutKit.swift */,
 				E524FABA308866D4009885DA /* DuoHingeKit.swift */,
-				E524FC013090E591009885DA /* BitBopKit.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -14277,7 +14091,6 @@
 				00000000000051A100000014 /* NGP.swift in Sources */,
 				00000000000051A100000015 /* PCE.swift in Sources */,
 				00000000000051A100000016 /* Wii.swift in Sources */,
-				00000000000051A100000017 /* AddUrlGameView.swift in Sources */,
 				00000000000051A100000018 /* NGC.swift in Sources */,
 				00000000000051A100000019 /* Symbian.swift in Sources */,
 				00000000000051A10000001A /* FocusTypes.swift in Sources */,
@@ -14310,7 +14123,6 @@
 				00000000000051A100000035 /* GameCoverModifyView.swift in Sources */,
 				00000000000051A100000036 /* ControllersSettingView.swift in Sources */,
 				00000000000051A100000037 /* ImageFetcher.swift in Sources */,
-				00000000000051A100000038 /* AddTriggerButtonStyleView.swift in Sources */,
 				00000000000051A100000039 /* ASSwitch.swift in Sources */,
 				00000000000051A10000003A /* LocaleExtensions.swift in Sources */,
 				00000000000051A10000003B /* GG.swift in Sources */,
@@ -14326,7 +14138,6 @@
 				00000000000051A100000045 /* GlobalCoreSwitch.swift in Sources */,
 				00000000000051A100000046 /* ASListCustomCollectionCell.swift in Sources */,
 				00000000000051A100000047 /* ASSheetView.swift in Sources */,
-				00000000000051A100000048 /* CitraAdvancedSettingView.swift in Sources */,
 				00000000000051A100000049 /* WFCSettingView.swift in Sources */,
 				00000000000051A10000004A /* TransparentHoleView.swift in Sources */,
 				00000000000051A10000004B /* ASLabelView.swift in Sources */,
@@ -14353,7 +14164,6 @@
 				00000000000051A100000060 /* UniversalScript.swift in Sources */,
 				00000000000051A100000061 /* HomeTabBar.swift in Sources */,
 				00000000000051A100000062 /* ASText.swift in Sources */,
-				00000000000051A100000063 /* AddTriggerActionComboView.swift in Sources */,
 				00000000000051A100000064 /* IconView.swift in Sources */,
 				00000000000051A100000065 /* ShowableView.swift in Sources */,
 				00000000000051A100000066 /* Shader.swift in Sources */,
@@ -14394,7 +14204,6 @@
 				00000000000051A100000087 /* ThreeDSKeyboardView.swift in Sources */,
 				00000000000051A100000088 /* PriceItemCollectionCell.swift in Sources */,
 				00000000000051A100000089 /* CategorySelectionView.swift in Sources */,
-				00000000000051A10000008A /* AddTriggerActionView.swift in Sources */,
 				00000000000051A10000008B /* NDS.swift in Sources */,
 				00000000000051A10000008C /* GameInfoView.swift in Sources */,
 				00000000000051A10000008D /* ASNavigationView.swift in Sources */,
@@ -14407,14 +14216,12 @@
 				00000000000051A100000094 /* GameCheat.swift in Sources */,
 				00000000000051A100000095 /* GBA.swift in Sources */,
 				00000000000051A100000096 /* WFC.swift in Sources */,
-				00000000000051A100000097 /* AddTriggerActionSimpleView.swift in Sources */,
 				00000000000051A100000098 /* Skin.swift in Sources */,
 				00000000000051A100000099 /* A7800.swift in Sources */,
 				00000000000051A10000009A /* WebServer.swift in Sources */,
 				00000000000051A10000009B /* ASListToolView.swift in Sources */,
 				00000000000051A10000009C /* PhotoSaver.swift in Sources */,
 				00000000000051A10000009D /* PurchaseManager.swift in Sources */,
-				E524FC053090E598009885DA /* BitBopKit.swift in Sources */,
 				00000000000051A10000009E /* ProHUDExtensions.swift in Sources */,
 				00000000000051A10000009F /* FlexItemView.swift in Sources */,
 				00000000000051A1000000A0 /* BlankSlateCollectionView.swift in Sources */,
@@ -14425,8 +14232,6 @@
 				00000000000051A1000000A5 /* PlayHistoryItemCollectionCell.swift in Sources */,
 				00000000000051A1000000A6 /* ObjectUpdatable.swift in Sources */,
 				00000000000051A1000000A7 /* NDSSaveConverter.swift in Sources */,
-				00000000000051A1000000A8 /* MultiDiscDescCollectionCell.swift in Sources */,
-				00000000000051A1000000A9 /* PSXSBIImportView.swift in Sources */,
 				00000000000051A1000000AA /* ASViewEffects.swift in Sources */,
 				00000000000051A1000000AB /* PlatformSortCollectionViewCell.swift in Sources */,
 				00000000000051A1000000AC /* UIColorExtensions.swift in Sources */,
@@ -14443,7 +14248,6 @@
 				00000000000051A1000000B6 /* LibretroNetplayAnalogDpad.swift in Sources */,
 				00000000000051A1000000B7 /* GameSavePurchaseGuideView.swift in Sources */,
 				00000000000051A1000000B8 /* J2MENetworkBridge.swift in Sources */,
-				00000000000051A1000000B9 /* TriggerProPreviewController.swift in Sources */,
 				00000000000051A1000000BA /* Theme.swift in Sources */,
 				00000000000051A1000000BB /* SectionIndexViewItem.swift in Sources */,
 				00000000000051A1000000BC /* AirPlayViewController.swift in Sources */,
@@ -14470,12 +14274,9 @@
 				00000000000051A1000000D1 /* ShaderOrderView.swift in Sources */,
 				00000000000051A1000000D2 /* LandscapeBackgroundView.swift in Sources */,
 				00000000000051A1000000D3 /* UTTypeExtensions.swift in Sources */,
-				00000000000051A1000000D4 /* TriggerProView.swift in Sources */,
 				00000000000051A1000000D5 /* SG1000.swift in Sources */,
 				00000000000051A1000000D6 /* ASCheckView.swift in Sources */,
 				00000000000051A1000000D7 /* CarouselLayoutIcon.swift in Sources */,
-				00000000000051A1000000D8 /* PlayCasePromoView.swift in Sources */,
-				00000000000051A1000000D9 /* MultiDiscAddCollectionCell.swift in Sources */,
 				00000000000051A1000000DA /* iCloudSettingView.swift in Sources */,
 				00000000000051A1000000DB /* Database.swift in Sources */,
 				00000000000051A1000000DC /* ASSegment.swift in Sources */,
@@ -14500,7 +14301,6 @@
 				00000000000051A1000000EF /* ASCheck.swift in Sources */,
 				00000000000051A1000000F0 /* ASCornerStyle.swift in Sources */,
 				00000000000051A1000000F1 /* FileBrowserView.swift in Sources */,
-				00000000000051A1000000F2 /* PSXSBICollectionCell.swift in Sources */,
 				E524FAA7308864B4009885DA /* TabletopSizeTransitionCoordinator.swift in Sources */,
 				00000000000051A1000000F3 /* SkinCollectionViewCell.swift in Sources */,
 				00000000000051A1000000F4 /* Shaders.metal in Sources */,
@@ -14514,10 +14314,8 @@
 				00000000000051A1000000FC /* ArticBaseCollectionCell.swift in Sources */,
 				00000000000051A1000000FD /* AchievementsProfile.swift in Sources */,
 				00000000000051A1000000FE /* Manufacturer.swift in Sources */,
-				00000000000051A1000000FF /* PSXSBIDescCollectionCell.swift in Sources */,
 				00000000000051A100000100 /* BIOSItem.swift in Sources */,
 				00000000000051A100000101 /* GameOptionsSortView.swift in Sources */,
-				00000000000051A100000102 /* PSPNetworkingConfigCell.swift in Sources */,
 				00000000000051A100000103 /* PretendoHomeMenuCollectionCell.swift in Sources */,
 				00000000000051A100000104 /* Cipher.swift in Sources */,
 				00000000000051A100000105 /* WeakScriptMessageHandler.swift in Sources */,
@@ -14533,7 +14331,6 @@
 				00000000000051A10000010F /* SymbolButton.swift in Sources */,
 				00000000000051A100000110 /* SettingItem.swift in Sources */,
 				00000000000051A100000111 /* AddCheatCodeView.swift in Sources */,
-				00000000000051A100000112 /* PSPNetworkingConfigOnlineView.swift in Sources */,
 				00000000000051A100000113 /* ImportViewController.swift in Sources */,
 				00000000000051A100000114 /* GameCoverView.swift in Sources */,
 				00000000000051A100000115 /* GameOptionPerform.swift in Sources */,
@@ -14545,12 +14342,9 @@
 				00000000000051A10000011B /* TitleInputCollectionViewCell.swift in Sources */,
 				00000000000051A10000011C /* RetroAchievementCountView.swift in Sources */,
 				00000000000051A10000011D /* J2MEView.swift in Sources */,
-				00000000000051A10000011E /* PSPNetworkingConfigLocalView.swift in Sources */,
 				00000000000051A10000011F /* ImportService.swift in Sources */,
 				00000000000051A100000120 /* ShaderManager.swift in Sources */,
-				00000000000051A100000121 /* AddTriggerButtonView.swift in Sources */,
 				00000000000051A100000122 /* GameShortCutView.swift in Sources */,
-				00000000000051A100000123 /* MAMEBiosView.swift in Sources */,
 				00000000000051A100000124 /* CollectionFooterReusableView.swift in Sources */,
 				00000000000051A100000125 /* ASButtonView.swift in Sources */,
 				00000000000051A100000126 /* GameViewExtensions.swift in Sources */,
@@ -14583,15 +14377,12 @@
 				00000000000051A100000141 /* NumbersExtensions.swift in Sources */,
 				00000000000051A100000142 /* SequenceExtensions.swift in Sources */,
 				00000000000051A100000143 /* UIFontExtensions.swift in Sources */,
-				00000000000051A100000144 /* SettingsRateUsView.swift in Sources */,
 				00000000000051A100000145 /* UITextFieldExtensions.swift in Sources */,
 				00000000000051A100000146 /* ArrayExtensions.swift in Sources */,
 				00000000000051A100000147 /* FlexSkinSettingViewController.swift in Sources */,
 				00000000000051A100000148 /* BIOSCollectionViewCell.swift in Sources */,
 				00000000000051A100000149 /* ASTextView.swift in Sources */,
 				00000000000051A10000014A /* SparkleSeperatorView.swift in Sources */,
-				00000000000051A10000014B /* MultiDiscItemCollectionCell.swift in Sources */,
-				00000000000051A10000014C /* PSPNetworkingSwitchCell.swift in Sources */,
 				00000000000051A10000014D /* SS.swift in Sources */,
 				00000000000051A10000014E /* LibretroCoreConfigsView.swift in Sources */,
 				00000000000051A10000014F /* NoControllCollectionView.swift in Sources */,
@@ -14605,15 +14396,12 @@
 				00000000000051A100000157 /* A2600.swift in Sources */,
 				00000000000051A100000158 /* ASCardView.swift in Sources */,
 				00000000000051A100000159 /* UIStackViewExtensions.swift in Sources */,
-				00000000000051A10000015A /* TriggerProManageView.swift in Sources */,
 				00000000000051A10000015B /* PlayViewController.swift in Sources */,
-				00000000000051A10000015C /* MultiDiscBuilderView.swift in Sources */,
 				00000000000051A10000015D /* GameMetadataView.swift in Sources */,
 				00000000000051A10000015E /* MCD.swift in Sources */,
 				00000000000051A10000015F /* ProHUDExtentions.swift in Sources */,
 				00000000000051A100000160 /* EmulationCore.swift in Sources */,
 				00000000000051A100000161 /* GameListView.swift in Sources */,
-				00000000000051A100000162 /* TriggerButton.swift in Sources */,
 				00000000000051A100000163 /* FilesSyncManager.swift in Sources */,
 				00000000000051A100000164 /* FilesSyncPolicy.swift in Sources */,
 				E524FAB230886523009885DA /* DuoTabletopKit.swift in Sources */,
@@ -14644,7 +14432,6 @@
 				00000000000051A10000017D /* OnlineCoverManager.swift in Sources */,
 				00000000000051A10000017E /* MappingInputPopupView.swift in Sources */,
 				00000000000051A10000017F /* GamesToolView.swift in Sources */,
-				00000000000051A100000180 /* J2MESettingView.swift in Sources */,
 				00000000000051A100000181 /* NSAttributedStringExtensions.swift in Sources */,
 				00000000000051A100000182 /* RetroAchievementsLaunchView.swift in Sources */,
 				00000000000051A100000183 /* FeaturesCell.swift in Sources */,
@@ -14663,9 +14450,6 @@
 				00000000000051A10000018F /* PurchaseView.swift in Sources */,
 				57F2A8052F8E100100C62FF6 /* PurchaseBackgroundView.swift in Sources */,
 				00000000000051A100000190 /* PlayHistoryBlankSlateView.swift in Sources */,
-				00000000000051A100000191 /* AddTriggerActionHoldView.swift in Sources */,
-				00000000000051A100000192 /* PSPNetworkingView.swift in Sources */,
-				00000000000051A100000193 /* AddTriggerMappingListView.swift in Sources */,
 				E524FA5730879B06009885DA /* DuoTabletopControlView.swift in Sources */,
 				00000000000051A100000194 /* JGenesisView.swift in Sources */,
 				00000000000051A100000195 /* GradientView.swift in Sources */,
@@ -14678,7 +14462,6 @@
 				00000000000051A10000019C /* BonjourKit.swift in Sources */,
 				00000000000051A10000019D /* BaseNavigationController.swift in Sources */,
 				00000000000051A10000019E /* ResourcesKit.swift in Sources */,
-				00000000000051A10000019F /* SkinButtonBindingView.swift in Sources */,
 				00000000000051A1000001A0 /* ASListPageView.swift in Sources */,
 				00000000000051A1000001A1 /* GamesNavigationView.swift in Sources */,
 				00000000000051A1000001A2 /* GamesCollectionReusableView.swift in Sources */,
@@ -14724,7 +14507,6 @@
 				57909387303C7D9100A53656 /* NGP.swift in Sources */,
 				57909388303C7D9100A53656 /* PCE.swift in Sources */,
 				57909389303C7D9100A53656 /* Wii.swift in Sources */,
-				57C4471A3057D7E00099C15F /* AddUrlGameView.swift in Sources */,
 				5790938A303C7D9100A53656 /* NGC.swift in Sources */,
 				5790938B303C7D9100A53656 /* Symbian.swift in Sources */,
 				5790938C303C7D9100A53656 /* FocusTypes.swift in Sources */,
@@ -14757,7 +14539,6 @@
 				579093A5303C7D9100A53656 /* GameCoverModifyView.swift in Sources */,
 				579093A6303C7D9100A53656 /* ControllersSettingView.swift in Sources */,
 				579093A7303C7D9100A53656 /* ImageFetcher.swift in Sources */,
-				579093A8303C7D9100A53656 /* AddTriggerButtonStyleView.swift in Sources */,
 				579093A9303C7D9100A53656 /* ASSwitch.swift in Sources */,
 				579093AA303C7D9100A53656 /* LocaleExtensions.swift in Sources */,
 				579093AB303C7D9100A53656 /* GG.swift in Sources */,
@@ -14773,7 +14554,6 @@
 				579093B4303C7D9100A53656 /* GlobalCoreSwitch.swift in Sources */,
 				579093B5303C7D9100A53656 /* ASListCustomCollectionCell.swift in Sources */,
 				579093B6303C7D9100A53656 /* ASSheetView.swift in Sources */,
-				579093B7303C7D9100A53656 /* CitraAdvancedSettingView.swift in Sources */,
 				579093B8303C7D9100A53656 /* WFCSettingView.swift in Sources */,
 				579093B9303C7D9100A53656 /* TransparentHoleView.swift in Sources */,
 				579093BA303C7D9100A53656 /* ASLabelView.swift in Sources */,
@@ -14800,7 +14580,6 @@
 				579093CC303C7D9100A53656 /* UniversalScript.swift in Sources */,
 				579093CD303C7D9100A53656 /* HomeTabBar.swift in Sources */,
 				579093CE303C7D9100A53656 /* ASText.swift in Sources */,
-				579093CF303C7D9100A53656 /* AddTriggerActionComboView.swift in Sources */,
 				579093D0303C7D9100A53656 /* IconView.swift in Sources */,
 				579093D1303C7D9100A53656 /* ShowableView.swift in Sources */,
 				579093D2303C7D9100A53656 /* Shader.swift in Sources */,
@@ -14841,7 +14620,6 @@
 				579093F3303C7D9100A53656 /* ThreeDSKeyboardView.swift in Sources */,
 				579093F4303C7D9100A53656 /* PriceItemCollectionCell.swift in Sources */,
 				579093F5303C7D9100A53656 /* CategorySelectionView.swift in Sources */,
-				579093F6303C7D9100A53656 /* AddTriggerActionView.swift in Sources */,
 				579093F7303C7D9100A53656 /* NDS.swift in Sources */,
 				579093F8303C7D9100A53656 /* GameInfoView.swift in Sources */,
 				579093F9303C7D9100A53656 /* ASNavigationView.swift in Sources */,
@@ -14854,14 +14632,12 @@
 				579093FF303C7D9100A53656 /* GameCheat.swift in Sources */,
 				57909400303C7D9100A53656 /* GBA.swift in Sources */,
 				57909401303C7D9100A53656 /* WFC.swift in Sources */,
-				57909402303C7D9100A53656 /* AddTriggerActionSimpleView.swift in Sources */,
 				57909403303C7D9100A53656 /* Skin.swift in Sources */,
 				57909404303C7D9100A53656 /* A7800.swift in Sources */,
 				57909405303C7D9100A53656 /* WebServer.swift in Sources */,
 				57909406303C7D9100A53656 /* ASListToolView.swift in Sources */,
 				57909407303C7D9100A53656 /* PhotoSaver.swift in Sources */,
 				57909408303C7D9100A53656 /* PurchaseManager.swift in Sources */,
-				E524FC033090E598009885DA /* BitBopKit.swift in Sources */,
 				E5A00BB43080B2CC00E99223 /* ProHUDExtensions.swift in Sources */,
 				57909409303C7D9100A53656 /* FlexItemView.swift in Sources */,
 				5790940A303C7D9100A53656 /* BlankSlateCollectionView.swift in Sources */,
@@ -14872,8 +14648,6 @@
 				5790940F303C7D9100A53656 /* PlayHistoryItemCollectionCell.swift in Sources */,
 				57909410303C7D9100A53656 /* ObjectUpdatable.swift in Sources */,
 				57909411303C7D9100A53656 /* NDSSaveConverter.swift in Sources */,
-				57909412303C7D9100A53656 /* MultiDiscDescCollectionCell.swift in Sources */,
-				57909413303C7D9100A53656 /* PSXSBIImportView.swift in Sources */,
 				57909414303C7D9100A53656 /* ASViewEffects.swift in Sources */,
 				57909415303C7D9100A53656 /* PlatformSortCollectionViewCell.swift in Sources */,
 				57909416303C7D9100A53656 /* UIColorExtensions.swift in Sources */,
@@ -14890,7 +14664,6 @@
 				57C81DAF2FD6082600A8D0A1 /* LibretroNetplayAnalogDpad.swift in Sources */,
 				57909420303C7D9100A53656 /* GameSavePurchaseGuideView.swift in Sources */,
 				57909421303C7D9100A53656 /* J2MENetworkBridge.swift in Sources */,
-				57909422303C7D9100A53656 /* TriggerProPreviewController.swift in Sources */,
 				57909423303C7D9100A53656 /* Theme.swift in Sources */,
 				57909424303C7D9100A53656 /* SectionIndexViewItem.swift in Sources */,
 				57909425303C7D9100A53656 /* AirPlayViewController.swift in Sources */,
@@ -14917,12 +14690,9 @@
 				5790943A303C7D9100A53656 /* ShaderOrderView.swift in Sources */,
 				5790943B303C7D9100A53656 /* LandscapeBackgroundView.swift in Sources */,
 				5790943C303C7D9100A53656 /* UTTypeExtensions.swift in Sources */,
-				5790943D303C7D9100A53656 /* TriggerProView.swift in Sources */,
 				5790943E303C7D9100A53656 /* SG1000.swift in Sources */,
 				5790943F303C7D9100A53656 /* ASCheckView.swift in Sources */,
 				57909440303C7D9100A53656 /* CarouselLayoutIcon.swift in Sources */,
-				57909441303C7D9100A53656 /* PlayCasePromoView.swift in Sources */,
-				57909442303C7D9100A53656 /* MultiDiscAddCollectionCell.swift in Sources */,
 				57909443303C7D9100A53656 /* iCloudSettingView.swift in Sources */,
 				57909444303C7D9100A53656 /* Database.swift in Sources */,
 				57909445303C7D9100A53656 /* ASSegment.swift in Sources */,
@@ -14947,7 +14717,6 @@
 				57909458303C7D9100A53656 /* ASCheck.swift in Sources */,
 				57909459303C7D9100A53656 /* ASCornerStyle.swift in Sources */,
 				5790945A303C7D9100A53656 /* FileBrowserView.swift in Sources */,
-				5790945B303C7D9100A53656 /* PSXSBICollectionCell.swift in Sources */,
 				E524FAA6308864B4009885DA /* TabletopSizeTransitionCoordinator.swift in Sources */,
 				5790945C303C7D9100A53656 /* SkinCollectionViewCell.swift in Sources */,
 				5790945D303C7D9100A53656 /* Shaders.metal in Sources */,
@@ -14961,10 +14730,8 @@
 				57909465303C7D9100A53656 /* ArticBaseCollectionCell.swift in Sources */,
 				57909466303C7D9100A53656 /* AchievementsProfile.swift in Sources */,
 				57909467303C7D9100A53656 /* Manufacturer.swift in Sources */,
-				57909468303C7D9100A53656 /* PSXSBIDescCollectionCell.swift in Sources */,
 				57909469303C7D9100A53656 /* BIOSItem.swift in Sources */,
 				5790946A303C7D9100A53656 /* GameOptionsSortView.swift in Sources */,
-				5790946B303C7D9100A53656 /* PSPNetworkingConfigCell.swift in Sources */,
 				5790946C303C7D9100A53656 /* PretendoHomeMenuCollectionCell.swift in Sources */,
 				5790946D303C7D9100A53656 /* Cipher.swift in Sources */,
 				5790946E303C7D9100A53656 /* WeakScriptMessageHandler.swift in Sources */,
@@ -14980,7 +14747,6 @@
 				57909478303C7D9100A53656 /* SymbolButton.swift in Sources */,
 				57909479303C7D9100A53656 /* SettingItem.swift in Sources */,
 				5790947A303C7D9100A53656 /* AddCheatCodeView.swift in Sources */,
-				5790947B303C7D9100A53656 /* PSPNetworkingConfigOnlineView.swift in Sources */,
 				5790947C303C7D9100A53656 /* ImportViewController.swift in Sources */,
 				5790947D303C7D9100A53656 /* GameCoverView.swift in Sources */,
 				5790947E303C7D9100A53656 /* GameOptionPerform.swift in Sources */,
@@ -14992,12 +14758,9 @@
 				57909484303C7D9100A53656 /* TitleInputCollectionViewCell.swift in Sources */,
 				57909485303C7D9100A53656 /* RetroAchievementCountView.swift in Sources */,
 				57909486303C7D9100A53656 /* J2MEView.swift in Sources */,
-				57909487303C7D9100A53656 /* PSPNetworkingConfigLocalView.swift in Sources */,
 				57909488303C7D9100A53656 /* ImportService.swift in Sources */,
 				57909489303C7D9100A53656 /* ShaderManager.swift in Sources */,
-				5790948A303C7D9100A53656 /* AddTriggerButtonView.swift in Sources */,
 				5790948B303C7D9100A53656 /* GameShortCutView.swift in Sources */,
-				5790948C303C7D9100A53656 /* MAMEBiosView.swift in Sources */,
 				5790948D303C7D9100A53656 /* CollectionFooterReusableView.swift in Sources */,
 				5790948E303C7D9100A53656 /* ASButtonView.swift in Sources */,
 				5790948F303C7D9100A53656 /* GameViewExtensions.swift in Sources */,
@@ -15030,15 +14793,12 @@
 				579094AA303C7D9100A53656 /* NumbersExtensions.swift in Sources */,
 				579094AB303C7D9100A53656 /* SequenceExtensions.swift in Sources */,
 				579094AC303C7D9100A53656 /* UIFontExtensions.swift in Sources */,
-				579094AD303C7D9100A53656 /* SettingsRateUsView.swift in Sources */,
 				579094AE303C7D9100A53656 /* UITextFieldExtensions.swift in Sources */,
 				579094AF303C7D9100A53656 /* ArrayExtensions.swift in Sources */,
 				579094B0303C7D9100A53656 /* FlexSkinSettingViewController.swift in Sources */,
 				579094B1303C7D9100A53656 /* BIOSCollectionViewCell.swift in Sources */,
 				579094B2303C7D9100A53656 /* ASTextView.swift in Sources */,
 				579094B3303C7D9100A53656 /* SparkleSeperatorView.swift in Sources */,
-				579094B4303C7D9100A53656 /* MultiDiscItemCollectionCell.swift in Sources */,
-				579094B5303C7D9100A53656 /* PSPNetworkingSwitchCell.swift in Sources */,
 				579094B6303C7D9100A53656 /* SS.swift in Sources */,
 				579094B7303C7D9100A53656 /* LibretroCoreConfigsView.swift in Sources */,
 				579094B8303C7D9100A53656 /* NoControllCollectionView.swift in Sources */,
@@ -15052,15 +14812,12 @@
 				579094C0303C7D9100A53656 /* A2600.swift in Sources */,
 				579094C1303C7D9100A53656 /* ASCardView.swift in Sources */,
 				579094C2303C7D9100A53656 /* UIStackViewExtensions.swift in Sources */,
-				579094C3303C7D9100A53656 /* TriggerProManageView.swift in Sources */,
 				579094C4303C7D9100A53656 /* PlayViewController.swift in Sources */,
-				579094C5303C7D9100A53656 /* MultiDiscBuilderView.swift in Sources */,
 				579094C6303C7D9100A53656 /* GameMetadataView.swift in Sources */,
 				579094C7303C7D9100A53656 /* MCD.swift in Sources */,
 				579094C8303C7D9100A53656 /* ProHUDExtentions.swift in Sources */,
 				579094C9303C7D9100A53656 /* EmulationCore.swift in Sources */,
 				579094CA303C7D9100A53656 /* GameListView.swift in Sources */,
-				579094CB303C7D9100A53656 /* TriggerButton.swift in Sources */,
 				57EBA5533052D8AA0017A6C3 /* FilesSyncManager.swift in Sources */,
 				57EBA5613052D8AA0017A6C3 /* FilesSyncPolicy.swift in Sources */,
 				E524FAB030886523009885DA /* DuoTabletopKit.swift in Sources */,
@@ -15091,7 +14848,6 @@
 				579094DF303C7D9100A53656 /* OnlineCoverManager.swift in Sources */,
 				579094E0303C7D9100A53656 /* MappingInputPopupView.swift in Sources */,
 				579094E1303C7D9100A53656 /* GamesToolView.swift in Sources */,
-				579094E2303C7D9100A53656 /* J2MESettingView.swift in Sources */,
 				579094E3303C7D9100A53656 /* NSAttributedStringExtensions.swift in Sources */,
 				579094E4303C7D9100A53656 /* RetroAchievementsLaunchView.swift in Sources */,
 				579094E5303C7D9100A53656 /* FeaturesCell.swift in Sources */,
@@ -15110,9 +14866,6 @@
 				579094F1303C7D9100A53656 /* PurchaseView.swift in Sources */,
 				57F2A8032F8E100100C62FF6 /* PurchaseBackgroundView.swift in Sources */,
 				579094F2303C7D9100A53656 /* PlayHistoryBlankSlateView.swift in Sources */,
-				579094F3303C7D9100A53656 /* AddTriggerActionHoldView.swift in Sources */,
-				579094F4303C7D9100A53656 /* PSPNetworkingView.swift in Sources */,
-				579094F5303C7D9100A53656 /* AddTriggerMappingListView.swift in Sources */,
 				E524FA5830879B06009885DA /* DuoTabletopControlView.swift in Sources */,
 				579094F6303C7D9100A53656 /* JGenesisView.swift in Sources */,
 				579094F7303C7D9100A53656 /* GradientView.swift in Sources */,
@@ -15125,7 +14878,6 @@
 				579094FE303C7D9100A53656 /* BonjourKit.swift in Sources */,
 				579094FF303C7D9100A53656 /* BaseNavigationController.swift in Sources */,
 				57909500303C7D9100A53656 /* ResourcesKit.swift in Sources */,
-				57D48BDD30585CDA00151935 /* SkinButtonBindingView.swift in Sources */,
 				57909501303C7D9100A53656 /* ASListPageView.swift in Sources */,
 				57909502303C7D9100A53656 /* GamesNavigationView.swift in Sources */,
 				57909503303C7D9100A53656 /* GamesCollectionReusableView.swift in Sources */,
@@ -15207,7 +14959,6 @@
 				A672B510CD9141B18392D564 /* NGP.swift in Sources */,
 				1CAAD3DB49C34DAD998DD033 /* PCE.swift in Sources */,
 				0E964747C5B24B348A8665E0 /* Wii.swift in Sources */,
-				57C447193057D7E00099C15F /* AddUrlGameView.swift in Sources */,
 				3008E79240634E729DB35FEB /* NGC.swift in Sources */,
 				75A984D24586436BA6AF31C9 /* Symbian.swift in Sources */,
 				F0C500000000000000000201 /* FocusTypes.swift in Sources */,
@@ -15240,7 +14991,6 @@
 				57D94254302CA90B00C06208 /* GameCoverModifyView.swift in Sources */,
 				57CDCD9A2FD5CBD3005BA4C8 /* ControllersSettingView.swift in Sources */,
 				57CDCD9C2FD5CBD3005BA4C8 /* ImageFetcher.swift in Sources */,
-				57D483C13021D61D0030A771 /* AddTriggerButtonStyleView.swift in Sources */,
 				5796DB272FE419680051F661 /* ASSwitch.swift in Sources */,
 				57CDCD9D2FD5CBD3005BA4C8 /* LocaleExtensions.swift in Sources */,
 				57CDCD9E2FD5CBD3005BA4C8 /* GG.swift in Sources */,
@@ -15256,7 +15006,6 @@
 				57CDCDA62FD5CBD3005BA4C8 /* GlobalCoreSwitch.swift in Sources */,
 				57D482B23019D3330030A771 /* ASListCustomCollectionCell.swift in Sources */,
 				57C79DE12FE3EC49003C737F /* ASSheetView.swift in Sources */,
-				57D942E4302F72CE00C06208 /* CitraAdvancedSettingView.swift in Sources */,
 				57CDCDA72FD5CBD3005BA4C8 /* WFCSettingView.swift in Sources */,
 				57CDCDA92FD5CBD3005BA4C8 /* TransparentHoleView.swift in Sources */,
 				5742E1B42FDA9A330031A726 /* ASLabelView.swift in Sources */,
@@ -15283,7 +15032,6 @@
 				57CDCDBA2FD5CBD3005BA4C8 /* UniversalScript.swift in Sources */,
 				57CDCDBB2FD5CBD3005BA4C8 /* HomeTabBar.swift in Sources */,
 				5796DB082FE416BA0051F661 /* ASText.swift in Sources */,
-				57D4842F302312020030A771 /* AddTriggerActionComboView.swift in Sources */,
 				57CDCDBC2FD5CBD3005BA4C8 /* IconView.swift in Sources */,
 				57F1D43D2FF3D53B00FC5B2A /* ShowableView.swift in Sources */,
 				57CDCDBD2FD5CBD3005BA4C8 /* Shader.swift in Sources */,
@@ -15324,7 +15072,6 @@
 				57CDCDDB2FD5CBD3005BA4C8 /* ThreeDSKeyboardView.swift in Sources */,
 				57CDCDDC2FD5CBD3005BA4C8 /* PriceItemCollectionCell.swift in Sources */,
 				57F1D4052FF2160600FC5B2A /* CategorySelectionView.swift in Sources */,
-				57D483B63021D4C70030A771 /* AddTriggerActionView.swift in Sources */,
 				57CDCDDD2FD5CBD3005BA4C8 /* NDS.swift in Sources */,
 				57CDCDDE2FD5CBD3005BA4C8 /* GameInfoView.swift in Sources */,
 				57BF5FDF2FE0223E0073D318 /* ASNavigationView.swift in Sources */,
@@ -15337,14 +15084,12 @@
 				57CDCDE32FD5CBD3005BA4C8 /* GameCheat.swift in Sources */,
 				57CDCDE42FD5CBD3005BA4C8 /* GBA.swift in Sources */,
 				57CDCDE52FD5CBD3005BA4C8 /* WFC.swift in Sources */,
-				57D4841A3023119B0030A771 /* AddTriggerActionSimpleView.swift in Sources */,
 				57CDCDE62FD5CBD3005BA4C8 /* Skin.swift in Sources */,
 				57CDCDE72FD5CBD3005BA4C8 /* A7800.swift in Sources */,
 				57CDCDE92FD5CBD3005BA4C8 /* WebServer.swift in Sources */,
 				57BF60962FE2ABF70073D318 /* ASListToolView.swift in Sources */,
 				57CDCDEA2FD5CBD3005BA4C8 /* PhotoSaver.swift in Sources */,
 				57CDCDEC2FD5CBD3005BA4C8 /* PurchaseManager.swift in Sources */,
-				E524FC023090E598009885DA /* BitBopKit.swift in Sources */,
 				E5A00BB23080B2CC00E99223 /* ProHUDExtensions.swift in Sources */,
 				577160AF30078D680088345B /* FlexItemView.swift in Sources */,
 				57CDCDED2FD5CBD3005BA4C8 /* BlankSlateCollectionView.swift in Sources */,
@@ -15355,8 +15100,6 @@
 				57CDCDF22FD5CBD3005BA4C8 /* PlayHistoryItemCollectionCell.swift in Sources */,
 				57CDCDF32FD5CBD3005BA4C8 /* ObjectUpdatable.swift in Sources */,
 				57CDCDF42FD5CBD3005BA4C8 /* NDSSaveConverter.swift in Sources */,
-				57CDCDF52FD5CBD3005BA4C8 /* MultiDiscDescCollectionCell.swift in Sources */,
-				57CDCDF62FD5CBD3005BA4C8 /* PSXSBIImportView.swift in Sources */,
 				57BF60712FE278B80073D318 /* ASViewEffects.swift in Sources */,
 				57CDCDF72FD5CBD3005BA4C8 /* PlatformSortCollectionViewCell.swift in Sources */,
 				57CDCDF82FD5CBD3005BA4C8 /* UIColorExtensions.swift in Sources */,
@@ -15373,7 +15116,6 @@
 				57C81DB02FD6082600A8D0A1 /* LibretroNetplayAnalogDpad.swift in Sources */,
 				57CDCE062FD5CBD3005BA4C8 /* GameSavePurchaseGuideView.swift in Sources */,
 				57CDCE072FD5CBD3005BA4C8 /* J2MENetworkBridge.swift in Sources */,
-				57CDCE082FD5CBD3005BA4C8 /* TriggerProPreviewController.swift in Sources */,
 				57CDCE092FD5CBD3005BA4C8 /* Theme.swift in Sources */,
 				57CDCE0A2FD5CBD3005BA4C8 /* SectionIndexViewItem.swift in Sources */,
 				57CDCE0B2FD5CBD3005BA4C8 /* AirPlayViewController.swift in Sources */,
@@ -15400,12 +15142,9 @@
 				57CDCE272FD5CBD3005BA4C8 /* ShaderOrderView.swift in Sources */,
 				57FD13F430110A34007F211A /* LandscapeBackgroundView.swift in Sources */,
 				57CDCE282FD5CBD3005BA4C8 /* UTTypeExtensions.swift in Sources */,
-				57CDCE292FD5CBD3005BA4C8 /* TriggerProView.swift in Sources */,
 				57CDCE2A2FD5CBD3005BA4C8 /* SG1000.swift in Sources */,
 				57BF5ED92FDB09A80073D318 /* ASCheckView.swift in Sources */,
 				5760A3933029CB9E002CCF6B /* CarouselLayoutIcon.swift in Sources */,
-				577160733005FAEE0088345B /* PlayCasePromoView.swift in Sources */,
-				57CDCE2B2FD5CBD3005BA4C8 /* MultiDiscAddCollectionCell.swift in Sources */,
 				57CDCE2C2FD5CBD3005BA4C8 /* iCloudSettingView.swift in Sources */,
 				57CDCE2D2FD5CBD3005BA4C8 /* Database.swift in Sources */,
 				5796DB522FE41AA30051F661 /* ASSegment.swift in Sources */,
@@ -15430,7 +15169,6 @@
 				5796DB352FE419E00051F661 /* ASCheck.swift in Sources */,
 				5796DB122FE417E80051F661 /* ASCornerStyle.swift in Sources */,
 				57D48251301702BA0030A771 /* FileBrowserView.swift in Sources */,
-				57CDCE3F2FD5CBD3005BA4C8 /* PSXSBICollectionCell.swift in Sources */,
 				E524FAA4308864B4009885DA /* TabletopSizeTransitionCoordinator.swift in Sources */,
 				57CDCE402FD5CBD3005BA4C8 /* SkinCollectionViewCell.swift in Sources */,
 				57CDCE412FD5CBD3005BA4C8 /* Shaders.metal in Sources */,
@@ -15444,10 +15182,8 @@
 				57CDCE482FD5CBD3005BA4C8 /* ArticBaseCollectionCell.swift in Sources */,
 				57CDCE492FD5CBD3005BA4C8 /* AchievementsProfile.swift in Sources */,
 				57CDCE4A2FD5CBD3005BA4C8 /* Manufacturer.swift in Sources */,
-				57CDCE4B2FD5CBD3005BA4C8 /* PSXSBIDescCollectionCell.swift in Sources */,
 				57CDCE4C2FD5CBD3005BA4C8 /* BIOSItem.swift in Sources */,
 				57D482993018F9520030A771 /* GameOptionsSortView.swift in Sources */,
-				57CDCE4E2FD5CBD3005BA4C8 /* PSPNetworkingConfigCell.swift in Sources */,
 				57CDCE502FD5CBD3005BA4C8 /* PretendoHomeMenuCollectionCell.swift in Sources */,
 				57CDCE512FD5CBD3005BA4C8 /* Cipher.swift in Sources */,
 				57CDCE522FD5CBD3005BA4C8 /* WeakScriptMessageHandler.swift in Sources */,
@@ -15463,7 +15199,6 @@
 				57CDCE602FD5CBD3005BA4C8 /* SymbolButton.swift in Sources */,
 				57CDCE612FD5CBD3005BA4C8 /* SettingItem.swift in Sources */,
 				57CDCE622FD5CBD3005BA4C8 /* AddCheatCodeView.swift in Sources */,
-				57CDCE642FD5CBD3005BA4C8 /* PSPNetworkingConfigOnlineView.swift in Sources */,
 				57CDCE652FD5CBD3005BA4C8 /* ImportViewController.swift in Sources */,
 				57CDCE672FD5CBD3005BA4C8 /* GameCoverView.swift in Sources */,
 				57D483993020EA770030A771 /* GameOptionPerform.swift in Sources */,
@@ -15475,12 +15210,9 @@
 				57E01075300CB3D8009AA38C /* TitleInputCollectionViewCell.swift in Sources */,
 				57CDCE712FD5CBD3005BA4C8 /* RetroAchievementCountView.swift in Sources */,
 				57CDCE722FD5CBD3005BA4C8 /* J2MEView.swift in Sources */,
-				57CDCE732FD5CBD3005BA4C8 /* PSPNetworkingConfigLocalView.swift in Sources */,
 				57CDCE742FD5CBD3005BA4C8 /* ImportService.swift in Sources */,
 				57CDCE752FD5CBD3005BA4C8 /* ShaderManager.swift in Sources */,
-				57CDCE762FD5CBD3005BA4C8 /* AddTriggerButtonView.swift in Sources */,
 				57D48378301F57C20030A771 /* GameShortCutView.swift in Sources */,
-				57CDCE772FD5CBD3005BA4C8 /* MAMEBiosView.swift in Sources */,
 				57CDCE782FD5CBD3005BA4C8 /* CollectionFooterReusableView.swift in Sources */,
 				57744ADF2FD91C8600DECBC7 /* ASButtonView.swift in Sources */,
 				57CDCE7A2FD5CBD3005BA4C8 /* GameViewExtensions.swift in Sources */,
@@ -15513,15 +15245,12 @@
 				57CDCE952FD5CBD3005BA4C8 /* NumbersExtensions.swift in Sources */,
 				57D483AA30217B060030A771 /* SequenceExtensions.swift in Sources */,
 				57CDCE962FD5CBD3005BA4C8 /* UIFontExtensions.swift in Sources */,
-				57ABFBB62FED1756001C1425 /* SettingsRateUsView.swift in Sources */,
 				57CDCE982FD5CBD3005BA4C8 /* UITextFieldExtensions.swift in Sources */,
 				57CDCE9A2FD5CBD3005BA4C8 /* ArrayExtensions.swift in Sources */,
 				57CDCE9B2FD5CBD3005BA4C8 /* FlexSkinSettingViewController.swift in Sources */,
 				57CDCE9D2FD5CBD3005BA4C8 /* BIOSCollectionViewCell.swift in Sources */,
 				579454222FE683F700D32DD6 /* ASTextView.swift in Sources */,
 				57CDCE9E2FD5CBD3005BA4C8 /* SparkleSeperatorView.swift in Sources */,
-				57CDCE9F2FD5CBD3005BA4C8 /* MultiDiscItemCollectionCell.swift in Sources */,
-				57CDCEA02FD5CBD3005BA4C8 /* PSPNetworkingSwitchCell.swift in Sources */,
 				57CDCEA12FD5CBD3005BA4C8 /* SS.swift in Sources */,
 				5760A36A3028CAFE002CCF6B /* LibretroCoreConfigsView.swift in Sources */,
 				57CDCEA32FD5CBD3005BA4C8 /* NoControllCollectionView.swift in Sources */,
@@ -15535,15 +15264,12 @@
 				57CDCEAB2FD5CBD3005BA4C8 /* A2600.swift in Sources */,
 				5771610A300A1C830088345B /* ASCardView.swift in Sources */,
 				57BF60FF2FE3215B0073D318 /* UIStackViewExtensions.swift in Sources */,
-				57D483A43020EDB50030A771 /* TriggerProManageView.swift in Sources */,
 				57CDCEAE2FD5CBD3005BA4C8 /* PlayViewController.swift in Sources */,
-				57D48450302330060030A771 /* MultiDiscBuilderView.swift in Sources */,
 				57D941F8302BFC9400C06208 /* GameMetadataView.swift in Sources */,
 				57CDCEB02FD5CBD3005BA4C8 /* MCD.swift in Sources */,
 				57CDCEB12FD5CBD3005BA4C8 /* ProHUDExtentions.swift in Sources */,
 				57CDCEB22FD5CBD3005BA4C8 /* EmulationCore.swift in Sources */,
 				57CDCEB32FD5CBD3005BA4C8 /* GameListView.swift in Sources */,
-				57CDCEB42FD5CBD3005BA4C8 /* TriggerButton.swift in Sources */,
 				57EBA5543052D8AA0017A6C3 /* FilesSyncManager.swift in Sources */,
 				57EBA5623052D8AA0017A6C3 /* FilesSyncPolicy.swift in Sources */,
 				E524FAB130886523009885DA /* DuoTabletopKit.swift in Sources */,
@@ -15574,7 +15300,6 @@
 				57CDCECA2FD5CBD3005BA4C8 /* OnlineCoverManager.swift in Sources */,
 				57CDCECC2FD5CBD3005BA4C8 /* MappingInputPopupView.swift in Sources */,
 				57CDCECD2FD5CBD3005BA4C8 /* GamesToolView.swift in Sources */,
-				57CDCECE2FD5CBD3005BA4C8 /* J2MESettingView.swift in Sources */,
 				57CDCED02FD5CBD3005BA4C8 /* NSAttributedStringExtensions.swift in Sources */,
 				577160EF300931900088345B /* RetroAchievementsLaunchView.swift in Sources */,
 				57CDCED12FD5CBD3005BA4C8 /* FeaturesCell.swift in Sources */,
@@ -15593,9 +15318,6 @@
 				57CDCED92FD5CBD3005BA4C8 /* PurchaseView.swift in Sources */,
 				57F2A8042F8E100100C62FF6 /* PurchaseBackgroundView.swift in Sources */,
 				57CDCEDA2FD5CBD3005BA4C8 /* PlayHistoryBlankSlateView.swift in Sources */,
-				57D48421302311D00030A771 /* AddTriggerActionHoldView.swift in Sources */,
-				57CDCEDB2FD5CBD3005BA4C8 /* PSPNetworkingView.swift in Sources */,
-				57D483CE3021D6D30030A771 /* AddTriggerMappingListView.swift in Sources */,
 				E524FA5530879B06009885DA /* DuoTabletopControlView.swift in Sources */,
 				57CDCEDC2FD5CBD3005BA4C8 /* JGenesisView.swift in Sources */,
 				57CDCEDD2FD5CBD3005BA4C8 /* GradientView.swift in Sources */,
@@ -15608,7 +15330,6 @@
 				57CDCEE42FD5CBD3005BA4C8 /* BonjourKit.swift in Sources */,
 				57CDCEE52FD5CBD3005BA4C8 /* BaseNavigationController.swift in Sources */,
 				57CDCEE62FD5CBD3005BA4C8 /* ResourcesKit.swift in Sources */,
-				57D48BDB30585CDA00151935 /* SkinButtonBindingView.swift in Sources */,
 				57C65AE42FD6B2D200BB73E0 /* ASListPageView.swift in Sources */,
 				57CDCEEA2FD5CBD3005BA4C8 /* GamesNavigationView.swift in Sources */,
 				57CDCEEC2FD5CBD3005BA4C8 /* GamesCollectionReusableView.swift in Sources */,
@@ -15705,7 +15426,6 @@
 				57D94253302CA90B00C06208 /* GameCoverModifyView.swift in Sources */,
 				5770068D2D438FEA00762E8F /* ControllersSettingView.swift in Sources */,
 				57CCB34A2D65B3DC0036476B /* ImageFetcher.swift in Sources */,
-				57D483C23021D61D0030A771 /* AddTriggerButtonStyleView.swift in Sources */,
 				5796DB282FE419680051F661 /* ASSwitch.swift in Sources */,
 				57F633042D718C4E007270E8 /* LocaleExtensions.swift in Sources */,
 				5706B03B2DFBEC240066122E /* GG.swift in Sources */,
@@ -15722,7 +15442,6 @@
 				578E4B592F8A2F480027E6D0 /* GlobalCoreSwitch.swift in Sources */,
 				57D482B33019D3330030A771 /* ASListCustomCollectionCell.swift in Sources */,
 				57C79DE22FE3EC49003C737F /* ASSheetView.swift in Sources */,
-				57D942E5302F72CE00C06208 /* CitraAdvancedSettingView.swift in Sources */,
 				E524FBCA308F2B41009885DA /* WiiU.swift in Sources */,
 				578F28832F3780BC00D2D998 /* WFCSettingView.swift in Sources */,
 				579076F02D8AAC2900ED90FB /* TransparentHoleView.swift in Sources */,
@@ -15750,7 +15469,6 @@
 				577EC5602F7E561900E8E3EB /* UniversalScript.swift in Sources */,
 				573BECBD2D1D3F6B008AD18D /* HomeTabBar.swift in Sources */,
 				5796DB092FE416BA0051F661 /* ASText.swift in Sources */,
-				57D4842E302312020030A771 /* AddTriggerActionComboView.swift in Sources */,
 				57EED0772ECB817C003971BD /* IconView.swift in Sources */,
 				57F1D43E2FF3D53B00FC5B2A /* ShowableView.swift in Sources */,
 				5781F46F2EED6DC100916D8B /* Shader.swift in Sources */,
@@ -15790,7 +15508,6 @@
 				5720CACC2DB555990090C0F6 /* ThreeDSKeyboardView.swift in Sources */,
 				57047A162D8571D600C62FF6 /* PriceItemCollectionCell.swift in Sources */,
 				57F1D4062FF2160600FC5B2A /* CategorySelectionView.swift in Sources */,
-				57D483B73021D4C70030A771 /* AddTriggerActionView.swift in Sources */,
 				57A4816A2E7F05D2001D4598 /* NDS.swift in Sources */,
 				57F1A9182D7D25B900D0CC93 /* GameInfoView.swift in Sources */,
 				57BF5FDE2FE0223E0073D318 /* ASNavigationView.swift in Sources */,
@@ -15802,8 +15519,6 @@
 				577005782D3D60B700762E8F /* GameCheat.swift in Sources */,
 				574ABEBC2E609FE60045F76E /* GBA.swift in Sources */,
 				5754D8932E2751CA001EA5ED /* WFC.swift in Sources */,
-				57D4841B3023119B0030A771 /* AddTriggerActionSimpleView.swift in Sources */,
-				57D48BDC30585CDA00151935 /* SkinButtonBindingView.swift in Sources */,
 				5770055F2D3CC40400762E8F /* Skin.swift in Sources */,
 				573CEE8C2F2338D800EA24F1 /* A7800.swift in Sources */,
 				577005D42D3F2F8E00762E8F /* WebServer.swift in Sources */,
@@ -15819,8 +15534,6 @@
 				57E962F82D6AB4540022914C /* PlayHistoryItemCollectionCell.swift in Sources */,
 				57CCB33B2D6584BC0036476B /* ObjectUpdatable.swift in Sources */,
 				57A912042F3B767800628B04 /* NDSSaveConverter.swift in Sources */,
-				576C46312E16D9090008D087 /* MultiDiscDescCollectionCell.swift in Sources */,
-				57399AC52E40ACE100AB73DD /* PSXSBIImportView.swift in Sources */,
 				57BF60722FE278B80073D318 /* ASViewEffects.swift in Sources */,
 				E524FA5630879B06009885DA /* DuoTabletopControlView.swift in Sources */,
 				570F59152DC5BB48007BFD92 /* PlatformSortCollectionViewCell.swift in Sources */,
@@ -15837,7 +15550,6 @@
 				57C81DAE2FD6082600A8D0A1 /* LibretroNetplayAnalogDpad.swift in Sources */,
 				576F0E052D88006300D2A1BA /* GameSavePurchaseGuideView.swift in Sources */,
 				572C5CB42F6E983600776F8C /* J2MENetworkBridge.swift in Sources */,
-				57D7CF592EA78B2B00F41540 /* TriggerProPreviewController.swift in Sources */,
 				570F591C2DC70843007BFD92 /* Theme.swift in Sources */,
 				574789BE2D4F8769006F0D99 /* SectionIndexViewItem.swift in Sources */,
 				57F1A9392D7D704300D0CC93 /* AirPlayViewController.swift in Sources */,
@@ -15866,12 +15578,9 @@
 				57FD13F530110A34007F211A /* LandscapeBackgroundView.swift in Sources */,
 				577005612D3CD3AC00762E8F /* UTTypeExtensions.swift in Sources */,
 				E524FAA5308864B4009885DA /* TabletopSizeTransitionCoordinator.swift in Sources */,
-				57D7CF952EA8E7EE00F41540 /* TriggerProView.swift in Sources */,
 				5706B0372DFBEC1E0066122E /* SG1000.swift in Sources */,
 				57BF5EDA2FDB09A80073D318 /* ASCheckView.swift in Sources */,
 				5760A3923029CB9E002CCF6B /* CarouselLayoutIcon.swift in Sources */,
-				577160743005FAEE0088345B /* PlayCasePromoView.swift in Sources */,
-				573CEE2B2F21036800EA24F1 /* MultiDiscAddCollectionCell.swift in Sources */,
 				57EED02C2EC8D7C8003971BD /* iCloudSettingView.swift in Sources */,
 				57CCB3CD2D6775080036476B /* Database.swift in Sources */,
 				5796DB512FE41AA30051F661 /* ASSegment.swift in Sources */,
@@ -15896,7 +15605,6 @@
 				5796DB362FE419E00051F661 /* ASCheck.swift in Sources */,
 				5796DB132FE417E80051F661 /* ASCornerStyle.swift in Sources */,
 				57D48252301702BA0030A771 /* FileBrowserView.swift in Sources */,
-				57399AC82E40AFBA00AB73DD /* PSXSBICollectionCell.swift in Sources */,
 				57CCB3A92D66CE610036476B /* SkinCollectionViewCell.swift in Sources */,
 				5706B0FA2DFFED100066122E /* Shaders.metal in Sources */,
 				576060182D22BC5900A98B0C /* PersistedKit.swift in Sources */,
@@ -15909,10 +15617,8 @@
 				572D027A2F87EC49000BD6F4 /* ArticBaseCollectionCell.swift in Sources */,
 				5720E7ED2E547FE100EC0DA5 /* AchievementsProfile.swift in Sources */,
 				57F30CDF2EC44F390035327C /* Manufacturer.swift in Sources */,
-				57399ACF2E40BB4D00AB73DD /* PSXSBIDescCollectionCell.swift in Sources */,
 				57E8B1022E2366DC00F93E60 /* BIOSItem.swift in Sources */,
 				57D482983018F9520030A771 /* GameOptionsSortView.swift in Sources */,
-				578F28AD2F37871100D2D998 /* PSPNetworkingConfigCell.swift in Sources */,
 				572D02862F87EC79000BD6F4 /* PretendoHomeMenuCollectionCell.swift in Sources */,
 				574BCC742F324C92009BD74E /* Cipher.swift in Sources */,
 				57DC7FFC2F52EC39004B6FFD /* WeakScriptMessageHandler.swift in Sources */,
@@ -15928,7 +15634,6 @@
 				57DE10472D606C4E00CDD82A /* SymbolButton.swift in Sources */,
 				57F633002D718366007270E8 /* SettingItem.swift in Sources */,
 				57B6ECC02D7969E2002E619C /* AddCheatCodeView.swift in Sources */,
-				578F28DB2F39FBC200D2D998 /* PSPNetworkingConfigOnlineView.swift in Sources */,
 				57605FFC2D20F28100A98B0C /* ImportViewController.swift in Sources */,
 				570F59202DC7ACA8007BFD92 /* GameCoverView.swift in Sources */,
 				57D4839A3020EA770030A771 /* GameOptionPerform.swift in Sources */,
@@ -15940,12 +15645,9 @@
 				57E01076300CB3D8009AA38C /* TitleInputCollectionViewCell.swift in Sources */,
 				5720E8112E559EE600EC0DA5 /* RetroAchievementCountView.swift in Sources */,
 				57DC7FF52F52E931004B6FFD /* J2MEView.swift in Sources */,
-				578F28D52F39E0A200D2D998 /* PSPNetworkingConfigLocalView.swift in Sources */,
 				577005B92D3E71BC00762E8F /* ImportService.swift in Sources */,
 				570622EC2D7BD2FE004F09E7 /* ShaderManager.swift in Sources */,
-				57D7CF622EA792FB00F41540 /* AddTriggerButtonView.swift in Sources */,
 				57D48379301F57C20030A771 /* GameShortCutView.swift in Sources */,
-				57B5E3362ECDF75F00DE17E9 /* MAMEBiosView.swift in Sources */,
 				578F28EC2F3A056600D2D998 /* CollectionFooterReusableView.swift in Sources */,
 				57744ADE2FD91C8600DECBC7 /* ASButtonView.swift in Sources */,
 				57F1A9252D7D36D200D0CC93 /* GameViewExtensions.swift in Sources */,
@@ -15987,16 +15689,12 @@
 				5781F4EB2EEFE44F00916D8B /* NumbersExtensions.swift in Sources */,
 				57D483AB30217B060030A771 /* SequenceExtensions.swift in Sources */,
 				B2383F512A2733DF000563E6 /* UIFontExtensions.swift in Sources */,
-				57ABFBB72FED1756001C1425 /* SettingsRateUsView.swift in Sources */,
 				57E0C1A72D56580F00962555 /* UITextFieldExtensions.swift in Sources */,
 				5720E7CA2E54470000EC0DA5 /* ArrayExtensions.swift in Sources */,
 				57CC338E2DBC78AE00DF7418 /* FlexSkinSettingViewController.swift in Sources */,
-				E524FC043090E598009885DA /* BitBopKit.swift in Sources */,
 				5706AFC62DF7DABD0066122E /* BIOSCollectionViewCell.swift in Sources */,
 				579454232FE683F700D32DD6 /* ASTextView.swift in Sources */,
 				57E9632E2D6B0B8A0022914C /* SparkleSeperatorView.swift in Sources */,
-				576C46352E16DA1B0008D087 /* MultiDiscItemCollectionCell.swift in Sources */,
-				578F28A62F3786D100D2D998 /* PSPNetworkingSwitchCell.swift in Sources */,
 				5706B05A2DFC0F7E0066122E /* SS.swift in Sources */,
 				5760A36B3028CAFE002CCF6B /* LibretroCoreConfigsView.swift in Sources */,
 				5744C6FF2E368BB40088081A /* NoControllCollectionView.swift in Sources */,
@@ -16010,15 +15708,12 @@
 				573CEE812F2338BC00EA24F1 /* A2600.swift in Sources */,
 				5771610B300A1C830088345B /* ASCardView.swift in Sources */,
 				57BF61002FE3215B0073D318 /* UIStackViewExtensions.swift in Sources */,
-				57D483A33020EDB50030A771 /* TriggerProManageView.swift in Sources */,
 				575FF91D2D350F210043B2F3 /* PlayViewController.swift in Sources */,
-				57D48451302330060030A771 /* MultiDiscBuilderView.swift in Sources */,
 				57D941F9302BFC9400C06208 /* GameMetadataView.swift in Sources */,
 				5706B0452DFBF7DF0066122E /* MCD.swift in Sources */,
 				57B6EBF32D769910002E619C /* ProHUDExtentions.swift in Sources */,
 				57BA59B52E3F13D100110849 /* EmulationCore.swift in Sources */,
 				577006892D438F1100762E8F /* GameListView.swift in Sources */,
-				57D7CF862EA88AC100F41540 /* TriggerButton.swift in Sources */,
 				577EC5AB2F7E566700E8E3EB /* UniversalScript.c in Sources */,
 				5781F47E2EEE572A00916D8B /* ShaderInfoView.swift in Sources */,
 				57C65AEB2FD6B2E300BB73E0 /* ASListItemView.swift in Sources */,
@@ -16043,7 +15738,6 @@
 				575A39CE2DCD011500B28FC2 /* OnlineCoverManager.swift in Sources */,
 				5720D1C32DBA01990090C0F6 /* MappingInputPopupView.swift in Sources */,
 				57E0C19E2D562F8600962555 /* GamesToolView.swift in Sources */,
-				57F3BAEC2F6541C900ABF4B3 /* J2MESettingView.swift in Sources */,
 				57DF847A2D62E98100AA0AAB /* NSAttributedStringExtensions.swift in Sources */,
 				577160F0300931900088345B /* RetroAchievementsLaunchView.swift in Sources */,
 				E520DED9306E9606003F83BE /* UIViewControllerExtensions.swift in Sources */,
@@ -16062,9 +15756,6 @@
 				57047A0A2D85217C00C62FF6 /* PurchaseView.swift in Sources */,
 				57F2A8022F8E100100C62FF6 /* PurchaseBackgroundView.swift in Sources */,
 				57EC6AB82D803810002920F0 /* PlayHistoryBlankSlateView.swift in Sources */,
-				57D48422302311D00030A771 /* AddTriggerActionHoldView.swift in Sources */,
-				578F28972F37856B00D2D998 /* PSPNetworkingView.swift in Sources */,
-				57D483CD3021D6D30030A771 /* AddTriggerMappingListView.swift in Sources */,
 				5781F5AE2EF45C8200916D8B /* JGenesisView.swift in Sources */,
 				B23E3DF22A0C9D9B0068EADA /* GradientView.swift in Sources */,
 				57EC6AC82D8119D9002920F0 /* SyncManager.swift in Sources */,
@@ -16090,7 +15781,6 @@
 				57D481FE3014A2480030A771 /* ShaderLIstView.swift in Sources */,
 				5796DB3D2FE41A0A0051F661 /* ASRadio.swift in Sources */,
 				570F59C02DC91FF5007BFD92 /* ColorPickerView.swift in Sources */,
-				57C447183057D7E00099C15F /* AddUrlGameView.swift in Sources */,
 				57BF5EE22FDB09BC0073D318 /* ASRadioView.swift in Sources */,
 				57B6ECBD2D7953EC002E619C /* CheatCodeListView.swift in Sources */,
 				5760A3A63029E813002CCF6B /* ShaderToy.swift in Sources */,

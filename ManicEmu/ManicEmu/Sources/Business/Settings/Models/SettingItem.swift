@@ -24,22 +24,14 @@ struct SettingItem {
              rumble,
              skinSound,
              retro,
-             triggerPro,
              jit,
              shaders,
              globalCoreSwitch,
-             FAQ,
-             feedback,
-             qq,
-             telegram,
-             discord,
              about,
-             shareApp,
              clearCache,
              language,
              userAgreement,
              privacyPolicy,
-             featuredItems,
              coverScraping,
              resetTips
     }
@@ -128,17 +120,17 @@ struct SettingItem {
     
     var iconColors: [UIColor] {
         switch type {
-        case .appearance, .respectSilentMode, .globalCoreSwitch, .discord, .privacyPolicy:
+        case .appearance, .respectSilentMode, .globalCoreSwitch, .privacyPolicy:
             [R.Color.Purple]
-        case .theme, .onlinePlay, .FAQ, .featuredItems:
+        case .theme, .onlinePlay:
             [R.Color.Orange]
-        case .autoSaveState, .rumble, .feedback, .resetTips:
+        case .autoSaveState, .rumble, .resetTips:
             [R.Color.Green]
         case .skin, .skinSound, .about:
             [R.Color.Pink]
-        case .airPlay, .qq, .telegram, .shareApp, .coverScraping:
+        case .airPlay, .coverScraping:
             [R.Color.Indigo]
-        case .quickGame, .iCloud, .triggerPro, .clearCache:
+        case .quickGame, .iCloud, .clearCache:
             [R.Color.Yellow]
         case .fullScreenWhenConnectController, .jit, .language:
             [R.Color.Cyan]
@@ -161,18 +153,6 @@ struct SettingItem {
             ASIcon.symbolImage(R.image.icloudsync_iconSymbols(), colors: iconColors)
         case .fullScreenWhenConnectController:
             ASIcon.symbolImage(R.image.fullscreen_iconSymbols(), colors: iconColors)
-        case .FAQ:
-            ASIcon.symbolImage(R.image.faq_iconSymbols(), colors: iconColors)
-        case .feedback:
-            ASIcon.symbolImage(R.image.feedback_iconSymbols(), colors: iconColors)
-        case .shareApp:
-            ASIcon.symbolImage(R.image.shareRa_iconSymbols(), colors: iconColors)
-        case .qq:
-            ASIcon.symbolImage(R.image.qq_iconSymbols(), colors: iconColors)
-        case .telegram:
-            ASIcon.symbolImage(R.image.share_iconSymbols(), colors: iconColors)
-        case .discord:
-            ASIcon.symbolImage(R.image.discord_iconSymbols(), colors: iconColors)
         case .clearCache:
             ASIcon.symbolImage(R.image.clean_iconSymbols(), colors: iconColors)
         case .language:
@@ -197,16 +177,12 @@ struct SettingItem {
             ASIcon.symbolImage(R.image.rumble_iconSymbols(), colors: iconColors)
         case .appearance:
             ASIcon.symbolImage(R.image.appearance_iconSymbols(), colors: iconColors)
-        case .triggerPro:
-            ASIcon.symbolImage(R.image.triggerpro_iconSymbols(), colors: iconColors)
         case .skin:
             ASIcon.symbolImage(R.image.skin_iconSymbols(), colors: iconColors)
         case .jit:
             ASIcon.symbolImage(R.image.jit_iconSymbols(), colors: iconColors)
         case .shaders:
             ASIcon.symbolImage(R.image.shaders_iconSymbols(), colors: iconColors)
-        case .featuredItems:
-            ASIcon.symbolImage(R.image.featureditems_iconSymbols(), colors: iconColors)
         case .skinSound:
             ASIcon.symbolImage(R.image.skin_iconSymbols(), colors: iconColors)
         case .globalCoreSwitch:
@@ -228,18 +204,6 @@ struct SettingItem {
             R.string.localizable.airPlayTitle()
         case .iCloud:
             R.string.localizable.iCloudTitle()
-        case .FAQ:
-            R.string.localizable.qaTitle()
-        case .feedback:
-            R.string.localizable.feedbackTitle()
-        case .shareApp:
-            R.string.localizable.shareAppTitle()
-        case .qq:
-            R.string.localizable.joinQQTitle()
-        case .telegram:
-            R.string.localizable.joinTelegramTitle()
-        case .discord:
-            R.string.localizable.joinDiscordTitle()
         case .clearCache:
             R.string.localizable.clearCacheTitle()
         case .language:
@@ -266,16 +230,12 @@ struct SettingItem {
             "Rumble"
         case .appearance:
             R.string.localizable.appearance()
-        case .triggerPro:
-            "TriggerPro"
         case .skin:
             R.string.localizable.gamesSpecifySkin()
         case .jit:
             "JIT"
         case .shaders:
             R.string.localizable.shaders()
-        case .featuredItems:
-            R.string.localizable.featuredItems()
         case .skinSound:
             R.string.localizable.skinSoundEffects()
         case .globalCoreSwitch:
@@ -304,8 +264,6 @@ struct SettingItem {
             return R.string.localizable.rumbleDetail()
         } else if type == .appearance {
             return Settings.appearance.desc
-        } else if type == .triggerPro {
-            return R.string.localizable.triggerProDesc()
         } else if type == .iCloud {
 #if SIDE_LOAD
             return R.string.localizable.iCloudNotEnable()

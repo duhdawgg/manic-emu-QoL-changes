@@ -228,14 +228,6 @@ class GameInfoView: BaseView {
         }
     }
     
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let coverPoint = gameCoverView.convert(point, from: self)
-        if let button = gameCoverView.bitbopButton(at: coverPoint, with: event) {
-            return button
-        }
-        return super.hitTest(point, with: event)
-    }
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         guard width > 0 else { return }

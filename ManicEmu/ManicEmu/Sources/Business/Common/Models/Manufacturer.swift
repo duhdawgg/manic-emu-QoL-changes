@@ -11,12 +11,10 @@
 enum Manufacturer: Int, CaseIterable {
     case nintendo, sony, sega, arcade, atari, sun, microsoft, modRetro, nokia, nec, snk, commodore, bandai, adobe
     
+    // QoL build: only the makers of the shipped systems (ModRetro = Chromatic, which runs as GB).
+    // The other cases stay because their raw values are saved in the theme's manufacturer order.
     static var allCases: [Manufacturer] {
-        if Locale.prefersUS {
-            [.nintendo, .sony, .sega, .atari, .arcade, .sun, .microsoft, .modRetro, .nokia, .nec, .snk, .commodore, .bandai, .adobe]
-        } else {
-            [.nintendo, .sony, .sega, .arcade, .atari, .sun, .microsoft, .modRetro, .nokia, .nec, .snk, .commodore, .bandai, .adobe]
-        }
+        [.nintendo, .modRetro]
     }
     
     init?(title: String) {
@@ -69,67 +67,19 @@ enum Manufacturer: Int, CaseIterable {
     
     var normalImage: UIImage {
         switch self {
-        case .nintendo:
-            R.image.nintendo_normal()!
-        case .sony:
-            R.image.sony_normal()!
-        case .sega:
-            R.image.sega_normal()!
-        case .arcade:
-            R.image.arcade_normal()!
-        case .atari:
-            R.image.atari_normal()!
-        case .sun:
-            R.image.sun_normal()!
-        case .microsoft:
-            R.image.microsoft_normal()!
         case .modRetro:
             R.image.modretro_normal()!
-        case .nokia:
-            R.image.nokia_normal()!
-        case .nec:
-            R.image.nec_normal()!
-        case .snk:
-            R.image.snk_normal()!
-        case .commodore:
-            R.image.commodore_normal()!
-        case .bandai:
-            R.image.bandai_normal()!
-        case .adobe:
-            R.image.adobe_normal()!
+        default:
+            R.image.nintendo_normal()!
         }
     }
     
     var highlightImage: UIImage {
         switch self {
-        case .nintendo:
-            R.image.nintendo_highlight()!
-        case .sony:
-            R.image.sony_highlight()!
-        case .sega:
-            R.image.sega_highlight()!
-        case .arcade:
-            R.image.arcade_highlight()!
-        case .atari:
-            R.image.atari_highlight()!
-        case .sun:
-            R.image.sun_highlight()!
-        case .microsoft:
-            R.image.microsoft_highlight()!
         case .modRetro:
             R.image.modretro_highlight()!
-        case .nokia:
-            R.image.nokia_highlight()!
-        case .nec:
-            R.image.nec_highlight()!
-        case .snk:
-            R.image.snk_highlight()!
-        case .commodore:
-            R.image.commodore_highlight()!
-        case .bandai:
-            R.image.bandai_highlight()!
-        case .adobe:
-            R.image.adobe_highlight()!
+        default:
+            R.image.nintendo_highlight()!
         }
     }
     

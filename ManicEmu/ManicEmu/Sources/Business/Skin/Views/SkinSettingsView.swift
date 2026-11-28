@@ -814,9 +814,6 @@ extension SkinSettingsView: UICollectionViewDataSource {
                                                  animated: true)
                 }
             }
-            cell.onPlaycaseTap = {
-                PlayCasePromoView.show(showDontShow: false)
-            }
             cell.onFocusConfirm = { [weak self] in
                 guard let self else { return false }
                 if self.isEditMode {
@@ -929,13 +926,6 @@ extension SkinSettingsView: UICollectionViewDelegate {
                     }
                     collectionView.reloadItems(at: reloadItems)
                 }
-#if !SIDE_LOAD
-                if currentSkins[indexPath.row].skinType == .playcase,
-                   !PlayViewController.isGaming,
-                   !UserDefaults.standard.bool(forKey: R.DefaultKey.HasShowPlayCasePromo) {
-                    PlayCasePromoView.show()
-                }
-#endif
             }
             return false
         }

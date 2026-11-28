@@ -75,7 +75,7 @@ class GameOptionsSortView: BaseView {
     }()
     
     required init?(parameters: Any...) {
-        self.optionGroups = GameOption.groupAndSortOptions(GameOption.allCases)
+        self.optionGroups = GameOption.groupAndSortOptions(GameOption.allCases.filter { !GameOption.hiddenInQoLBuild.contains($0) })
         super.init(frame: .zero)
         addSubview(listPageView)
         listPageView.snp.makeConstraints { make in

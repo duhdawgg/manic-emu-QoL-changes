@@ -473,7 +473,12 @@ enum GameOption: Int, CaseIterable {
         .ndsLidToggle
     ]
     
-    static let defaultGroupAndSort: [[Self]] = [
+    /// Default menu order, without the options hidden in this build.
+    static let defaultGroupAndSort: [[Self]] = upstreamGroupAndSort
+        .map { $0.filter { !hiddenInQoLBuild.contains($0) } }
+        .filter { !$0.isEmpty }
+    
+    private static let upstreamGroupAndSort: [[Self]] = [
         [
             .bitbop
         ],
@@ -1084,7 +1089,26 @@ enum GameOption: Int, CaseIterable {
         }
     }
     
+    /// QoL build: options that never apply in this build, either because the feature was
+    /// removed (Trigger Pro, BitBop) or because only removed systems/cores use them.
+    /// They stay in the enum because the raw values are saved in preferences.
+    static let hiddenInQoLBuild: Set<GameOption> = [
+        .triggerPro, .bitbop,
+        .citraAdvanceToggle, .citraMode, .citraShader, .citraRightEyeRender, // Citra core (3DS runs on Azahar)
+        .pspJitType, .pspRenderer, .pspTexture,
+        .ps1Bios, .ps1ControllerMode, .ps1Sbi, .ps1Renderer,
+        .n64TransferPak, .n64RdpPlugin,
+        .clownMDTvStandard, .snesVRAM, .wswanRotation, .symbianDevice,
+        .wiiControllerMode, .dolphinCpuCore,
+        .skinButtonBinding, // Flash only
+        .editLink, // web/URL games
+    ]
+    
     static func availableOptions(game: Game, scene: Scene = .common) -> [Self] {
+        return unfilteredOptions(game: game, scene: scene).filter { !hiddenInQoLBuild.contains($0) }
+    }
+    
+    private static func unfilteredOptions(game: Game, scene: Scene) -> [Self] {
         if game.isSymbianHomeMenu {
             var options: [Self] = [.rename,
                                    .cover,
@@ -1338,10 +1362,6 @@ enum GameOption: Int, CaseIterable {
         
         if game.gameType != .flash {
             allOptions.remove(.skinButtonBinding)
-        }
-        
-        if !game.gameType.supportBitBop {
-            allOptions.remove(.bitbop)
         }
         
         allOptions.subtract(disableOptionsForScene(scene))

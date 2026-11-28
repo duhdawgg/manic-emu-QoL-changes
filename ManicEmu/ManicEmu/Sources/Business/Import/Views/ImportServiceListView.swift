@@ -29,31 +29,6 @@ class ImportServiceListView: BaseView {
             } else if index == 1 {
                 //question
                 ASWebView.show(url: R.URLs.GameImportGuide)
-            } else if index == 2 {
-                //More
-                ChevronSheetView.show(sections: [
-                    (header: R.string.localizable.addGameLink(),
-                     cells: [.iconTitleChevronCell(icon: .symbolImage(R.image.link_iconSymbols()),
-                                                   title: R.string.localizable.addGameLink())]),
-                    (header: R.string.localizable.fetchGamesFromOtherEmulators(),
-                     cells: [
-                        .iconTitleChevronCell(title: R.string.localizable.fetchGamesFromMeloNX()),
-                        .iconTitleChevronCell(title: R.string.localizable.fetchGamesFromXeniOS()),
-                        .iconTitleChevronCell(title: R.string.localizable.fetchGamesFromDukeX()),
-                        .iconTitleChevronCell(title: R.string.localizable.fetchGamesFromARMSX2()),
-                        .iconTitleChevronCell(title: R.string.localizable.fetchGamesFromMeloCafe())
-                     ])
-                ], completion: { indexPath in
-                    guard let indexPath else { return }
-                    if indexPath.section == 0 {
-                        AddUrlGameView.show()
-                        return
-                    }
-                    let types: [EmulatorInteractionKit.EmulatorType] = [.meloNX, .xeniOS, .dukeX, .armsx2, .melocafe]
-                    if types.indices.contains(indexPath.row) {
-                        EmulatorInteractionKit.fetchGames(type: types[indexPath.row])
-                    }
-                })
             }
         }
         
@@ -93,11 +68,12 @@ class ImportServiceListView: BaseView {
         
         services.append(ImportService.genService(type: .paste, detail: R.string.localizable.importServiceListPasteDetail()))
         
-        services.append(ImportService.genService(type: .multiDisc))
-        
+        // QoL build: the multi-disc helper is gone (no disc-based systems).
         services.append(ImportService.genService(type: .romPatcher))
         return services
     }()
+    /// Built-in services at the top of `services`, before the user's own.
+    private let builtInServiceCount = 3
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -232,7 +208,7 @@ class ImportServiceListView: BaseView {
     }
     
     private func updateServices(objects: Results<ImportService>) {
-        services.removeSubrange(4...)
+        services.removeSubrange(builtInServiceCount...)
         services.append(contentsOf: objects.map({ $0 }))
         collectionView.reloadSections([1])
     }
@@ -396,10 +372,6 @@ extension ImportServiceListView: UICollectionViewDelegate {
             if let provider = service.lanDriveProvider {
                 FileBrowserView.show(provider: provider, navigationTitle: service.title)
             }
-            
-        case .multiDisc:
-            //多碟助手
-            MultiDiscBuilderView.show()
             
         case .romPatcher:
             //RomPatcher

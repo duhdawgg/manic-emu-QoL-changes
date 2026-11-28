@@ -78,8 +78,7 @@ class ImportNavigationView: BaseView {
     private func getTools() -> [ASIcon] {
         return [
             .symbolImage(R.image.cloudDownload_iconSymbols(), animated: DownloadManager.shared.hasDownloadTask),
-            .symbolImage(R.image.faq_iconSymbols()),
-            .symbolImage(R.image.ellipsis_iconSymbols())
+            .symbolImage(R.image.faq_iconSymbols())
         ]
     }
 }

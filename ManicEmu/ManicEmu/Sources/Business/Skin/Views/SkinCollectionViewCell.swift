@@ -39,7 +39,6 @@ class SkinCollectionViewCell: UICollectionViewCell {
     }
     
     var onPreview: (() -> Void)?
-    var onPlaycaseTap: (() -> Void)?
     
     private var appliedSkinIdentifier: String?
     private var appliedTraits: ControllerSkin.Traits?
@@ -71,15 +70,6 @@ class SkinCollectionViewCell: UICollectionViewCell {
     private var subscriptView: SubscriptView = {
         let view = SubscriptView()
         view.isHidden = true
-        return view
-    }()
-    
-    private var playcaseButton: UIImageView = {
-        let view = UIImageView(image: R.image.playcase_footnote())
-        view.enablePressEffect = true
-        view.isFocusable = false
-        view.isHidden = true
-        view.isUserInteractionEnabled = true
         return view
     }()
     
@@ -139,16 +129,8 @@ class SkinCollectionViewCell: UICollectionViewCell {
             make.center.equalToSuperview()
         }
         
-        addSubview(playcaseButton)
-        playcaseButton.snp.makeConstraints { make in
-            make.leading.bottom.equalToSuperview()
-        }
-        
         previewButton.addTapGesture { [weak self] _ in
             self?.onPreview?()
-        }
-        playcaseButton.addTapGesture { [weak self] _ in
-            self?.onPlaycaseTap?()
         }
     }
     
@@ -166,7 +148,6 @@ class SkinCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         onPreview = nil
-        onPlaycaseTap = nil
         onFocusConfirm = nil
     }
     
@@ -210,8 +191,6 @@ class SkinCollectionViewCell: UICollectionViewCell {
         } else {
             subscriptView.isHidden = true
         }
-        
-        playcaseButton.isHidden = !(controllerSkin?.isPlayCase ?? false)
         
         checkView.isHidden = !isEditMode || !isEditable
         radioView.isHidden = isEditMode || !isUsing
